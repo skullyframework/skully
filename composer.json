@@ -13,12 +13,16 @@
       "email": "bobby@tgitriodesign.com"
     }
   ],
+  "require-dev": {
+    "mikey179/vfsStream": "v1.2.0"
+  },
   "require": {
     "php": ">=5.5.3"
   },
   "autoload": {
     "psr-0": {
-      "UVd\\": "Library/uvd"
+      "UVd\\": "Library/uvd",
+      "Skully\\": ""
     }
   },
   "license": "LGPL-2.1",
