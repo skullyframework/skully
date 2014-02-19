@@ -1,8 +1,8 @@
 {
-  "name": "trio/skully",
+  "name": "jaycode/skully-core",
   "version": "1.0",
   "type": "package",
-  "description": "Simple framework",
+  "description": "Simple framework by trio digital agency.",
   "authors": [
     {
       "name": "Jay",
