@@ -1,0 +1,30 @@
+{
+  "name": "trio/skully",
+  "version": "1.0",
+  "type": "package",
+  "description": "Simple framework",
+  "authors": [
+    {
+      "name": "Jay",
+      "email": "jay@tgitriodesign.com"
+    },
+    {
+      "name": "Bobby",
+      "email": "bobby@tgitriodesign.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.3",
+    "doctrine/orm": "2.4.*",
+    "symfony/yaml": "2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "UVd\\": "Library/uvd"
+    }
+  },
+  "license": "LGPL-2.1",
+  "suggest": {
+    "ext-runkit": "For using the runkit API."
+  }
+}
