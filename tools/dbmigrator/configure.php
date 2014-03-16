@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 10/12/13
- * Time: 12:19 PM
- * Description: Use this to decide if ruckus application is running on online or local version.
- */
+
 
 /** When running ruckus.php, pass -p option for production database. */
 $server = 'development';

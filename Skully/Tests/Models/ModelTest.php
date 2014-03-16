@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 3/12/14
- * Time: 4:13 PM
- */
+
 
 require_once(dirname(__FILE__).'/../DatabaseTestCase.php');
 

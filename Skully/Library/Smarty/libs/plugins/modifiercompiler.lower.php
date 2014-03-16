@@ -1,9 +1,5 @@
 <?php
-/**
- * Smarty plugin
- * @package Smarty
- * @subpackage PluginsModifierCompiler
- */
+
 
 /**
  * Smarty lower modifier plugin

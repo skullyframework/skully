@@ -1,9 +1,5 @@
 <?php
-/**
- * Smarty plugin
- * @package Smarty
- * @subpackage PluginsFunction
- */
+
 
 /**
  * Smarty {counter} function plugin

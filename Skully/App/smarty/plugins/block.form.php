@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 1/17/14
- * Time: 10:35 AM
- */
+
 
 /**
  * @param array $params

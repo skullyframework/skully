@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 12/19/13
- * Time: 11:46 PM
- */
+
 
 namespace Skully;
 use Skully\Core\ControllerInterface;

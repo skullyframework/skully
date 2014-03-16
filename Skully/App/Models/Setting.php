@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 2/10/14
- * Time: 1:43 AM
- */
+
 
 namespace Skully\App\Models;
 use \RedBean_Facade as R;

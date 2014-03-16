@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 1/8/14
- * Time: 5:58 PM
- */
+
 
 namespace Tests\Controllers\Views;
 

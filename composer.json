@@ -1,34 +1,35 @@
 {
-  "name": "triodigital/skully",
-  "version": "0.1",
-  "type": "package",
-  "description": "Simple framework by trio digital agency.",
-  "authors": [
-    {
-      "name": "Jay",
-      "email": "jay@tgitriodesign.com"
+    "name": "triodigital/skully",
+    "version": "0.1",
+    "type": "package",
+    "description": "Simple framework by trio digital agency.",
+    "authors": [
+        {
+            "name": "Jay",
+            "email": "jay@tgitriodesign.com"
+        },
+        {
+            "name": "Bobby",
+            "email": "bobby@tgitriodesign.com"
+        }
+    ],
+    "require-dev": {
+        "mikey179/vfsStream": "v1.2.0",
+        "symfony/console": "2.5.x-dev"
+
     },
-    {
-      "name": "Bobby",
-      "email": "bobby@tgitriodesign.com"
+    "require": {
+        "php": ">=5.5.3",
+        "gabordemooij/redbean": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Skully\\": "",
+            "EncryptionClass": "library/encryptionClass"
+        }
+    },
+    "license": "LGPL-2.1",
+    "suggest": {
+        "ext-runkit": "For using the runkit API."
     }
-  ],
-  "require-dev": {
-    "mikey179/vfsStream": "v1.2.0"
-  },
-  "require": {
-    "php": ">=5.5.3",
-    "gabordemooij/redbean": "dev-master",
-    "symfony/console": "2.5.x-dev"
-  },
-  "autoload": {
-    "psr-0": {
-      "Skully\\": "",
-      "EncryptionClass": "library/encryptionClass"
-    }
-  },
-  "license": "LGPL-2.1",
-  "suggest": {
-    "ext-runkit": "For using the runkit API."
-  }
 }

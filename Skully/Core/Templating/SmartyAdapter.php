@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 12/29/13
- * Time: 5:00 PM
- */
+
 
 namespace Skully\Core\Templating;
 require_once dirname(__FILE__) . '../../../' . 'Library/Smarty/libs/Smarty.class.php';

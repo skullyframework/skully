@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 1/11/14
- * Time: 11:28 AM
- */
+
 
 namespace Skully\Exceptions;
 

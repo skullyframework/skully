@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 12/20/13
- * Time: 5:18 PM
- */
-
 namespace Skully\App\Controllers;
 
 use Skully\Core\Controller;

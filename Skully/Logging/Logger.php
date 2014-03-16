@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 1/9/14
- * Time: 2:00 AM
- */
+
 
 namespace Skully\Logging;
 

@@ -1,9 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 2/27/13
- * Time: 10:57 AM
- */
+
 namespace Skully\App\Helpers;
 
 /**

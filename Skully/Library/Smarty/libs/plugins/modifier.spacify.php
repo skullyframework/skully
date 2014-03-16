@@ -1,9 +1,5 @@
 <?php
-/**
- * Smarty plugin
- * @package Smarty
- * @subpackage PluginsModifier
- */
+
 
 /**
  * Smarty spacify modifier plugin

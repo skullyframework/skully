@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 7/20/13
- * Time: 5:56 PM
- * Description: link function in smarty
- */
+
 
 function smarty_function_link($params = array(), &$smarty) {
 	$href = '';

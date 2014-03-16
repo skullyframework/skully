@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by Trio Design Team (jay@tgitriodesign.com).
- * Date: 5/4/13
- * Time: 3:09 PM
- * Description: Global lang() function for tinymce.
- */
+
 
 /**
  * @param array $params
