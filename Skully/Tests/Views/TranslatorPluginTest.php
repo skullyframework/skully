@@ -10,8 +10,8 @@ namespace Tests\Controllers\Views;
 use \org\bovigo\vfs\vfsStream;
 use \Skully\Core\Config;
 
-require_once(realpath(dirname(__FILE__).'/../').'/realpath_custom.php');
-require_once(realpath(dirname(__FILE__).'/../').'/App/include.php');
+require_once(realpath(dirname(__FILE__) . '/../') . '/realpath_custom.php');
+require_once(realpath(dirname(__FILE__) . '/../') . '/App/include.php');
 
 class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
     protected $root;
@@ -104,7 +104,6 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
 
     protected function getApp()
     {
-
         $structure = $this->getStructure();
         $this->root = vfsStream::setup('root', 777, $structure);
 //        print_r(vfsStream::inspect(new vfsStreamStructureVisitor())->getStructure());

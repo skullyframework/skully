@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'org\\bovigo\\vfs\\' => array($vendorDir . '/mikey179/vfsStream/src/main/php'),
-    'UVd\\' => array($baseDir . '/Library/uvd'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Skully\\' => array($baseDir . '/'),
+    'RedBean_' => array($vendorDir . '/gabordemooij/redbean'),
+    'EncryptionClass' => array($baseDir . '/library/encryptionClass'),
 );

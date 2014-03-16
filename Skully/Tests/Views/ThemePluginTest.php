@@ -10,8 +10,8 @@ namespace Tests\Controllers\Views;
 use \org\bovigo\vfs\vfsStream;
 use \Skully\Core\Config;
 
-require_once(realpath(dirname(__FILE__).'/../').'/realpath_custom.php');
-require_once(realpath(dirname(__FILE__).'/../').'/App/include.php');
+require_once(realpath(dirname(__FILE__) . '/../') . '/realpath_custom.php');
+require_once(realpath(dirname(__FILE__) . '/../') . '/App/include.php');
 
 class ThemePluginTest extends \PHPUnit_Framework_TestCase {
     protected $root;

@@ -24,6 +24,11 @@ use Skully\Exceptions\PageNotFoundException;
 use Skully\Core\RepositoryInterface;
 use Skully\Core\RepositoryFactory;
 use Skully\Core\Http;
+use Skully\App\Session\DBSession;
+
+use RedBean_Facade as R;
+use RedBean_ModelHelper;
+use RedBean_DependencyInjector;
 
 
 /**
@@ -33,6 +38,10 @@ use Skully\Core\Http;
  * Refer to ApplicationInterface for documentation
  */
 class Application implements ApplicationInterface {
+    /** @var \Skully\App\Session\DBSession */
+    protected $session;
+
+    protected $modelsInjector;
 
     /**
      * @var null
@@ -102,6 +111,86 @@ class Application implements ApplicationInterface {
         date_default_timezone_set($this->config('timezone'));
         $this->addLangfile('common', $this->config('language'));
         $this->addLangfile('common', $this->getLanguage());
+
+        // Setting up RedBean
+        $dbConfig = $config->getProtected('dbConfig');
+        if (!empty($dbConfig)) {
+            self::setupRedBean("mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};port={$dbConfig['port']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
+            // Below is needed so that RedBean_SimpleModel may use $this->app:
+            $this->modelsInjector = new RedBean_DependencyInjector;
+            RedBean_ModelHelper::setDependencyInjector( $this->modelsInjector );
+            $this->modelsInjector->addDependency('App', $this);
+            // Add Settings to config
+            $this->mergeSettingsToConfig();
+        }
+    }
+
+    /**
+     * Merge settings to config.
+     */
+    protected function mergeSettingsToConfig() {
+        $settings = R::findAll('setting');
+        if (!empty($settings)) {
+            foreach($settings as $setting) {
+                $value = $setting->value;
+                settype($value, $setting->type);
+                if ($setting->is_client) {
+                    $this->config->setPublic($setting->name, $value);
+                }
+                else {
+                    $this->config->setProtected($setting->name, $value);
+                }
+            }
+        }
+    }
+
+    /**
+     * @param string $dsn
+     * @param $user
+     * @param string $password
+     * @param bool $isDevMode
+     */
+    public static function setupRedBean($dsn, $user, $password = '', $isDevMode = false)
+    {
+        $formatter = new ModelFormatter;
+        RedBean_ModelHelper::setModelFormatter($formatter);
+        if (!isset( R::$toolboxes['default'] )) {
+            R::setup($dsn, $user,$password, !$isDevMode);
+        }
+
+    }
+
+    /**
+     * Creates a model
+     * @param $name
+     * @param array $attributes
+     * @return \Skully\App\Models\BaseModel
+     * @throws \Exception
+     */
+    public function createModel($name, $attributes = array())
+    {
+        /** @var \RedBean_SimpleModel $bean */
+        $bean = R::dispense(strtolower($name));
+        /** @var \Skully\App\Models\BaseModel $model */
+        $model = $bean->box();
+        if (empty($model)) {
+            throw new \Exception("Model ".ucfirst($name)." not found.");
+        }
+        if (!empty($attributes)) {
+            foreach ($attributes as $attribute => $value) {
+                $model->set($attribute, $value);
+            }
+
+        }
+        return $model;
+    }
+
+    public function getSession()
+    {
+        if (empty($this->session)) {
+            $this->session = new DBSession($this);
+        }
+        return $this->session;
     }
 
     /**
@@ -474,7 +563,7 @@ class Application implements ApplicationInterface {
 //            if (!$this->configIsEmpty('caching')) {
 //                $caching = $this->config('caching');
 //            }
-            $this->templateEngine = new SmartyAdapter($this->config('basePath'), $this->config('theme'), $this->getAppName(), $this->additionalTemplateEnginePluginsDir(), $caching);
+            $this->templateEngine = new SmartyAdapter($this->config('basePath'), $this->config('theme'), $this, $this->additionalTemplateEnginePluginsDir(), $caching);
             $this->templateEngine->registerObject('app', $this);
         }
         return $this->templateEngine;
@@ -534,15 +623,6 @@ class Application implements ApplicationInterface {
      */
     public function aRedirect($url) {
         return $this->getHttp()->redirect($url);
-    }
-
-    /**
-     * Can be extended to use DBSession
-     * @return mixed
-     */
-    public function getSession()
-    {
-        return $_SESSION;
     }
 
     /**

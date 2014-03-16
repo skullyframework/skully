@@ -205,6 +205,23 @@ interface ApplicationInterface {
     public function aRedirect($url);
 
     /**
+     * @param string $dsn
+     * @param $user
+     * @param string $password
+     * @param bool $isDevMode
+     */
+    public static function setupRedBean($dsn, $user, $password = '', $isDevMode = false);
+
+    /**
+     * Creates a model
+     * @param $name
+     * @param array $attributes
+     * @return \Skully\\App\Models\BaseModel
+     * @throws \Exception
+     */
+    public function createModel($name, $attributes = array());
+
+    /**
      * Can be extended to use DBSession
      * @return mixed
      */

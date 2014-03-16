@@ -219,14 +219,6 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         unsetRealpath();
     }
 
-    public function testLoadSkullyTestTheme()
-    {
-        $app = $this->getSkullyApp();
-        $controller = new \Skully\App\Controllers\Admin\HomeController($app, 'index');
-        $this->assertEquals('This is skully test admin home', $controller->fetch('admin/home/index'));
-        unsetRealpath();
-    }
-
     public function testLoadDefaultTheme()
     {
         $app = $this->getApp();

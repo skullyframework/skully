@@ -17,12 +17,14 @@
     "mikey179/vfsStream": "v1.2.0"
   },
   "require": {
-    "php": ">=5.5.3"
+    "php": ">=5.5.3",
+    "gabordemooij/redbean": "dev-master",
+    "symfony/console": "2.5.x-dev"
   },
   "autoload": {
     "psr-0": {
-      "UVd\\": "Library/uvd",
-      "Skully\\": ""
+      "Skully\\": "",
+      "EncryptionClass": "library/encryptionClass"
     }
   },
   "license": "LGPL-2.1",

@@ -5,6 +5,8 @@
  * Time: 3:14 PM
  */
 
+$_SERVER['SERVER_NAME'] = 'test';
+
 require_once('Application.php');
 require_once('Controllers/base.php');
 require_once('Controllers/home.php');

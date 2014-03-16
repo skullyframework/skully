@@ -1,0 +1,63 @@
+Pack version 2.0.1
+  Written by Andrew Smith [andrew.caleb.smith@gmail.com]
+
+Pack comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the license distributed with it.
+
+Pack is a command-line tool that can combine a directory full of CSS or JavaScript
+files, compress them, and then save the resulting files where you desire.
+Pack uses Google Closure [http://code.google.com/closure/] to compress JavaScript.
+
+Usage: pack path/to/pack.txt
+  You may specify multiple pack files at once.
+
+Pack works by reading a text file with instructions on how to compress or
+combine JavaScript and CSS files.
+
+Example pack.txt file:
+
+  @combine css/style.css
+    css/base.css
+    css/layout.css
+    css/other_stylesheets/*
+
+This example will read in css/base.css and css/layout.css, combine the
+contents of both files, and save them in a file called style.css. All paths
+are relative to the directory of the pack file (you can specify absolute
+paths if you need to). You can use "*" to specify all the files in a
+specific directory, but don't worry--this will never accidentally read the
+file you want to write to.
+
+If you want to compress or minify your code, use @compress. Example:
+
+  @compress js/javascript.js
+    js/file1.js
+    js/file2.js
+
+The same thing works with CSS as well. You may add comments to the pack file
+with the "#" character.
+
+Here's a final pack file example:
+
+  @compress css/style.min.css
+    # Compress everything in this folder
+    # into a file called "style.min.css"
+    css/*
+    # Note: this won't read style.min.css
+    # even though it uses the asterisk!
+
+  @combine js/javascript.js
+    # Combine js files into one file
+    js/jquery/jquery-1.3.2.min.js
+    js/jquery/jquery-ui-1.7.2.min.js
+
+    # Load all plugins
+    js/plugins/*
+
+    # Load everything else
+    js/source/*
+
+  @compress js/javascript.min.js
+    js/javascript.js
+
+Enjoy!

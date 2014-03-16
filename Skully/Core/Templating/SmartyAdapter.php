@@ -6,7 +6,7 @@
  */
 
 namespace Skully\Core\Templating;
-require_once dirname(__FILE__).'../../../'.'Library/Smarty/libs/Smarty.class.php';
+require_once dirname(__FILE__) . '../../../' . 'Library/Smarty/libs/Smarty.class.php';
 
 use Skully\Exceptions\InvalidTemplateException;
 
@@ -22,7 +22,7 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     private $smarty;
 
     /**
-     * @var
+     * @var \Skully\Application
      */
     private $app;
 
@@ -39,22 +39,24 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     /**
      * @param string $basePath Application's base path ending with DIRECTORY_SEPARATOR
      * @param string $theme
-     * @param string $app
+     * @param \Skully\Application $app
      * @param array $additionalPluginsDir
      * @param int $caching
      */
-    public function __construct($basePath, $theme = 'default', $app = 'App', $additionalPluginsDir = array(), $caching = 1)
+    public function __construct($basePath, $theme = 'default', $app = null, $additionalPluginsDir = array(), $caching = 1)
     {
+        $appName = $app->getAppName();
+        $this->app = $app;
         $skullyBasePath = realpath(dirname(__FILE__).'/../../../').DIRECTORY_SEPARATOR;
         $this->smarty = new \Smarty;
         $this->smarty->caching = $caching;
         $this->caching = $caching;
-        $this->smarty->setCompileDir($basePath . implode(DIRECTORY_SEPARATOR, array($app, 'smarty', 'templates_c')).DIRECTORY_SEPARATOR);
-        $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($app, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
-        $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($app, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
+        $this->smarty->setCompileDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'templates_c')).DIRECTORY_SEPARATOR);
+        $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
+        $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
         $this->smarty->setTemplateDir(array(
-            'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme,$app,'views')),
-            'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default',$app,'views')),
+            'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme,$appName,'views')),
+            'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default',$appName,'views')),
             'skully' => $skullyBasePath.implode(DIRECTORY_SEPARATOR, array('public','default','App','views'))
         ));
         $plugins = array_merge($additionalPluginsDir, array(

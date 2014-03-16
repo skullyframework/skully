@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/lib/pack'
+
+puts File.read('README') unless ARGV.length > 0
+
+ARGV.each do |path|
+  Pack.pack path
+end
