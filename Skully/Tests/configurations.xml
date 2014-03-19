@@ -11,7 +11,8 @@
             <!--<file>Views/TranslatorPluginTest.php</file>-->
             <!--<file>Views/ThemePluginTest.php</file>-->
             <!--<file>Helpers/BaseHelperTest.php</file>-->
-            <file>Models\ModelTest.php</file>
+            <!--<file>Models\ModelTest.php</file>-->
+            <file>Commands/CommandTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>

@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Skully\App\Models;
 use \RedBean_Facade as R;
 use \Skully\App\Helpers\FileHelper;

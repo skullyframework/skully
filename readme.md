@@ -13,4 +13,25 @@ This framework uses [RedbeanPHP](http://redbeanphp.com) as its ORM and [Smarty](
 - It is a compilation of best practices in software development.
 - Easy to use command line tools (we use the symfony Command plugin for this), and additional tools you can add as you go. Examples below.
 - Database migration, a great feature from Rails, is integrated with the help of Ruckusing module (which we tinkered with a bit).
-- We think this is the best feature Skully offers: Clean integration with our favourite IDE: [PHP Storm]()
+- We think this is the best feature Skully offers: Clean integration with our favourite IDE: [PHP Storm](http://www.jetbrains.com/phpstorm/). Do you remember the days when you have to do find-from-all to find out where a class / method is inherited from? That days are long gone with Skully on PHP Storm.
+
+## Setting Up
+
+Coming soon
+
+## Project Structure
+
+
+## Templating with Skully is Fun!
+
+## Command Line Applications
+
+Coming Soon
+
+## Tools
+
+### Schema Migration Tool
+
+### Javascript Packer Tool
+
+### Password Encryption Tool

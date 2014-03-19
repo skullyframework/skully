@@ -1,0 +1,130 @@
+[Wednesday, 19-Mar-14 18:58:53 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:22
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:02:46 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:04:51 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:05:39 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:06:21 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:08:51 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/ConsoleApplication.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Symfony\Component\Console\Command\HelpCommand::setApp()
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:53:56 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/EncryptCommand.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function config() on a non-object
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:54:41 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/EncryptCommand.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function config() on a non-object
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:56:12 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/EncryptCommand.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function config() on a non-object
+#0  shutdownHandler()
+
+
+[Wednesday, 19-Mar-14 19:57:31 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/EncryptCommand.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function config() on a non-object
+#0  shutdownHandler()
+
+

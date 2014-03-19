@@ -9,7 +9,7 @@ require_once(dirname(__FILE__).'/functions.php');
 
 use App\Application;
 use RedBean_Facade as R;
-use App\Config\Config;
+use Skully\Core\Config;
 
 abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
     /** @var Application */
