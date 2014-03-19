@@ -17,12 +17,12 @@
         "phpunit/phpunit": "3.7.28",
         "phpunit/phpunit-selenium": ">=1.2",
         "phpunit/dbunit": ">=1.2",
-        "mikey179/vfsStream": "v1.2.0",
-        "symfony/console": "2.5.x-dev"
+        "mikey179/vfsStream": "v1.2.0"
     },
     "require": {
         "php": ">=5.5.3",
-        "gabordemooij/redbean": "dev-master"
+        "gabordemooij/redbean": "dev-master",
+        "symfony/console": "2.5.x-dev"
     },
     "autoload": {
         "psr-0": {
