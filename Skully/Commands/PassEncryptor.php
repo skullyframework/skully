@@ -10,7 +10,7 @@ use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 
 use \Skully\Library\EncryptionClass\EncryptionClass;
 
-class PassEncryptor extends Command {
+class PassEncryptorCommand extends Command {
     protected function configure()
     {
         $crypt = new EncryptionClass();

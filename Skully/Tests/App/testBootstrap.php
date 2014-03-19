@@ -8,11 +8,10 @@ session_start();
 mb_internal_encoding("UTF-8");
 
 require_once(BASE_PATH . 'include.php');
-use App\Config\Config;
+use Skully\Core\Config;
 
-require_once(BASE_PATH . '/globals.php');
-require_once( BASE_PATH.'/config/config.common.php');
-require_once( BASE_PATH.'/config/config.unique.php');
+require_once( BASE_PATH.'config.common.php');
+require_once( BASE_PATH.'config.unique.php');
 
 if (!function_exists('__setupApp')) {
     function __setupApp() {

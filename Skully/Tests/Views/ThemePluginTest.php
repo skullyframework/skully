@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Tests\Controllers\Views;
+namespace Skully\Tests\Views;
 
 use \org\bovigo\vfs\vfsStream;
 use \Skully\Core\Config;

@@ -1,5 +1,5 @@
 <?php
-
+namespace Skully\Tests\Models;
 
 require_once(dirname(__FILE__).'/../DatabaseTestCase.php');
 

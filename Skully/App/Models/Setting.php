@@ -3,7 +3,8 @@
 
 namespace Skully\App\Models;
 use \RedBean_Facade as R;
-use \App\Helpers\FileHelper;
+use \Skully\App\Helpers\FileHelper;
+use \Skully\Library\EncryptionClass\EncryptionClass;
 
 class Setting extends BaseModel{
     protected function protectedFields() {
@@ -16,7 +17,7 @@ class Setting extends BaseModel{
     }
 
     public function beforeSave() {
-        $crypt = new \EncryptionClass();
+        $crypt = new EncryptionClass();
         if ($this->get('input_type') == 'password') {
             $this->set('value', $crypt->encrypt($this->app->config('globalSalt'), $this->get('value')));
         }
