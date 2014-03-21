@@ -121,27 +121,6 @@ class Application implements ApplicationInterface {
             $this->modelsInjector = new RedBean_DependencyInjector;
             RedBean_ModelHelper::setDependencyInjector( $this->modelsInjector );
             $this->modelsInjector->addDependency('App', $this);
-            // Add Settings to config
-            $this->mergeSettingsToConfig();
-        }
-    }
-
-    /**
-     * Merge settings to config.
-     */
-    protected function mergeSettingsToConfig() {
-        $settings = R::findAll('setting');
-        if (!empty($settings)) {
-            foreach($settings as $setting) {
-                $value = $setting->value;
-                settype($value, $setting->type);
-                if ($setting->is_client) {
-                    $this->config->setPublic($setting->name, $value);
-                }
-                else {
-                    $this->config->setProtected($setting->name, $value);
-                }
-            }
         }
     }
 
