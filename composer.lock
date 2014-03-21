@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b34bdc49a1aa455e0c214d4810143639",
+    "hash": "e913449b346d4db14678b0d6899651a5",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruckus/ruckusing-migrations.git",
-                "reference": "0b2d4698a4a0fcb951a38745c1034b40f5526e49"
+                "reference": "a843bfec407449c6ee45716d4343ed6dcf5dde0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/0b2d4698a4a0fcb951a38745c1034b40f5526e49",
-                "reference": "0b2d4698a4a0fcb951a38745c1034b40f5526e49",
+                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/a843bfec407449c6ee45716d4343ed6dcf5dde0f",
+                "reference": "a843bfec407449c6ee45716d4343ed6dcf5dde0f",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "ruckusing",
                 "task"
             ],
-            "time": "2014-03-06 18:04:07"
+            "time": "2014-03-20 20:13:36"
         },
         {
             "name": "symfony/console",
