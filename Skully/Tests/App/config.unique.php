@@ -15,7 +15,7 @@ function setUniqueConfig(Config &$config, $serverName = null) {
         $config_r=array(
             'serverName' => $serverName,
             "dbConfig" => array(
-                'driver' => 'pdo_mysql',
+                'type' => 'mysql',
                 "host"	    => "127.0.0.1",
                 "user"	    => "root",
                 "password"	=> "oisadj",
@@ -31,12 +31,12 @@ function setUniqueConfig(Config &$config, $serverName = null) {
         $config_r=array(
             'serverName' => $serverName,
             "dbConfig" => array(
-                'driver' => 'pdo_mysql',
-                "host"	    => "127.0.0.1",
-                "user"	    => "root",
-                "password"	=> "oisadj",
-                "port"		=> "3306",
-                "dbname"	=> "skullyTest"
+                'type' => 'sqlite',
+                "host"	    => "localhost",
+                "user"	    => "",
+                "password"	=> "",
+                "port"		=> "",
+                "dbname"	=> dirname(__FILE__) . '/test.db'
             ),
         );
     }
@@ -47,7 +47,7 @@ function setUniqueConfig(Config &$config, $serverName = null) {
         $config_r=array(
             'serverName' => $serverName,
             "dbConfig" => array(
-                'driver' => 'pdo_mysql',
+                'type' => 'mysql',
                 "host"	    => "",
                 "user"	    => "",
                 "password"	=> "",

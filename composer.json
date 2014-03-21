@@ -22,16 +22,23 @@
     "require": {
         "php": ">=5.5.3",
         "gabordemooij/redbean": "dev-master",
-        "symfony/console": "2.5.x-dev"
+        "symfony/console": "2.5.x-dev",
+        "jaycode/ruckusing-migrations": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "Skully\\": "",
-            "EncryptionClass": "library/encryptionClass"
+            "Skully\\": ""
+//            "Ruckusing": "Skully/Library/ruckusing/lib"
         }
     },
     "license": "LGPL-2.1",
     "suggest": {
         "ext-runkit": "For using the runkit API."
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jaycode/ruckusing-migrations"
+        }
+    ]
 }

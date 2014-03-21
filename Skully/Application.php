@@ -111,7 +111,12 @@ class Application implements ApplicationInterface {
         // Setting up RedBean
         $dbConfig = $config->getProtected('dbConfig');
         if (!empty($dbConfig)) {
-            self::setupRedBean("mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};port={$dbConfig['port']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
+            if ($dbConfig['type'] == 'mysql') {
+                self::setupRedBean("mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};port={$dbConfig['port']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
+            }
+            elseif ($dbConfig['type'] == 'sqlite') {
+                self::setupRedBean("sqlite:{$dbConfig['dbname']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
+            }
             // Below is needed so that RedBean_SimpleModel may use $this->app:
             $this->modelsInjector = new RedBean_DependencyInjector;
             RedBean_ModelHelper::setDependencyInjector( $this->modelsInjector );

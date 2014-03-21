@@ -128,3 +128,80 @@ Call to a member function config() on a non-object
 #0  shutdownHandler()
 
 
+[Thursday, 20-Mar-14 17:27:33 WIB error] lvl: 4096 | msg:Argument 1 passed to Skully\Console\Console::__construct() must be an instance of Skully\Application, boolean given, called in /media/jay/Data/apache/skully/Skully/Tests/Commands/CommandTest.php on line 15 and defined | file:/media/jay/Data/apache/skully/Skully/Console/Console.php | ln:16
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+
+
+
+[Thursday, 20-Mar-14 17:27:33 WIB fatal] [SHUTDOWN] lvl:4096 | file:/media/jay/Data/apache/skully/Skully/Console/Console.php | ln:16
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Argument 1 passed to Skully\Console\Console::__construct() must be an instance of Skully\Application, boolean given, called in /media/jay/Data/apache/skully/Skully/Tests/Commands/CommandTest.php on line 15 and defined
+#0  shutdownHandler()
+
+
+[Thursday, 20-Mar-14 18:37:12 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/Console.php | ln:32
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '\Skully\Commands\SchemaCommand' not found
+#0  shutdownHandler()
+
+
+[Thursday, 20-Mar-14 18:37:28 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/SchemaCommand.php | ln:42
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Skully\Commands\Ruckusing_FrameworkRunner' not found
+#0  shutdownHandler()
+
+
+[Thursday, 20-Mar-14 18:37:45 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/SchemaCommand.php | ln:42
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Ruckusing_FrameworkRunner' not found
+#0  shutdownHandler()
+
+
+[Thursday, 20-Mar-14 18:37:45 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/SchemaCommand.php | ln:42
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Ruckusing_FrameworkRunner' not found
+#0  shutdownHandler()
+
+

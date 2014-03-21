@@ -11,32 +11,41 @@ use Symfony\Component\Console\Output\BufferedOutput;
 
 class Console extends ApplicationAware {
     protected $test = false;
-    public function __construct($test = false) {
+    protected $consoleApp;
+    protected $app;
+    public function __construct(Application $app, $test = false) {
+        $this->app = $app;
         $this->test = $test;
+        $this->consoleApp = new ConsoleApplication();
+        $classes = array(
+            '\Skully\Commands\EncryptCommand',
+            '\Skully\Commands\DecryptCommand',
+            '\Skully\Commands\SchemaCommand'
+        );
+        $this->addCommands($classes);
     }
-    public function run(Application $app, $inputString = '') {
+    public function addCommands($commands = null) {
+
+        if (!empty($commands)) {
+            foreach($commands as $command) {
+                /** @var \Skully\Console\Command $newClass */
+                $newCommand = new $command($this->app);
+                $this->consoleApp->add($newCommand);
+            }
+        }
+    }
+    public function run($inputString = '') {
         $input = null;
         if (!empty($inputString)) {
             $input = new StringInput($inputString);
         }
-        $this->setApp($app);
-        $consoleApp = new ConsoleApplication();
-        $classes = array(
-            '\Skully\Commands\EncryptCommand'
-        );
-        if (!empty($classes)) {
-            foreach($classes as $class) {
-                /** @var \Skully\Console\Command $newClass */
-                $newClass = new $class($app);
-                $consoleApp->add($newClass);
-            }
-        }
+
         $output = null;
         if ($this->test) {
-            $consoleApp->setAutoExit($this->autoExit);
+            $this->consoleApp->setAutoExit(!$this->test);
             $output = new BufferedOutput();
         }
-        $consoleApp->run($input, $output);
+        $this->consoleApp->run($input, $output);
         return $output;
     }
 } 

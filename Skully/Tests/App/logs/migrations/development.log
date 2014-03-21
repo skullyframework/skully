@@ -1,0 +1,16 @@
+Mar 21 12:02:18 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="RUCKUSING_TS_SCHEMA_TBL_NAME";
+Mar 21 12:02:18 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="RUCKUSING_TS_SCHEMA_TBL_NAME";
+Mar 21 12:02:18 [info] CREATE TABLE "RUCKUSING_TS_SCHEMA_TBL_NAME" (
+"version" varchar(255)) ;
+Mar 21 12:02:18 [info] CREATE UNIQUE INDEX "idx_RUCKUSING_TS_SCHEMA_TBL_NAME_version" ON "RUCKUSING_TS_SCHEMA_TBL_NAME"("version")
+Mar 21 12:02:18 [info] SELECT version FROM RUCKUSING_TS_SCHEMA_TBL_NAME
+Mar 21 12:02:18 [info] SELECT version FROM RUCKUSING_TS_SCHEMA_TBL_NAME
+Mar 21 12:02:18 [info] SELECT version FROM RUCKUSING_TS_SCHEMA_TBL_NAME
+Mar 21 12:02:55 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Mar 21 12:02:55 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Mar 21 12:02:55 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Mar 21 12:02:56 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Mar 21 12:02:56 [info] SELECT version FROM schema_migrations
+Mar 21 12:02:56 [info] SELECT version FROM schema_migrations
+Mar 21 12:02:56 [info] SELECT version FROM schema_migrations

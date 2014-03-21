@@ -12,14 +12,25 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
     public function testRunningEncryptionCommand()
     {
         $app = __setupApp();
-        $console = new Console(true);
-        $output = $console->run($app, "skully:encrypt password");
+        $console = new Console($app, true);
+        $output = $console->run("skully:encrypt password");
         $this->assertEquals("x0 z8=3F",trim($output->fetch()));
+    }
+
+    public function testRunningDecryptionCommand()
+    {
+        $app = __setupApp();
+        $console = new Console($app, true);
+        $output = $console->run("skully:decrypt \"x0 z8=3F\"");
+        $this->assertEquals("password",trim($output->fetch()));
     }
 
     public function testRunningMigrationCommand()
     {
-
+        $app = __setupApp();
+        $console = new Console($app, true);
+        $output = $console->run("skully:schema db:migrate");
+        $this->assertEquals('', trim($output->fetch()));
     }
 }
  
