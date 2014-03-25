@@ -32,5 +32,10 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
         $output = $console->run("skully:schema db:migrate");
         $this->assertEquals('', trim($output->fetch()));
     }
+
+    public function testPackCommand()
+    {
+
+    }
 }
  

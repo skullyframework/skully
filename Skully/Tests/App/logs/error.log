@@ -205,3 +205,16 @@ Class 'Ruckusing_FrameworkRunner' not found
 #0  shutdownHandler()
 
 
+[Friday, 21-Mar-14 17:25:29 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Console/Console.php | ln:33
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '\Skully\Commands\PackCommand' not found
+#0  shutdownHandler()
+
+

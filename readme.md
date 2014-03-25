@@ -17,9 +17,43 @@ This framework uses [RedbeanPHP](http://redbeanphp.com) as its ORM and [Smarty](
 
 ## Setting Up
 
-Coming soon
+Within composer.json, add the following:
+require: {
+    "triodigital/skully": "dev-master"
+}
 
 ## Project Structure
+
+A Skully powered projects are normally structured as follows:
+
+- App
+    * Commands
+    * Controllers
+    * Crons
+    * Helpers
+    * Models
+    * smarty
+        - plugins
+    * Tests
+    * Application.php
+- library
+- logs
+- migrations
+- public
+    * default
+    * [template_name]
+- bootstrap.php
+- composer.json
+- console
+- globals.php
+- index.php
+
+**Note: Uppercase and lowercase first letter of words (i.e. Titleize) are important here. Rules for font-casing as follows:**
+
+- Titleized words are for autoload-able classes. Basically the structure here has to follow the namespace of classes inside of it.
+  For example if you have a class in file App\Controllers\HomeController.php the class name should be HomeController and it should have a namespace of App\Controllers.
+- un-Titleized words (example: "thisFile") are used on non-autoload-able files / folders.
+  There is actually no standard for naming of these files/directories.
 
 
 ## Templating with Skully is Fun!

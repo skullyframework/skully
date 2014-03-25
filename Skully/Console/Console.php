@@ -20,7 +20,8 @@ class Console extends ApplicationAware {
         $classes = array(
             '\Skully\Commands\EncryptCommand',
             '\Skully\Commands\DecryptCommand',
-            '\Skully\Commands\SchemaCommand'
+            '\Skully\Commands\SchemaCommand',
+            '\Skully\Commands\PackCommand'
         );
         $this->addCommands($classes);
     }
