@@ -244,3 +244,28 @@ Class 'ImageProcessor' not found
 #0  shutdownHandler()
 
 
+[Sunday, 13-Apr-14 16:12:32 WIB error] lvl: 4096 | msg:Object of class App\Controllers\HomeController could not be converted to string | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:244
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+
+
+
+[Sunday, 13-Apr-14 16:12:32 WIB fatal] [SHUTDOWN] lvl:4096 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:244
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Object of class App\Controllers\HomeController could not be converted to string
+#0  shutdownHandler()
+
+

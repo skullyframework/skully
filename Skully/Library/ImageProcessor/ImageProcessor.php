@@ -44,9 +44,15 @@ class ImageProcessor {
     public static function resize($imagePath,$opts=null){
         $imagePath = urldecode($imagePath);
         # start configuration
-        $resultDir = $opts['resultDir']; # path to your result Dir, must be writeable by web server
-        $remoteDir = $opts['remoteDir'];
-        if (empty($opts['remoteDir'])) {
+        $resultDir = null;
+        if (!empty($opts['resultDir'])) {
+            $resultDir = $opts['resultDir']; # path to your result Dir, must be writeable by web server
+        }
+        $remoteDir = null;
+        if (!empty($opts['remoteDir'])) {
+            $remoteDir = $opts['remoteDir'];
+        }
+        if (empty($remoteDir)) {
             $remoteDir = $resultDir.'remote/'; # path to the Dir you wish to download remote images into
         }
 
@@ -67,7 +73,7 @@ class ImageProcessor {
 
 
         //if not using imagic, run the following code and return the new path immediately
-        if($opts['noImagick']){
+        if(!empty($opts['noImagick']) && $opts['noImagick']){
             if(file_exists($imagePath) == false):
                 $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
                 if(file_exists($imagePath) == false):
@@ -158,13 +164,9 @@ class ImageProcessor {
             elseif(!empty($h)):
                 $newPath = $resultDir.$filename.'_h'.$h.'.'.$ext;
             else:
-                echo "no need to resize";
                 return false;
             endif;
         endif;
-
-        echo "resultDir is " . $resultDir;
-        echo "\nnewPath is $newPath\n";
 
         $create = true;
 

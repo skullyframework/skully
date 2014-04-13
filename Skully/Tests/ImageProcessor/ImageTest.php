@@ -5,9 +5,8 @@ namespace Tests\Features;
 
 require_once(dirname(__FILE__) . '/../DatabaseTestCase.php');
 use Skully\Library\ImageProcessor\ImageProcessor;
-use Tests\DatabaseTestCase;
 
-class ImageTest extends DatabaseTestCase {
+class ImageTest extends \PHPUnit_Framework_TestCase {
     public function testResizeWithMaxOnly()
     {
         $originalPath = dirname(__FILE__).'/original.jpg';

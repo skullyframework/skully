@@ -258,14 +258,13 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         unsetRealpath();
     }
 
-    /**
-     * @expectedException \Skully\Exceptions\InvalidTemplateException
-     * @expectedExceptionCode 1
-     */
-    public function testSmartyInvalidTemplateUndefinedIndexError()
+    public function testSmartyInvalidTemplateUndefinedIndex()
     {
         $app = $this->getApp();
+        ob_start();
         $app->runControllerFromRawUrl('home/undefinedIndexError');
+        $output = ob_get_clean();
+        $this->assertEquals('', $output);
         unsetRealpath();
     }
 
@@ -348,4 +347,3 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         }
     }
 }
- 
