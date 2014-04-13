@@ -2,17 +2,17 @@
 
 
 namespace Skully\Library\ImageProcessor;
-/**
- * Resize image using ImageMagick's "convert" method.
- * Initial function by Wes Edling .. http://joedesigns.com
- *
- *
- * Changes:
- * 2012/01/30 - David Goodwin - call escapeshellarg on parameters going into the shell
- * 2012/07/12 - Whizzkid - Added support for encoded image urls and images on ssl secured servers [https://]
- * 2014/02/04 - Jay - Added some options.
- * 2014/04/13 - Jay - Major update
- */
+    /**
+     * Resize image using ImageMagick's "convert" method.
+     * Initial function by Wes Edling .. http://joedesigns.com
+     *
+     *
+     * Changes:
+     * 2012/01/30 - David Goodwin - call escapeshellarg on parameters going into the shell
+     * 2012/07/12 - Whizzkid - Added support for encoded image urls and images on ssl secured servers [https://]
+     * 2014/02/04 - Jay - Added some options.
+     * 2014/04/13 - Jay - Major update
+     */
 
 /**
  * SECURITY:
@@ -27,17 +27,19 @@ class ImageProcessor {
     /**
      * @param string $imagePath - either a local absolute/relative path, or a remote URL (e.g. http://...flickr.com/.../ ). See SECURITY note above.
      * @param array $opts (
-     *  curl(boolean),
+     *  curl(boolean) = false,
      *  maxCurlSize(int in Mbytes),
      *  w(pixels),
      *  h(pixels),
-     *  crop(boolean),
-     *  scale(boolean),
-     *  thumbnail(boolean),
-     *  maxOnly(boolean),
-     *  canvasColor(string) e.g. "#abcabc",
-     *  outputFilename(string),
-     *  cacheHttpMinutes(int))
+     *  crop(boolean) = false,
+     *  scale(boolean) = true,
+     *  thumbnail(boolean) = false,
+     *  maxOnly(boolean) = false,
+     *  canvasColor(string) = '#FFFFFF',
+     *  resultDir = null,
+     *  remoteDir = null,
+     *  outputFilename(string) = false,
+     *  cacheHttpMinutes(int) = 20)
      * @throws \Exception
      * @return bool|mixed|string string new URL for resized image.
      */

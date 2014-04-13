@@ -4,6 +4,7 @@
 namespace Skully\App\Models;
 
 use RedBean_SimpleModel;
+use Skully\App\Helpers\UtilitiesHelper;
 use Skully\ApplicationInterface;
 use RedBean_Facade as R;
 
@@ -50,7 +51,7 @@ class BaseModel extends RedBean_SimpleModel {
      */
     public function __get( $prop )
     {
-        $method = 'get'.ucfirst($prop);
+        $method = 'get'.UtilitiesHelper::toCamelCase($prop);
         if (method_exists($this, $method)) {
             return $this->$method();
         }

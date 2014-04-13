@@ -8,6 +8,15 @@ namespace Skully\App\Helpers;
  */
 class UtilitiesHelper {
 
+    public static function toCamelCase($dashedString, $ucFirst = false)
+    {
+        $str = str_replace(' ', '', ucwords(str_replace('_', ' ', $dashedString)));
+        if (!$ucFirst) {
+            $str[0] = strtolower($str[0]);
+        }
+        return $str;
+    }
+    
     public static function toHash($password, $salt, $globalSalt) {
         return md5($password . $salt . $globalSalt);
     }
