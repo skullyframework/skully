@@ -104,6 +104,7 @@ class Application implements ApplicationInterface {
         if ($this->configIsEmpty('timezone')) {
             $this->getConfigObject()->setProtected('timezone', 'Asia/Jakarta');
         }
+        $this->langAdjustment();
         date_default_timezone_set($this->config('timezone'));
         $this->addLangfile('common', $this->config('language'));
         $this->addLangfile('common', $this->getLanguage());
@@ -642,5 +643,26 @@ class Application implements ApplicationInterface {
             }
         }
         return null;
+    }
+
+    /**
+     * Retrieve and remove lang path.
+     * E.g. http://siteName.com/en/controller/action
+     * Get the 'en' part and add 'english' to $_GET['_language']
+     * (languages are defined in commonConfig)
+     */
+    protected function langAdjustment() {
+        if (!empty($_GET['_url'])) {
+            $path_r = explode('/', $_GET['_url']);
+            foreach ($this->config('languages') as $key => $value) {
+                $index = array_search($key, $path_r);
+                if ($index !== false) {
+                    $_GET['_language'] = $key;
+                    unset($path_r[$index]);
+                    $_GET['_url'] = implode('/', $path_r);
+                    return;
+                }
+            }
+        }
     }
 }

@@ -218,3 +218,29 @@ Class '\Skully\Commands\PackCommand' not found
 #0  shutdownHandler()
 
 
+[Sunday, 13-Apr-14 15:54:29 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/ImageProcessor/ImageTest.php | ln:25
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'ImageProcessor' not found
+#0  shutdownHandler()
+
+
+[Sunday, 13-Apr-14 15:57:53 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/ImageProcessor/ImageTest.php | ln:39
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'ImageProcessor' not found
+#0  shutdownHandler()
+
+

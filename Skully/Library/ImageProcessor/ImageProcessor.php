@@ -3,15 +3,15 @@
 
 namespace Skully\Library\ImageProcessor;
 /**
- * function by Wes Edling .. http://joedesigns.com
- * feel free to use this in any project, i just ask for a credit in the source code.
- * a link back to my site would be nice too.
+ * Resize image using ImageMagick's "convert" method.
+ * Initial function by Wes Edling .. http://joedesigns.com
  *
  *
  * Changes:
  * 2012/01/30 - David Goodwin - call escapeshellarg on parameters going into the shell
  * 2012/07/12 - Whizzkid - Added support for encoded image urls and images on ssl secured servers [https://]
  * 2014/02/04 - Jay - Added some options.
+ * 2014/04/13 - Jay - Major update
  */
 
 /**
@@ -26,24 +26,33 @@ namespace Skully\Library\ImageProcessor;
 class ImageProcessor {
     /**
      * @param string $imagePath - either a local absolute/relative path, or a remote URL (e.g. http://...flickr.com/.../ ). See SECURITY note above.
-     * @param array $opts  (curl(boolean), maxCurlSize(int in Mbytes), w(pixels), h(pixels), crop(boolean), scale(boolean), thumbnail(boolean), maxOnly(boolean), canvas-color(#abcabc), output-filename(string), cache_http_minutes(int))
-     * @return string new URL for resized image.
-     * opts: string cacheFolder
-     *       boolean noImagick
-     *       string remoteFolder
+     * @param array $opts (
+     *  curl(boolean),
+     *  maxCurlSize(int in Mbytes),
+     *  w(pixels),
+     *  h(pixels),
+     *  crop(boolean),
+     *  scale(boolean),
+     *  thumbnail(boolean),
+     *  maxOnly(boolean),
+     *  canvasColor(string) e.g. "#abcabc",
+     *  outputFilename(string),
+     *  cacheHttpMinutes(int))
+     * @throws \Exception
+     * @return bool|mixed|string string new URL for resized image.
      */
     public static function resize($imagePath,$opts=null){
         $imagePath = urldecode($imagePath);
         # start configuration
-        $cacheFolder = $opts['cacheFolder']; # path to your cache folder, must be writeable by web server
-
-        if (empty($opts['remoteFolder'])) {
-            $remoteFolder = $cacheFolder.'remote/'; # path to the folder you wish to download remote images into
+        $resultDir = $opts['resultDir']; # path to your result Dir, must be writeable by web server
+        $remoteDir = $opts['remoteDir'];
+        if (empty($opts['remoteDir'])) {
+            $remoteDir = $resultDir.'remote/'; # path to the Dir you wish to download remote images into
         }
 
         $defaults = array('curl' => false, 'crop' => false, 'scale' => true, 'thumbnail' => false, 'maxOnly' => false,
-            'canvas-color' => '#FFFFFF', 'output-filename' => false,
-            'cacheFolder' => $cacheFolder, 'remoteFolder' => $remoteFolder, 'quality' => 90, 'cache_http_minutes' => 20);
+            'canvasColor' => '#FFFFFF', 'outputFilename' => false,
+            'resultDir' => $resultDir, 'remoteDir' => $remoteDir, 'quality' => 90, 'cacheHttpMinutes' => 20);
 
         $opts = array_merge($defaults, $opts);
 
@@ -53,37 +62,33 @@ class ImageProcessor {
 
         $purl = parse_url($imagePath);
         $finfo = pathinfo($imagePath);
-        if (empty($info['basename'])){
-            $ext = '';
-        }
-        else {
-            $ext = $finfo['extension'];
-        }
+        $ext_r = explode('.', $imagePath);
+        $ext = $ext_r[count($ext_r)-1];
+
 
         //if not using imagic, run the following code and return the new path immediately
         if($opts['noImagick']){
             if(file_exists($imagePath) == false):
                 $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
                 if(file_exists($imagePath) == false):
-                    return 'image not found';
+                    throw new \Exception("Image not found.");
                 endif;
             endif;
 
             $filename = md5_file($imagePath);
 
-            // If the user has requested an explicit output-filename, do not use the cache directory.
-            if(false !== $opts['output-filename']) :
-                $newPath = $opts['output-filename'];
+            if(false !== $opts['outputFilename']) :
+                $newPath = $resultDir.$opts['outputFilename'];
             else:
-                $newPath = $cacheFolder.$filename.$ext;
+                $newPath = $resultDir.$filename.$ext;
             endif;
 
             if(move_uploaded_file($imagePath, $newPath)){
                 return str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
             }
             else{
-                error_log("Unable to move the uploaded file. Please check your folder permission.");
-                return false;
+                $e = new \Exception("Unable to move the uploaded file. Please check your Dir permission.");
+                throw $e;
             }
         }
 
@@ -91,10 +96,10 @@ class ImageProcessor {
         if(isset($purl['scheme']) && ($purl['scheme'] == 'http' || $purl['scheme'] == 'https')):
             # grab the image, and cache it so we have something to work with..
             list($filename) = explode('?',$finfo['basename']);
-            $local_filepath = $remoteFolder.$filename;
+            $local_filepath = $remoteDir.$filename;
             $download_image = true;
             if(file_exists($local_filepath)):
-                if(filemtime($local_filepath) < strtotime('+'.$opts['cache_http_minutes'].' minutes')):
+                if(filemtime($local_filepath) < strtotime('+'.$opts['cacheHttpMinutes'].' minutes')):
                     $download_image = false;
                 endif;
             endif;
@@ -107,7 +112,7 @@ class ImageProcessor {
                                 ImageProcessor::grabImage($imagePath, $local_filepath);
                             }
                             else {
-                                return "image too large";
+                                throw new \Exception("image too large");
                             }
                         }
                         else {
@@ -122,7 +127,7 @@ class ImageProcessor {
                         file_put_contents($local_filepath,$img);
                     }
                 } catch (\Exception $e) {
-                    error_log("ERROR: While doing image resize, got this error: ".$e->getMessage());
+                    throw new \Exception("ERROR: While doing image resize, got this error: ".$e->getMessage());
                 }
             endif;
             $imagePath = $local_filepath;
@@ -131,7 +136,7 @@ class ImageProcessor {
         if(file_exists($imagePath) == false):
             $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
             if(file_exists($imagePath) == false):
-                return 'image not found';
+                throw new \Exception('image not found');
             endif;
         endif;
 
@@ -142,20 +147,24 @@ class ImageProcessor {
 
         $filename = md5_file($imagePath);
 
-        // If the user has requested an explicit output-filename, do not use the cache directory.
-        if(false !== $opts['output-filename']) :
-            $newPath = $opts['output-filename'];
+        // If the user has requested an explicit outputFilename, do not use the cache directory.
+        if(false !== $opts['outputFilename']) :
+            $newPath = $resultDir.$opts['outputFilename'];
         else:
             if(!empty($w) and !empty($h)):
-                $newPath = $cacheFolder.$filename.'_w'.$w.'_h'.$h.(isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "").(isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "").'.'.$ext;
+                $newPath = $resultDir.$filename.'_w'.$w.'_h'.$h.(isset($opts['crop']) && $opts['crop'] == true ? "_cp" : "").(isset($opts['scale']) && $opts['scale'] == true ? "_sc" : "").'.'.$ext;
             elseif(!empty($w)):
-                $newPath = $cacheFolder.$filename.'_w'.$w.'.'.$ext;
+                $newPath = $resultDir.$filename.'_w'.$w.'.'.$ext;
             elseif(!empty($h)):
-                $newPath = $cacheFolder.$filename.'_h'.$h.'.'.$ext;
+                $newPath = $resultDir.$filename.'_h'.$h.'.'.$ext;
             else:
+                echo "no need to resize";
                 return false;
             endif;
         endif;
+
+        echo "resultDir is " . $resultDir;
+        echo "\nnewPath is $newPath\n";
 
         $create = true;
 
@@ -193,27 +202,26 @@ class ImageProcessor {
                 else:
                     $cmd = $path_to_convert." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
                         " -size ". escapeshellarg($w ."x". $h) .
-                        " xc:". escapeshellarg($opts['canvas-color']) .
+                        " xc:". escapeshellarg($opts['canvasColor']) .
                         " +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
                 endif;
 
             else:
                 $cmd = $path_to_convert." " . escapeshellarg($imagePath) .
                     " -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
-                    (isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\>" : "") .
+                    (isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\\>" : "") .
                     " -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
             endif;
 
-            $c = exec($cmd, $output, $return_code);
+            exec($cmd, $output, $return_code);
             if($return_code == 127) {
                 $path_to_convert = '/usr/local/bin/convert'; # this could be something like /usr/bin/convert or /opt/local/share/bin/convert
                 $cmd = preg_replace('/convert/', $path_to_convert, $cmd, 1);
-                $c = exec($cmd, $output, $return_code);
+                exec($cmd, $output, $return_code);
             }
 
             if($return_code != 0) {
-                error_log("Tried to execute : $cmd, return code: $return_code, output: " . print_r($output, true));
-                return false;
+                throw new \Exception("Tried to execute : $cmd, return code: $return_code, output: " . print_r($output, true));
             }
         endif;
 
@@ -222,7 +230,7 @@ class ImageProcessor {
 
     }
 
-    public static function grabSize($remoteFile) {
+    public static function grabSize($remoteFile, &$status = 'unknown') {
         $ch = curl_init($remoteFile);
         curl_setopt($ch, CURLOPT_NOBODY, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -231,12 +239,10 @@ class ImageProcessor {
         $data = curl_exec($ch);
         curl_close($ch);
         if ($data === false) {
-            echo 'cURL failed';
-            exit;
+            throw new \Exception('cURL failed');
         }
 
         $contentLength = 'unknown';
-        $status = 'unknown';
         if (preg_match('/^HTTP\/1\.[01] (\d\d\d)/', $data, $matches)) {
             $status = (int)$matches[1];
         }

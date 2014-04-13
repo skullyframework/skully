@@ -14,3 +14,7 @@ Mar 21 12:02:56 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "s
 Mar 21 12:02:56 [info] SELECT version FROM schema_migrations
 Mar 21 12:02:56 [info] SELECT version FROM schema_migrations
 Mar 21 12:02:56 [info] SELECT version FROM schema_migrations
+Apr 13 15:53:55 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Apr 13 15:53:55 [info] SELECT version FROM schema_migrations
+Apr 13 15:53:55 [info] SELECT version FROM schema_migrations
+Apr 13 15:53:55 [info] SELECT version FROM schema_migrations
