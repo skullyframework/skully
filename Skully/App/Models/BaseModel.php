@@ -51,7 +51,7 @@ class BaseModel extends RedBean_SimpleModel {
      */
     public function __get( $prop )
     {
-        $method = 'get'.UtilitiesHelper::toCamelCase($prop);
+        $method = 'get'.UtilitiesHelper::toCamelCase($prop, true);
         if (method_exists($this, $method)) {
             return $this->$method();
         }
@@ -72,7 +72,7 @@ class BaseModel extends RedBean_SimpleModel {
      */
     public function __set( $prop, $value )
     {
-        $method = 'set'.ucfirst($prop);
+        $method = 'set'.UtilitiesHelper::toCamelCase($prop,true);
         if (method_exists($this, $method)) {
             $this->$method($value);
         }

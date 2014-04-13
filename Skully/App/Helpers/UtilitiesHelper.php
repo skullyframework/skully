@@ -16,7 +16,7 @@ class UtilitiesHelper {
         }
         return $str;
     }
-    
+
     public static function toHash($password, $salt, $globalSalt) {
         return md5($password . $salt . $globalSalt);
     }
