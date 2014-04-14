@@ -28,7 +28,6 @@
     "autoload": {
         "psr-0": {
             "Skully\\": ""
-//            "Ruckusing": "Skully/Library/ruckusing/lib"
         }
     },
     "license": "LGPL-2.1",
