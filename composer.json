@@ -20,7 +20,7 @@
         "mikey179/vfsStream": "v1.2.0"
     },
     "require": {
-        "php": ">=5.5.3",
+        "php": ">=5.4.x",
         "gabordemooij/redbean": "dev-master",
         "symfony/console": "2.5.x-dev",
         "ruckusing/ruckusing-migrations": "dev-master"
