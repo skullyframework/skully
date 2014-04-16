@@ -21,7 +21,7 @@
     },
     "require": {
         "php": ">=5.4",
-        "gabordemooij/redbean": "dev-master",
+        "gabordemooij/redbean": "3.x",
         "symfony/console": "2.5.x-dev",
         "ruckusing/ruckusing-migrations": "dev-master"
     },
