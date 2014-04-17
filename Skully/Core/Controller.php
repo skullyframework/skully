@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Created by Trio Design Team (jay@tgitriodesign.com).
+ * Date: 12/21/13
+ * Time: 3:06 PM
+ */
 
 namespace Skully\Core;
 
@@ -238,8 +242,16 @@ class Controller extends ApplicationAware implements ControllerInterface {
         $this->app->getTemplateEngine()->assign($assignParams);
         if (empty($viewPath)) {
             $viewPath = $this->getCurrentAction();
+            $completePath = $this->getActionTemplate($viewPath);
         }
-        $completePath = $this->getActionTemplate($viewPath);
+        else {
+            if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
+                $completePath = $this->app->getTheme()->getAppPath('views'.$viewPath.'.tpl');
+            }
+            else {
+                $completePath = $this->getActionTemplate($viewPath);
+            }
+        }
         $this->app->getTemplateEngine()->display($completePath);
     }
 
@@ -254,7 +266,12 @@ class Controller extends ApplicationAware implements ControllerInterface {
             $completePath = $this->getActionTemplate($viewPath);
         }
         else {
-            $completePath = $this->app->getTheme()->getAppPath('views'.DIRECTORY_SEPARATOR.$viewPath.'.tpl');
+            if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
+                $completePath = $this->app->getTheme()->getAppPath('views'.$viewPath.'.tpl');
+            }
+            else {
+                $completePath = $this->getActionTemplate($viewPath);
+            }
         }
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
@@ -329,4 +346,4 @@ class Controller extends ApplicationAware implements ControllerInterface {
     {
 
     }
-} 
+}

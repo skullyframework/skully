@@ -33,6 +33,14 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('', trim($output->fetch()));
     }
 
+    public function testRunningGenerateCommand()
+    {
+        $app = __setupApp();
+        $console = new Console($app, true);
+        $output = $console->run("skully:schema db:generate test");
+        $this->assertEquals('', trim($output->fetch()));
+    }
+
     public function testPackCommand()
     {
 

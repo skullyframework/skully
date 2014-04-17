@@ -45,7 +45,6 @@ EOT
             )
         ), $this->app->config('ruckusingConfig'));
 
-        print_r($argv);
         $main = new \Ruckusing_FrameworkRunner($ruckusingConfig, $argv);
         echo $main->execute();
     }
