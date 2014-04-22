@@ -64,6 +64,7 @@ class Theme implements ThemeInterface {
      */
     public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $virtual = false)
     {
+        $basePath = str_replace('/', DIRECTORY_SEPARATOR, $basePath);
         if (substr($basePath, -1, 1) != DIRECTORY_SEPARATOR) {
             $basePath .= DIRECTORY_SEPARATOR;
         }
@@ -217,7 +218,7 @@ class Theme implements ThemeInterface {
     {
         return $this->publicBaseUrl;
     }
-    
+
     /**
      * @return string
      */
@@ -235,4 +236,4 @@ class Theme implements ThemeInterface {
     }
 
 
-} 
+}
