@@ -39,7 +39,9 @@ class ImageProcessor {
      *  resultDir = null,
      *  remoteDir = null,
      *  outputFilename(string) = false,
-     *  cacheHttpMinutes(int) = 20)
+     *  cacheHttpMinutes(int) = 20,
+     *  overwrite(boolean) - false,
+     *  onlyCreateWhenNew(boolean) - true)
      * @throws \Exception
      * @return bool|mixed|string string new URL for resized image.
      */
@@ -59,6 +61,16 @@ class ImageProcessor {
             $remoteDir = $resultDir.'remote/'; # path to the Dir you wish to download remote images into
         }
 
+        $overwrite = false;
+        if (isset($opts['overwrite'])) {
+            $overwrite = $opts['overwrite'];
+        }
+
+        $onlyCreateWhenNew = true;
+        if (isset($opts['onlyCreateWhenNew'])) {
+            $onlyCreateWhenNew = $opts['onlyCreateWhenNew'];
+        }
+
         $defaults = array('curl' => false, 'crop' => false, 'scale' => true, 'thumbnail' => false, 'maxOnly' => false,
             'canvasColor' => '#FFFFFF', 'outputFilename' => false,
             'resultDir' => $resultDir, 'remoteDir' => $remoteDir, 'quality' => 90, 'cacheHttpMinutes' => 20);
@@ -73,7 +85,6 @@ class ImageProcessor {
         $finfo = pathinfo($imagePath);
         $ext_r = explode('.', $imagePath);
         $ext = $ext_r[count($ext_r)-1];
-
 
         //if not using imagic, run the following code and return the new path immediately
         if(!empty($opts['noImagick']) && $opts['noImagick']){
@@ -94,7 +105,7 @@ class ImageProcessor {
             endif;
 
             if(move_uploaded_file($imagePath, $newPath)){
-                return str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
+                return $newPath;
             }
             else{
                 $e = new \Exception("Unable to move the uploaded file. Please check your Dir permission.");
@@ -174,14 +185,41 @@ class ImageProcessor {
 
         $create = true;
 
-        if(file_exists($newPath) == true):
-            $create = false;
-            $origFileTime = date("YmdHis",filemtime($imagePath));
-            $newFileTime = date("YmdHis",filemtime($newPath));
-            if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
-                $create = true;
+        if ($onlyCreateWhenNew) {
+            if(file_exists($newPath) == true):
+                $create = false;
+                $origFileTime = date("YmdHis",filemtime($imagePath));
+                $newFileTime = date("YmdHis",filemtime($newPath));
+                if($newFileTime < $origFileTime): # Not using $opts['expire-time'] ??
+                    $create = true;
+                endif;
             endif;
-        endif;
+        }
+        else {
+            if (!$overwrite) {
+                if(file_exists($newPath) == true) {
+                    $newExt = substr(strrchr($newPath,'.'),1);
+                    $pos = strrpos($newPath, '.'.$newExt);
+                    if($pos !== false)
+                    {
+                        $noExt = substr_replace($newPath, '', $pos, strlen('.'.$newExt));
+                        $count = 1;
+                        while(file_exists($noExt.'-'.$count.'.'.$newExt)) {
+                            $count+=1;
+                        }
+                        $newPath = $noExt.'-'.$count.'.'.$newExt;
+                    }
+                    else {
+                        $noExt = $newPath;
+                        $count = 1;
+                        while(file_exists($noExt.'-'.$count)) {
+                            $count+=1;
+                        }
+                        $newPath = $noExt.'-'.$count;
+                    }
+                }
+            }
+        }
 
         if($create == true):
             if(!empty($w) and !empty($h)):
@@ -232,7 +270,7 @@ class ImageProcessor {
         endif;
 
         # return cache file path
-        return str_replace($_SERVER['DOCUMENT_ROOT'],'',$newPath);
+        return $newPath;
 
     }
 
