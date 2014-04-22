@@ -49,6 +49,7 @@ class ImageProcessor {
         $resultDir = null;
         if (!empty($opts['resultDir'])) {
             $resultDir = $opts['resultDir']; # path to your result Dir, must be writeable by web server
+            $resultDir = str_replace('/', DIRECTORY_SEPARATOR, $resultDir);
         }
         $remoteDir = null;
         if (!empty($opts['remoteDir'])) {
@@ -79,13 +80,14 @@ class ImageProcessor {
             if(file_exists($imagePath) == false):
                 $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
                 if(file_exists($imagePath) == false):
-                    throw new \Exception("Image not found.");
+                    throw new \Exception("Image not found. (".$imagePath.")");
                 endif;
             endif;
 
             $filename = md5_file($imagePath);
 
             if(false !== $opts['outputFilename']) :
+                $opts['outputFilename'] = str_replace('/', DIRECTORY_SEPARATOR, $opts['outputFilename']);
                 $newPath = $resultDir.$opts['outputFilename'];
             else:
                 $newPath = $resultDir.$filename.$ext;
@@ -144,7 +146,7 @@ class ImageProcessor {
         if(file_exists($imagePath) == false):
             $imagePath = $_SERVER['DOCUMENT_ROOT'].$imagePath;
             if(file_exists($imagePath) == false):
-                throw new \Exception('image not found');
+                throw new \Exception('image not found. ('.$imagePath.')');
             endif;
         endif;
 
