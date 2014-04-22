@@ -15,7 +15,7 @@ class Theme implements ThemeInterface {
      * @var string
      * BasePath of main app, ended with DIRECTORY_SEPARATOR.
      */
-    protected $basePath = '/';
+    protected $basePath = DIRECTORY_SEPARATOR;
 
     /**
      * @var string
@@ -65,7 +65,7 @@ class Theme implements ThemeInterface {
     public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $virtual = false)
     {
         if (substr($basePath, -1, 1) != DIRECTORY_SEPARATOR) {
-            $basePath .= '/';
+            $basePath .= DIRECTORY_SEPARATOR;
         }
         if ($virtual) {
             $this->publicBaseUrl = $baseUrl;
@@ -190,7 +190,7 @@ class Theme implements ThemeInterface {
      */
     public function getBasePath()
     {
-        return $this->basePath;
+        return str_replace('/', DIRECTORY_SEPARATOR, $this->basePath);
     }
 
     /**
