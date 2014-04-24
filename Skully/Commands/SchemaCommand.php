@@ -13,7 +13,9 @@ class SchemaCommand extends Command {
         $this->setName("skully:schema")
             ->setDescription("Run schema-related commands (with Ruckusing module)")
             ->setDefinition(array(
-                new InputArgument('input', InputOption::VALUE_REQUIRED, 'Input to run at Ruckusing module', '')
+                new InputArgument('input', InputArgument::REQUIRED, 'Input to run at Ruckusing module'),
+                new InputArgument('input1', InputArgument::OPTIONAL, 'Additional input to run at Ruckusing module'),
+                new InputArgument('input2', InputArgument::OPTIONAL, 'Additional input to run at Ruckusing module')
             ))
             ->setHelp(<<<EOT
 Run schema-related commands
@@ -31,6 +33,7 @@ EOT
         $argv = $input->getArguments();
         unset($argv['command']);
         $argv = array_values($argv);
+        array_unshift($argv, './ruckus.php');
 
         $dbConfig = $this->app->config('dbConfig');
         $ruckusingConfig = array_merge(array(
@@ -45,7 +48,7 @@ EOT
                 )
             )
         ), $this->app->config('ruckusingConfig'));
-
+        $_SERVER["argv"] = $argv;
         $main = new \Ruckusing_FrameworkRunner($ruckusingConfig, $argv);
         echo $main->execute();
     }

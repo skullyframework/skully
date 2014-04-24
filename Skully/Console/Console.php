@@ -39,9 +39,7 @@ class Console extends ApplicationAware {
     public function run($inputString = '') {
         $input = null;
         if (!empty($inputString)) {
-            $inputs_r = explode(' ', $inputString, 2);
-            array_unshift($inputs_r, '');
-            $input = new ArgvInput($inputs_r);
+            $input = new StringInput($inputString);
         }
 
         $output = null;
