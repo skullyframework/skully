@@ -6,6 +6,7 @@ namespace Skully\Console;
 
 use Skully\Application;
 use Skully\Core\ApplicationAware;
+use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Input\StringInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 
@@ -38,7 +39,9 @@ class Console extends ApplicationAware {
     public function run($inputString = '') {
         $input = null;
         if (!empty($inputString)) {
-            $input = new StringInput($inputString);
+            $inputs_r = explode(' ', $inputString, 2);
+            array_unshift($inputs_r, '');
+            $input = new ArgvInput($inputs_r);
         }
 
         $output = null;

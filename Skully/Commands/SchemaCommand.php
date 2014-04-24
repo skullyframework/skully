@@ -21,6 +21,7 @@ Run schema-related commands
 Usage:
 
 <info>./console skully:schema db:migrate <env></info>
+<info>./console skully:schema db:generate model <env></info>
 EOT
             );
     }

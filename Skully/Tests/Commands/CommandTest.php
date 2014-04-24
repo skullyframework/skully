@@ -21,11 +21,11 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
     {
         $app = __setupApp();
         $console = new Console($app, true);
-        $output = $console->run("skully:decrypt \"x0 z8=3F\"");
+        $output = $console->run("skully:decrypt x0 z8=3F");
         $this->assertEquals("password",trim($output->fetch()));
     }
 
-    public function testRunningMigrationCommand()
+    public function xtestRunningMigrationCommand()
     {
         $app = __setupApp();
         $console = new Console($app, true);
