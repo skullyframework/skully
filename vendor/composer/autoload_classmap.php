@@ -19,6 +19,7 @@ return array(
     'PHPUnit_Extensions_Database_DB_IDatabaseConnection' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/IDatabaseConnection.php',
     'PHPUnit_Extensions_Database_DB_IMetaData' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/IMetaData.php',
     'PHPUnit_Extensions_Database_DB_MetaData' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/MetaData.php',
+    'PHPUnit_Extensions_Database_DB_MetaData_Dblib' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/MetaData/Dblib.php',
     'PHPUnit_Extensions_Database_DB_MetaData_Firebird' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/MetaData/Firebird.php',
     'PHPUnit_Extensions_Database_DB_MetaData_InformationSchema' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/MetaData/InformationSchema.php',
     'PHPUnit_Extensions_Database_DB_MetaData_MySQL' => $vendorDir . '/phpunit/dbunit/PHPUnit/Extensions/Database/DB/MetaData/MySQL.php',

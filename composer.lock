@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e913449b346d4db14678b0d6899651a5",
+    "hash": "8131d8b56b3a73e79a3a7703a710e24a",
     "packages": [
         {
             "name": "gabordemooij/redbean",
-            "version": "dev-master",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabordemooij/redbean.git",
-                "reference": "b146123c108425f7dc06dd2eb8fb218f87f9a075"
+                "reference": "41bb293e2bc744c150e4ae30e30fb5083e047f53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/b146123c108425f7dc06dd2eb8fb218f87f9a075",
-                "reference": "b146123c108425f7dc06dd2eb8fb218f87f9a075",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/41bb293e2bc744c150e4ae30e30fb5083e047f53",
+                "reference": "41bb293e2bc744c150e4ae30e30fb5083e047f53",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "Object Relational Mapping",
                 "orm"
             ],
-            "time": "2014-03-02 12:03:05"
+            "time": "2013-10-30 22:13:02"
         },
         {
             "name": "ruckusing/ruckusing-migrations",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruckus/ruckusing-migrations.git",
-                "reference": "a843bfec407449c6ee45716d4343ed6dcf5dde0f"
+                "reference": "5643f4eee1b1d572098f6f877d44a236bd9b02e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/a843bfec407449c6ee45716d4343ed6dcf5dde0f",
-                "reference": "a843bfec407449c6ee45716d4343ed6dcf5dde0f",
+                "url": "https://api.github.com/repos/ruckus/ruckusing-migrations/zipball/5643f4eee1b1d572098f6f877d44a236bd9b02e1",
+                "reference": "5643f4eee1b1d572098f6f877d44a236bd9b02e1",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "ruckusing",
                 "task"
             ],
-            "time": "2014-03-20 20:13:36"
+            "time": "2014-04-24 16:37:40"
         },
         {
             "name": "symfony/console",
@@ -110,12 +110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "ab9359cbf100259625c756b57c578eea15b3c464"
+                "reference": "b95e9cb9a73988853d51d6e35d18d032b8760877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/ab9359cbf100259625c756b57c578eea15b3c464",
-                "reference": "ab9359cbf100259625c756b57c578eea15b3c464",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/b95e9cb9a73988853d51d6e35d18d032b8760877",
+                "reference": "b95e9cb9a73988853d51d6e35d18d032b8760877",
                 "shasum": ""
             },
             "require": {
@@ -158,7 +158,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-19 15:49:37"
+            "time": "2014-04-18 20:54:24"
         }
     ],
     "packages-dev": [
@@ -194,16 +194,16 @@
         },
         {
             "name": "phpunit/dbunit",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/dbunit.git",
-                "reference": "9d8a28bdb41fbd3c0dc16fa32fc00862d06abace"
+                "reference": "a5891b7a9c4f21587a51f9bc4e8f7042b741b480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/9d8a28bdb41fbd3c0dc16fa32fc00862d06abace",
-                "reference": "9d8a28bdb41fbd3c0dc16fa32fc00862d06abace",
+                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/a5891b7a9c4f21587a51f9bc4e8f7042b741b480",
+                "reference": "a5891b7a9c4f21587a51f9bc4e8f7042b741b480",
                 "shasum": ""
             },
             "require": {
@@ -249,20 +249,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-04 08:33:33"
+            "time": "2014-03-26 11:25:06"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "1.2.16",
+            "version": "1.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "69e55e68481cf708a6db43aff0b504e31402fe27"
+                "reference": "6ef2bf3a1c47eca07ea95f0d8a902a6340390b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/69e55e68481cf708a6db43aff0b504e31402fe27",
-                "reference": "69e55e68481cf708a6db43aff0b504e31402fe27",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6ef2bf3a1c47eca07ea95f0d8a902a6340390b34",
+                "reference": "6ef2bf3a1c47eca07ea95f0d8a902a6340390b34",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-02-25 03:34:05"
+            "time": "2014-03-28 10:53:45"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -674,17 +674,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
                 "shasum": ""
             },
             "require": {
@@ -719,7 +719,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-12 18:29:58"
         }
     ],
     "aliases": [
@@ -727,12 +727,11 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gabordemooij/redbean": 20,
         "symfony/console": 20,
         "ruckusing/ruckusing-migrations": 20
     },
     "platform": {
-        "php": ">=5.5.3"
+        "php": ">=5.4"
     },
     "platform-dev": [
 
