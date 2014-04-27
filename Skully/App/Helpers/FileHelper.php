@@ -1,14 +1,17 @@
 <?php
 
-namespace App\Helpers;
+namespace Skully\App\Helpers;
 
-class FileHelper extends \Skully\Core\ApplicationAwareHelper
+use Skully\Core\ApplicationAwareHelper;
+use Skully\Library\ImageProcessor\ImageProcessor;
+
+class FileHelper extends ApplicationAwareHelper
 {
     // Save image from given image data then return its file url on success.
     // $base64 is image string passed from canvas.toDataURL()
     public static function saveImage($base64, $filePath, $fileNameNoExt){
         $matches = array();
-        $t = preg_match('/\/(.*?)\;/s', $base64, $matches);
+        preg_match('/\/(.*?)\;/s', $base64, $matches);
         if(empty($matches[1])) return false;
         $ext = $matches[1];
 
@@ -67,7 +70,7 @@ class FileHelper extends \Skully\Core\ApplicationAwareHelper
                 $photoData["path"] = $filePath;
                 $photoData["url"] = $fileUrl;
 
-                $imageProcessor = new \ImageProcessor();
+                $imageProcessor = new ImageProcessor();
                 $imageProcessor::resize($photoData['path'], array(
                     'curl' => true,
                     'maxCurlSize' => 10,
