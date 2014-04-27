@@ -25,14 +25,6 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals("password",trim($output->fetch()));
     }
 
-    public function xtestRunningMigrationCommand()
-    {
-        $app = __setupApp();
-        $console = new Console($app, true);
-        $output = $console->run("skully:schema db:migrate");
-        $this->assertEquals('', trim($output->fetch()));
-    }
-
     public function testRunningGenerateCommand()
     {
         $app = __setupApp();
