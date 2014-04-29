@@ -8,11 +8,22 @@
  */
 use \org\bovigo\vfs\vfsStream;
 function realpath_custom($path) {
-//    echo "realpath_custom $path";
-    $originalPath = realpath_original($path);
-    $basePath = realpath_original(__DIR__.'/../../../../../');
-    $newPath = str_replace($basePath, vfsStream::url('root'), $originalPath);
-    return $newPath;
+    if (substr($path, 0, 3) == 'vfs') {
+        return $path;
+    }
+    else {
+        $originalPath = realpath_original($path);
+        $check = realpath_original(__DIR__.'/../../../');
+        $check_r = explode(DIRECTORY_SEPARATOR, $check);
+        if ($check_r[count($check_r)-1] == 'vendor') {
+            $basePath = realpath_original(__DIR__.'/../../../../../');
+        }
+        else {
+            $basePath = realpath_original(__DIR__.'/../../');
+        }
+        $newPath = str_replace($basePath, vfsStream::url('root'), $originalPath);
+        return $newPath;
+    }
 }
 
 function setRealpath()

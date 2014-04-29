@@ -67,9 +67,9 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
                     )
                 )
             ),
-            $path_r[count($path_r)-3] => array(
-                $path_r[count($path_r)-2] => array(
-                    $path_r[count($path_r)-1] => array(
+            'vendor' => array(
+                'triodigital' => array(
+                    'skully' => array(
                         'public' => array(
                             'default' => array(
                                 'Skully' => array(
@@ -107,7 +107,9 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         $config->setProtectedFromArray(array(
             'theme' => 'test',
             'language' => 'en',
+            'languages' => array('en' => array('value' => 'english', 'code' => 'en')),
             'basePath' => vfsStream::url('root'),
+            'skullyBasePath' => vfsStream::url('root/vendor/triodigital/skully/'),
             'baseUrl' => 'http://localhost/skully/',
             'urlRules' => array(
                 '' => 'home/index',
@@ -115,7 +117,14 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
             )
         ));
         $_SESSION['__language'] = 'id';
-        return new \App\Application($config);
+        $app = new \App\Application($config);
+
+        unsetRealpath();
+        $pluginsPath = realpath(__DIR__.'/../../App/smarty/plugins');
+        setRealpath();
+        $app->getTemplateEngine()->addPluginsDir($pluginsPath);
+
+        return $app;
     }
 
     public function testPassAppToSmarty()

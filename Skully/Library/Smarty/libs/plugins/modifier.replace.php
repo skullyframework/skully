@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Smarty plugin
+ * @package Smarty
+ * @subpackage PluginsModifier
+ */
 
 /**
  * Smarty replace modifier plugin

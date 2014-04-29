@@ -1,7 +1,7 @@
 <?php
 // First let's define our apps root directory
 if (!defined('BASE_PATH')) {
-    define("BASE_PATH", realpath(dirname(__FILE__)) . '/');
+    define("BASE_PATH", realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR);
 }
 $session_id = session_id();
 session_start();

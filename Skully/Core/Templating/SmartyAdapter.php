@@ -42,15 +42,22 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function __construct($basePath, $theme = 'default', $app = null, $additionalPluginsDir = array(), $caching = 1)
     {
         $appName = $app->getAppName();
+
         $this->app = $app;
-        $skullyBasePath = realpath(dirname(__FILE__).'/../../../').DIRECTORY_SEPARATOR;
+        if (!empty($app) && !$app->configIsEmpty('skullyBasePath')) {
+            $skullyBasePath = $app->config('skullyBasePath');
+        }
+        else {
+            $skullyBasePath = realpath(dirname(__FILE__).'/../../../') . DIRECTORY_SEPARATOR;
+        }
+
         $this->smarty = new \Smarty;
         $this->smarty->caching = $caching;
         $this->caching = $caching;
         $this->smarty->setCompileDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'templates_c')).DIRECTORY_SEPARATOR);
         $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
         $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
-        $this->smarty->setTemplateDir(array(
+        $this->setTemplateDir(array(
             'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme,$appName,'views')),
             'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default',$appName,'views')),
             'skully' => $skullyBasePath.implode(DIRECTORY_SEPARATOR, array('public','default','App','views'))
@@ -59,7 +66,26 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
             realpath(dirname(__FILE__).'/../../').'/App/smarty/plugins/',
             realpath(dirname(__FILE__).'/../../').'/Library/Smarty/libs/plugins/'
         ));
-        $this->smarty->setPluginsDir($plugins);
+        $this->setPluginsDir($plugins);
+    }
+
+    /**
+     * Set template directory
+     *
+     * @param  string|array $template_dir directory(s) of template sources
+     */
+    public function setTemplateDir($template_dir) {
+        $this->smarty->setTemplateDir($template_dir);
+    }
+
+    /**
+     * Add template directory(s)
+     *
+     * @param  string|array    $template_dir directory(s) of template sources
+     * @param  string          $key          of the array element to assign the template dir to
+     */
+    public function addTemplateDir($template_dir, $key=null) {
+        $this->smarty->addTemplateDir($template_dir, $key);
     }
 
     /**
@@ -69,6 +95,22 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function getTemplateDir($index = null)
     {
         return $this->smarty->getTemplateDir($index);
+    }
+
+    /**
+     * @param $plugins_dir String Plugins directory to add
+     */
+    public function addPluginsDir($plugins_dir)
+    {
+        $this->smarty->addPluginsDir($plugins_dir);
+    }
+
+    /**
+     * @param $plugins_dir String Plugins directory to set
+     */
+    public function setPluginsDir($plugins_dir)
+    {
+        $this->smarty->setPluginsDir($plugins_dir);
     }
 
     /**

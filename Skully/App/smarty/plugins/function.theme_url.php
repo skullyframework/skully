@@ -6,7 +6,6 @@
  * @param Smarty $smarty
  * @return string
  */
-error_log("loading smarty function theme_url");
 function smarty_function_theme_url($params = array(), &$smarty) {
     $path = '';
     if (!empty($params['path'])) {

@@ -58,7 +58,7 @@ function setCommonConfig(Config &$config, $serverName = null) {
     $config_r = array_merge(array(
         // 0: no caching, 1: cache all with same lifetime, 2: cache with different lifetime per template.
         // http://www.smarty.net/docsv2/en/caching
-        'caching' => 2,
+        'caching' => 0,
 
         // Set these to show the site under maintenance page
         'maintenance' => false,

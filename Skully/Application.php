@@ -516,7 +516,7 @@ class Application implements ApplicationInterface {
                 $this->getConfigObject()->setProtected('theme', 'default');
                 $theme = 'default';
             }
-            $this->setTheme(new Theme($basePath, $this->config('baseUrl'), 'public', $theme, $this->getAppName()));
+            $this->setTheme(new Theme($basePath, $this->config('baseUrl'), 'public', $theme, $this->getAppName(), $this));
         }
         return $this->theme;
     }
@@ -540,10 +540,9 @@ class Application implements ApplicationInterface {
     {
         if (empty($this->templateEngine)) {
             $caching = 0;
-            // Smarty caching is currently broken (v.3.1.16) so we disable it
-//            if (!$this->configIsEmpty('caching')) {
-//                $caching = $this->config('caching');
-//            }
+            if (!$this->configIsEmpty('caching')) {
+                $caching = $this->config('caching');
+            }
             $this->templateEngine = new SmartyAdapter($this->config('basePath'), $this->config('theme'), $this, $this->additionalTemplateEnginePluginsDir(), $caching);
             $this->templateEngine->registerObject('app', $this);
         }
@@ -611,7 +610,12 @@ class Application implements ApplicationInterface {
      */
     protected function getSkullyBasePath()
     {
-        return realpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
+        if (!$this->configIsEmpty('skullyBasePath')) {
+            return $this->config('skullyBasePath');
+        }
+        else {
+            return realpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
+        }
     }
 
     /**

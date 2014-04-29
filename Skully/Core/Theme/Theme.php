@@ -60,23 +60,33 @@ class Theme implements ThemeInterface {
      * @param string $publicDirectory name of public directory.
      * @param string $themeName Selected theme name.
      * @param string $appName App's name, used as directory name storing languages and views.
-     * @param boolean $virtual Set to true for applications with virtual server setting. When true, use baseURl without publicDirectory for public Url.
+     * @param \Skully\ApplicationInterface $app Optional Skully App
+     * todo: param boolean $virtual Set to true for applications with virtual server setting. When true, use baseURl without publicDirectory for public Url.
      */
-    public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $virtual = false)
+    public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $app = null)
     {
         $basePath = str_replace('/', DIRECTORY_SEPARATOR, $basePath);
         if (substr($basePath, -1, 1) != DIRECTORY_SEPARATOR) {
             $basePath .= DIRECTORY_SEPARATOR;
         }
-        if ($virtual) {
-            $this->publicBaseUrl = $baseUrl;
-        }
-        else {
+        // todo: virtual server setup
+//        if ($virtual) {
+//            $this->publicBaseUrl = $baseUrl;
+//        }
+//        else {
             $this->publicBaseUrl = $baseUrl . $publicDirectory . '/';
-        }
+//        }
         $this->basePath = $basePath . $publicDirectory . DIRECTORY_SEPARATOR;
         $this->themeName = $themeName;
-        $this->skullyBasePath = realpath(dirname(__FILE__).'/../../../').DIRECTORY_SEPARATOR . $publicDirectory . DIRECTORY_SEPARATOR;
+
+        $this->app = $app;
+        if (!empty($app) && !$app->configIsEmpty('skullyBasePath')) {
+            $this->skullyBasePath = $app->config('skullyBasePath') . $publicDirectory . DIRECTORY_SEPARATOR;
+        }
+        else {
+            $this->skullyBasePath = realpath(dirname(__FILE__).'/../../../') . DIRECTORY_SEPARATOR . $publicDirectory . DIRECTORY_SEPARATOR;
+        }
+
         $skullyRelativePath = str_replace($basePath, '', $this->getSkullyBasePath());
         $skullyRelativePath = str_replace(DIRECTORY_SEPARATOR, '/', $skullyRelativePath);
         $this->skullyPublicBaseUrl = $baseUrl.$skullyRelativePath;

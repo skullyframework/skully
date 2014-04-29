@@ -49,9 +49,9 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
                     )
                 )
             ),
-            $path_r[count($path_r)-3] => array(
-                $path_r[count($path_r)-2] => array(
-                    $path_r[count($path_r)-1] => array(
+            'vendor' => array(
+                'triodigital' => array(
+                    'skully' => array(
                         'public' => array(
                             'default' => array(
                                 'resources' => array(
@@ -75,7 +75,9 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $config->setProtectedFromArray(array(
             'theme' => 'test',
             'language' => 'en',
+            'languages' => array('en' => array('value' => 'english', 'code' => 'en' )),
             'basePath' => vfsStream::url('root'),
+            'skullyBasePath' => vfsStream::url('root/vendor/triodigital/skully/'),
             'baseUrl' => 'http://localhost/skully/',
             'urlRules' => array(
                 '' => 'home/index',
@@ -83,18 +85,23 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
             )
         ));
         $_SESSION['language'] = 'id';
-        return new \App\Application($config);
+        setRealPath();
+        $app = new \App\Application($config);
+        unsetRealpath();
+        $pluginsPath = realpath(__DIR__.'/../../App/smarty/plugins');
+        setRealpath();
+        $app->getTemplateEngine()->addPluginsDir($pluginsPath);
+        return $app;
     }
 
     public function testThemeConstruct()
     {
         $path = realpath(dirname(__FILE__).'/../../../');
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
-        setRealPath();
         $app = $this->getApp();
         $this->assertEquals('vfs://root/public/', $app->getTheme()->getBasePath());
-        $this->assertEquals('vfs://root/'.$path_r[count($path_r)-3].'/'.$path_r[count($path_r)-2].'/'.$path_r[count($path_r)-1].'/public/', $app->getTheme()->getSkullyBasePath());
-        $this->assertEquals($app->config('baseUrl').$path_r[count($path_r)-3].'/'.$path_r[count($path_r)-2].'/'.$path_r[count($path_r)-1].'/public/', $app->getTheme()->getSkullyPublicBaseUrl());
+        $this->assertEquals('vfs://root/vendor/triodigital/skully/public/', $app->getTheme()->getSkullyBasePath());
+        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/', $app->getTheme()->getSkullyPublicBaseUrl());
         unsetRealpath();
     }
 
@@ -102,11 +109,10 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
     {
         $path = realpath(dirname(__FILE__).'/../../../');
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
-        setRealPath();
         $app = $this->getApp();
         $this->assertEquals($app->config('baseUrl').'public/test/resources/css/test.css', $app->getTheme()->getUrl('resources/css/test.css'));
         $this->assertEquals($app->config('baseUrl').'public/default/resources/css/default.css', $app->getTheme()->getUrl('resources/css/default.css'));
-        $this->assertEquals($app->config('baseUrl').$path_r[count($path_r)-3].'/'.$path_r[count($path_r)-2].'/'.$path_r[count($path_r)-1].'/public/default/resources/css/skully.css', $app->getTheme()->getUrl('resources/css/skully.css'));
+        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/default/resources/css/skully.css', $app->getTheme()->getUrl('resources/css/skully.css'));
         unsetRealpath();
     }
 
@@ -114,11 +120,8 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
     {
         $path = realpath(dirname(__FILE__).'/../../../');
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
-        setRealPath();
         $app = $this->getApp();
-        unsetRealpath();
         $app->getTemplateEngine()->loadPlugin('smarty_function_theme_url');
-        setRealPath();
         ob_start();
         $app->runControllerFromRawUrl('themes/testTheme');
         $output = ob_get_clean();
@@ -132,7 +135,7 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         ob_start();
         $app->runControllerFromRawUrl('themes/skullyTheme');
         $output = ob_get_clean();
-        $this->assertEquals($app->config('baseUrl').$path_r[count($path_r)-3].'/'.$path_r[count($path_r)-2].'/'.$path_r[count($path_r)-1].'/public/default/resources/css/skully.css?arg1=arg1', $output);
+        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/default/resources/css/skully.css?arg1=arg1', $output);
         unsetRealpath();
     }
 
@@ -140,7 +143,6 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $app->getTemplateEngine()->loadPlugin('smarty_function_theme_url');
-        setRealPath();
 
         ob_start();
         $app->runControllerFromRawUrl('themes/testPublicUrl');

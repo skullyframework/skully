@@ -15,11 +15,35 @@ interface TemplateEngineAdapterInterface {
     public function __construct($basePath, $theme = 'default', $app = 'App', $additionalPluginsDir = array(), $caching = 1);
 
     /**
+     * Set template directory
+     *
+     * @param  string|array $template_dir directory(s) of template sources
+     */
+    public function setTemplateDir($template_dir);
+
+    /**
+     * Add template directory(s)
+     *
+     * @param  string|array    $template_dir directory(s) of template sources
+     * @param  string          $key          of the array element to assign the template dir to
+     */
+    public function addTemplateDir($template_dir, $key=null);
+
+    /**
      * @param null $index
      * @return array|string
      */
     public function getTemplateDir($index = null);
 
+    /**
+     * @param $plugins_dir String Plugins directory to add
+     */
+    public function addPluginsDir($plugins_dir);
+
+    /**
+     * @param $plugins_dir String Plugins directory to set
+     */
+    public function setPluginsDir($plugins_dir);
     /**
      * @return array
      */

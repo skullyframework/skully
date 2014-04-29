@@ -20,9 +20,10 @@ interface ThemeInterface {
      * @param string $publicDirectory name of public directory.
      * @param string $themeName Selected theme name.
      * @param string $appName App's name, used as directory name storing languages and views.
-     * @param boolean $virtual Set to true for applications with virtual server setting. When true, use baseURl without publicDirectory for public Url.
+     * @param \Skully\ApplicationInterface $app Optional Skully App
+     * todo: param boolean $virtual Set to true for applications with virtual server setting. When true, use baseURl without publicDirectory for public Url.
      */
-    public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $virtual = false);
+    public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $app = null);
 
     /**
      * @param $path
