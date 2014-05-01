@@ -114,6 +114,11 @@ function setCommonConfig(Config &$config, $serverName = null) {
 
         'basePath' => BASE_PATH,
 
+        /**
+         * Set skullyBasePath when Skully framework is located at funny places e.g. for Tests.
+         */
+        'skullyBasePath' => null,
+
         'globalSalt' => 'hakunamatata',
 
         'ruckusingConfig' => array(

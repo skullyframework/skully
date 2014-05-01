@@ -58,6 +58,7 @@ interface TemplateEngineAdapterInterface {
      */
     public function display($template = null, $cache_id = null, $compile_id = null, $parent = null);
 
+    public function clearAllCache();
     /**
      * @param null $template
      * @param null $cache_id
