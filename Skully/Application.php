@@ -121,7 +121,7 @@ class Application implements ApplicationInterface {
             if (!$this->configIsEmpty('namespace')) {
                 $namespace = $this->config('namespace');
             }
-            define('REDBEAN_MODEL_PREFIX', '\\'.$namespace.'\\Model\\');
+            define('REDBEAN_MODEL_PREFIX', '\\'.$namespace.'\\Models\\');
 
             // Below is needed so that RedBeanPHP\SimpleModel may use $this->app:
             SimpleFacadeBeanHelper::setFactoryFunction( function( $beanTypeName ) {
