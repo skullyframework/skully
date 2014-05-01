@@ -310,6 +310,9 @@ class Application implements ApplicationInterface {
             $controller = $this->controllers[$controllerStr];
         }
         else {
+            if (!$this->configIsEmpty('namespace')) {
+                ControllerFactory::setConfig('namespace', $this->config('namespace'));
+            }
             $controller = ControllerFactory::create($this, $controllerStr, $actionStr, $additionalParams);
             $this->controllers[$controllerStr] = $controller;
         }

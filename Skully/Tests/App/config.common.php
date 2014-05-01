@@ -56,6 +56,8 @@ function setCommonConfig(Config &$config, $serverName = null) {
     }
 
     $config_r = array_merge(array(
+        'namespace' => 'App',
+
         // 0: no caching, 1: cache all with same lifetime, 2: cache with different lifetime per template.
         // http://www.smarty.net/docsv2/en/caching
         'caching' => 0,
