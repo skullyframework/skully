@@ -6,7 +6,7 @@ class TextHelper
 {
     public static function isJson($string)
     {
-        return !preg_match('/[^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]/',
+        return !preg_match('/[Mo^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]/',
             preg_replace('/"(\\.|[^"\\])*"/g', '', $string));
     }
 

@@ -8,7 +8,7 @@
 
 namespace Skully\App\Session;
 
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 use Skully\Core\ApplicationAware;
 
 /**

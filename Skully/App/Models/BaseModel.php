@@ -3,19 +3,19 @@
 
 namespace Skully\App\Models;
 
-use RedBean_SimpleModel;
+use RedBeanPHP\SimpleModel;
 use Skully\App\Helpers\UtilitiesHelper;
 use Skully\ApplicationInterface;
-use RedBean_Facade as R;
+use RedBeanPHP\Facade as R;
 
 /**
  * Class BaseModel
  * @package Skully\App\Models
  */
-class BaseModel extends RedBean_SimpleModel {
+class BaseModel extends \RedBeanPHP\SimpleModel {
 
     /**
-     * @var \RedBean_OODBBean Duplicated object right before saving.
+     * @var \RedBeanPHP\OODBBean Duplicated object right before saving.
      */
     public $oldMe;
     /**
@@ -341,7 +341,7 @@ class BaseModel extends RedBean_SimpleModel {
     }
 
     /**
-     * @var \RedBean_OODBBean $oldMe
+     * @var \RedBeanPHP\OODBBean $oldMe
      */
     public function afterDestroy($oldMe)
     {

@@ -1,0 +1,169 @@
+[Friday, 02-May-14 01:00:50 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/ModelFormatter.php | ln:8
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Interface 'RedBeanPHP\IModelFormatter' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:10:21 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:11:21 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:11:54 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:12:58 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:15:25 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:15:44 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:15:56 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\Facade' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:17:09 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Cannot access private property RedBeanPHP\Facade::$toolboxes
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:18:14 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:120
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\DependencyInjector' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:30:52 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:134
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'RedBeanPHP\DependencyInjector' not found
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:33:30 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:145
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Cannot use object of type RedBeanPHP\ToolBox as array
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 01:35:55 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Application.php | ln:146
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Cannot use object of type RedBeanPHP\ToolBox as array
+#0  shutdownHandler()
+
+

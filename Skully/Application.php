@@ -22,10 +22,8 @@ use Skully\Core\RepositoryFactory;
 use Skully\Core\Http;
 use Skully\App\Session\DBSession;
 
-use RedBean_Facade as R;
-use RedBean_ModelHelper;
-use RedBean_DependencyInjector;
-
+use RedBeanPHP\Facade as R;
+use RedBeanPHP\BeanHelper\SimpleFacadeBeanHelper as SimpleFacadeBeanHelper;
 
 /**
  * Class Application
@@ -118,10 +116,20 @@ class Application implements ApplicationInterface {
             elseif ($dbConfig['type'] == 'sqlite') {
                 self::setupRedBean("sqlite:{$dbConfig['dbname']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
             }
-            // Below is needed so that RedBean_SimpleModel may use $this->app:
-            $this->modelsInjector = new RedBean_DependencyInjector;
-            RedBean_ModelHelper::setDependencyInjector( $this->modelsInjector );
-            $this->modelsInjector->addDependency('App', $this);
+
+            $namespace = 'App';
+            if (!$this->configIsEmpty('namespace')) {
+                $namespace = $this->config('namespace');
+            }
+            define('REDBEAN_MODEL_PREFIX', '\\'.$namespace.'\\Model\\');
+
+            // Below is needed so that RedBeanPHP\SimpleModel may use $this->app:
+            SimpleFacadeBeanHelper::setFactoryFunction( function( $beanTypeName ) {
+                /** @var \Skully\App\Models\BaseModel $model */
+                $model = new $beanTypeName();
+                $model->setApp( $this );
+                return $model;
+            } );
         }
     }
 
@@ -133,12 +141,10 @@ class Application implements ApplicationInterface {
      */
     public static function setupRedBean($dsn, $user, $password = '', $isDevMode = false)
     {
-        $formatter = new ModelFormatter;
-        RedBean_ModelHelper::setModelFormatter($formatter);
-        if (!isset( R::$toolboxes['default'] )) {
+        $toolbox = R::getToolBox();
+        if (empty( $toolbox )) {
             R::setup($dsn, $user,$password, !$isDevMode);
         }
-
     }
 
     /**
@@ -150,7 +156,7 @@ class Application implements ApplicationInterface {
      */
     public function createModel($name, $attributes = array())
     {
-        /** @var \RedBean_SimpleModel $bean */
+        /** @var \RedBeanPHP\SimpleModel $bean */
         $bean = R::dispense(strtolower($name));
         /** @var \Skully\App\Models\BaseModel $model */
         $model = $bean->box();

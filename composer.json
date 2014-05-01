@@ -1,6 +1,6 @@
 {
     "name": "triodigital/skully",
-    "version": "0.2",
+    "version": "0.3",
     "type": "package",
     "description": "Simple framework by trio digital agency.",
     "authors": [
@@ -21,13 +21,13 @@
     },
     "require": {
         "php": ">=5.4",
-        "gabordemooij/redbean": "3.x",
         "symfony/console": "2.5.x-dev",
         "ruckusing/ruckusing-migrations": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "Skully\\": ""
+            "Skully\\": "",
+            "RedBeanPHP\\" : "Skully/Library/redbean"
         }
     },
     "license": "LGPL-2.1",

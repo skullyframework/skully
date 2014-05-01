@@ -12,5 +12,5 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Skully\\' => array($baseDir . '/'),
     'Ruckusing' => array($vendorDir . '/ruckusing/ruckusing-migrations/lib'),
-    'RedBean_' => array($vendorDir . '/gabordemooij/redbean'),
+    'RedBeanPHP\\' => array($baseDir . '/Skully/Library/redbean'),
 );
