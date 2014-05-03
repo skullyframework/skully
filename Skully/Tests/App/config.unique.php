@@ -36,7 +36,7 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 "user"	    => "",
                 "password"	=> "",
                 "port"		=> "",
-                "dbname"	=> dirname(__FILE__) . '/test.db'
+                "dbname"	=> 'test.db'
             ),
         );
     }

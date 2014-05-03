@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+$serverName = 'localhost';
+if (!empty($argv)) {
+    foreach($argv as $index => $arg) {
+        if ($arg == '-p' or $arg == '--production') {
+            $serverName = 'production';
+            unset($argv[$index]);
+        }
+        elseif ($arg == '-t' or $arg == '--test') {
+            $serverName = 'test';
+            unset($argv[$index]);
+        }
+    }
+}
+require_once(dirname(__FILE__) . '/../../../vendor/autoload.php');
+require_once(dirname(__FILE__).'/include.php');
+require_once('testBootstrap.php');
+$app = __setupApp($serverName);
+
+use Skully\Console\Console;
+$consoleApp = new Console($app);
+array_shift($argv);
+try {
+    $consoleApp->run(implode(' ', $argv));
+}
+catch (Exception $e) {
+    echo $e->getMessage();
+}

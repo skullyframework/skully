@@ -4,7 +4,7 @@ use \RedBeanPHP\Facade as R;
 use \Skully\App\Helpers\FileHelper;
 use \Skully\Library\EncryptionClass\EncryptionClass;
 
-class Setting extends BaseModel{
+abstract class Setting extends BaseModel{
     protected function protectedFields() {
         return array('isClient', 'type');
     }

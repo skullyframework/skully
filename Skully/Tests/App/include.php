@@ -12,3 +12,6 @@ require_once('Controllers/home2.php');
 require_once('Controllers/plugins.php');
 require_once('Controllers/themes.php');
 require_once('Controllers/news.php');
+require_once('Models/testmodel.php');
+require_once('Models/foo.php');
+require_once('Models/bar.php');

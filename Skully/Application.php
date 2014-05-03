@@ -110,18 +110,20 @@ class Application implements ApplicationInterface {
         // Setting up RedBean
         $dbConfig = $config->getProtected('dbConfig');
         if (!empty($dbConfig)) {
+            $namespace = 'App';
+            if (!$this->configIsEmpty('namespace')) {
+                $namespace = $this->config('namespace');
+            }
+            if (!defined('REDBEAN_MODEL_PREFIX')) {
+                define('REDBEAN_MODEL_PREFIX', '\\'.$namespace.'\\Models\\');
+            }
+
             if ($dbConfig['type'] == 'mysql') {
                 self::setupRedBean("mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};port={$dbConfig['port']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
             }
             elseif ($dbConfig['type'] == 'sqlite') {
                 self::setupRedBean("sqlite:{$dbConfig['dbname']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
             }
-
-            $namespace = 'App';
-            if (!$this->configIsEmpty('namespace')) {
-                $namespace = $this->config('namespace');
-            }
-            define('REDBEAN_MODEL_PREFIX', '\\'.$namespace.'\\Models\\');
 
             // Below is needed so that RedBeanPHP\SimpleModel may use $this->app:
             SimpleFacadeBeanHelper::setFactoryFunction( function( $beanTypeName ) {

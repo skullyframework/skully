@@ -9,6 +9,7 @@ require_once(dirname(__FILE__).'/functions.php');
 
 use App\Application;
 use RedBeanPHP\Facade as R;
+use Skully\Console\Console;
 use Skully\Core\Config;
 
 abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
@@ -27,7 +28,7 @@ abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
         setCommonConfig($config);
         setUniqueConfig($config);
 
-        Application::setupRedBean('sqlite:'.dirname(__FILE__).'/dbfile.txt', 'user','password', $this->frozen, 'sqlite');
+        Application::setupRedBean('sqlite:test.db', 'user','password', $this->frozen, 'sqlite');
         R::freeze(false);
         R::nuke();
         R::freeze($this->frozen);
@@ -45,8 +46,15 @@ abstract class DatabaseTestCase extends \PHPUnit_Framework_TestCase{
     protected function migrate()
     {
         ob_start();
-        $argv = array('db:migrate', '-t');
-        require(BASE_PATH.'tools/dbmigrator/ruckus.php');
+        $argv = array('console', 'skully:schema', 'db:migrate');
+        $consoleApp = new Console($this->app, true);
+        array_shift($argv);
+        try {
+            $consoleApp->run(implode(' ', $argv));
+        }
+        catch (\Exception $e) {
+            echo $e->getMessage();
+        }
         ob_clean();
     }
 

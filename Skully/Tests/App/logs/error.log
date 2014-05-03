@@ -167,3 +167,159 @@ Cannot use object of type RedBeanPHP\ToolBox as array
 #0  shutdownHandler()
 
 
+[Friday, 02-May-14 20:36:16 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 20:37:20 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 20:37:47 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 20:38:00 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 22:08:04 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 22:08:22 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 22:20:20 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 22:22:01 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Friday, 02-May-14 22:25:21 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Saturday, 03-May-14 10:41:05 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Saturday, 03-May-14 10:41:48 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Tests/DatabaseTestCase.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require(): Failed opening required '/media/jay/Data/apache/skully/Skully/Tests/App/tools/dbmigrator/ruckus.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Saturday, 03-May-14 13:14:05 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/ModelTest.php | ln:58
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function setMeta() on a non-object
+#0  shutdownHandler()
+
+

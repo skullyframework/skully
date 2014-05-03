@@ -12,7 +12,7 @@ use RedBeanPHP\Facade as R;
  * Class BaseModel
  * @package Skully\App\Models
  */
-class BaseModel extends \RedBeanPHP\SimpleModel {
+abstract class BaseModel extends \RedBeanPHP\SimpleModel {
 
     /**
      * @var \RedBeanPHP\OODBBean Duplicated object right before saving.
