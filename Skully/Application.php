@@ -350,6 +350,9 @@ class Application implements ApplicationInterface {
             $repository = $this->repositories[$repositoryStr];
         }
         else {
+            if (!$this->configIsEmpty('namespace')) {
+                RepositoryFactory::setConfig('namespace', $this->config('namespace'));
+            }
             $repository = RepositoryFactory::create($this, $repositoryStr);
             $this->repositories[$repositoryStr] = $repository;
         }
