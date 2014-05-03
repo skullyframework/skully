@@ -542,9 +542,14 @@ class Application implements ApplicationInterface {
      */
     public function getAppName()
     {
-        $class = get_called_class();
-        $namespace_r = explode('\\',$class);
-        return $namespace_r[0];
+        if ($this->configIsEmpty('namespace')) {
+            $class = get_called_class();
+            $namespace_r = explode('\\',$class);
+            return $namespace_r[0];
+        }
+        else {
+            return $this->config('namespace');
+        }
     }
 
     /**
