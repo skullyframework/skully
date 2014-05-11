@@ -65,15 +65,13 @@ interface ThemeInterface {
     /**
      * @return string
      */
-    public function getSkullyBasePath();
-
-    /**
-     * @return string
-     */
-    public function getSkullyPublicBaseUrl();
-
-    /**
-     * @return string
-     */
     public function getThemeName();
+
+    public function setDirs($dirs);
+
+    public function setDir($dir, $key);
+
+    public function getDirs();
+
+    public function getDir($key);
 } 

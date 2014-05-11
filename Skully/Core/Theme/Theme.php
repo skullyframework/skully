@@ -41,18 +41,11 @@ class Theme implements ThemeInterface {
 
     /**
      * @var string
-     * Url of public directory of Skully app, ended with '/'.
-     * This should not be needed in any occassion, except for users wishing to
-     * see if their quick Skully installation is successful.
-     * This obviously won't work with apps with virtual host setting.
-     */
-    protected $skullyPublicBaseUrl = 'http://yoursite.wow/library/trio/skully/public/';
-
-    /**
-     * @var string
      * Application's name, used in directory name to store languages and views.
      */
     protected $appName = 'App';
+
+    protected $dirs = '';
 
     /**
      * @param string $basePath Base path of the main app.
@@ -80,16 +73,6 @@ class Theme implements ThemeInterface {
         $this->themeName = $themeName;
 
         $this->app = $app;
-        if (!empty($app) && !$app->configIsEmpty('skullyBasePath')) {
-            $this->skullyBasePath = $app->config('skullyBasePath') . $publicDirectory . DIRECTORY_SEPARATOR;
-        }
-        else {
-            $this->skullyBasePath = realpath(dirname(__FILE__).'/../../../') . DIRECTORY_SEPARATOR . $publicDirectory . DIRECTORY_SEPARATOR;
-        }
-
-        $skullyRelativePath = str_replace($basePath, '', $this->getSkullyBasePath());
-        $skullyRelativePath = str_replace(DIRECTORY_SEPARATOR, '/', $skullyRelativePath);
-        $this->skullyPublicBaseUrl = $baseUrl.$skullyRelativePath;
         $this->appName = $appName;
     }
 
@@ -103,22 +86,45 @@ class Theme implements ThemeInterface {
      */
     public function getPath($path = '', $hideErrors = false)
     {
-        $fullPath = $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
-        if (!file_exists($fullPath)) {
-            $fullPath = $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
+        $dirs = $this->getDirs();
+        $fullPaths = array();
+        $fullPath = '';
+        foreach($dirs as $key => $dir) {
+            $fullPaths[] = $dir . DIRECTORY_SEPARATOR . $path;
+            if (!file_exists($fullPath)) {
+                $fullPath = $dir . DIRECTORY_SEPARATOR . $path;
+            }
         }
-        if (!file_exists($fullPath)) {
-            $fullPath = $this->getSkullyPath($path);
-        }
+
         if (!file_exists($fullPath) && !$hideErrors) {
-            throw new ThemeFileNotFoundException("Theme file not found after searching at these four locations: \n".
-                $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getSkullyBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getSkullyBasePath() . 'default' . DIRECTORY_SEPARATOR . $path
+            throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
+                implode("\n", $fullPaths)
             );
         }
         return $fullPath;
+    }
+
+    public function setDirs($dirs)
+    {
+        $this->dirs = $dirs;
+    }
+
+    public function setDir($dir, $key)
+    {
+        $this->dirs[$key] = $dir;
+    }
+
+    /**
+     * @return Array
+     */
+    public function getDirs()
+    {
+        return $this->dirs;
+    }
+
+    public function getDir($key)
+    {
+        return $this->dirs[$key];
     }
 
     /**
@@ -130,20 +136,6 @@ class Theme implements ThemeInterface {
     {
         return $this->getPath($this->appName . DIRECTORY_SEPARATOR . $path, $hideErrors);
     }
-
-    /**
-     * @param $path
-     * @return string
-     */
-    protected function getSkullyPath($path)
-    {
-        $fullPath = $this->getSkullyBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
-        if (!file_exists($fullPath)) {
-            $fullPath = $this->getSkullyBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
-        }
-        return $fullPath;
-    }
-
 
     /**
      * @param string $path
@@ -159,17 +151,6 @@ class Theme implements ThemeInterface {
         if (!file_exists($fullPath)) {
             $fullPath = $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
             if (!file_exists($fullPath)) {
-
-                $fullPath = $this->getSkullyBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
-                if (!file_exists($fullPath)) {
-                    $fullPath = $this->getSkullyBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
-                    if (file_exists($fullPath)) {
-                        $fullUrl = $this->getSkullyPublicBaseUrl() . 'default/' . $path;
-                    }
-                }
-                else {
-                    $fullUrl = $this->getSkullyPublicBaseUrl() . $this->themeName . '/' . $path;
-                }
             }
             else {
                 $fullUrl = $this->getPublicBaseUrl() . 'default/' . $path;
@@ -180,11 +161,9 @@ class Theme implements ThemeInterface {
         }
 
         if (!file_exists($fullPath) && !$hideErrors) {
-            throw new ThemeFileNotFoundException("Theme file not found after searching at these four locations: \n".
+            throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
                 $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getSkullyBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getSkullyBasePath() . 'default' . DIRECTORY_SEPARATOR . $path
+                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path . "\n"
             );
         }
         if (empty($params)) {
@@ -216,25 +195,9 @@ class Theme implements ThemeInterface {
     /**
      * @return string
      */
-    public function getSkullyBasePath()
-    {
-        return $this->skullyBasePath;
-    }
-
-    /**
-     * @return string
-     */
     public function getPublicBaseUrl()
     {
         return $this->publicBaseUrl;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSkullyPublicBaseUrl()
-    {
-        return $this->skullyPublicBaseUrl;
     }
 
     /**

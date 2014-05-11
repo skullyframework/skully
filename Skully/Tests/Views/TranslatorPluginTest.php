@@ -67,34 +67,6 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
                     )
                 )
             ),
-            'vendor' => array(
-                'triodigital' => array(
-                    'skully' => array(
-                        'public' => array(
-                            'default' => array(
-                                'Skully' => array(
-                                    'languages' => array(
-                                        'en' => array(
-                                            'plugins' => array(
-                                                '_pluginsLang.json' => '{"one" : "skully en"}',
-                                                'langLang.json' => '{"a_one" : "a skully en"}'
-                                            ),
-                                            'commonLang.json' => '{"c_one" : "c skully en"}'
-                                        ),
-                                        'id' => array(
-                                            'plugins' => array(
-                                                '_pluginsLang.json' => '{"two" : "skully id"}',
-                                                'langLang.json' => '{"a_two" : "a skully id", "big4": "id"}'
-                                            ),
-                                            'commonLang.json' => '{"c_two" : "c skully id"}'
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            )
         );
     }
 
@@ -152,24 +124,18 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         $app->getControllerFromRawUrl('plugins/lang');
 
 //      controller
-        $this->assertEquals('skully en', $app->getTranslator()->translate('one'));
-        $this->assertEquals('skully id', $app->getTranslator()->translate('two'));
         $this->assertEquals('app default en', $app->getTranslator()->translate('three'));
         $this->assertEquals('app default id', $app->getTranslator()->translate('four'));
         $this->assertEquals('app test en', $app->getTranslator()->translate('five'));
         $this->assertEquals('app test id', $app->getTranslator()->translate('six'));
 
 //      common
-        $this->assertEquals('c skully en', $app->getTranslator()->translate('c_one'));
-        $this->assertEquals('c skully id', $app->getTranslator()->translate('c_two'));
         $this->assertEquals('c app default en', $app->getTranslator()->translate('c_three'));
         $this->assertEquals('c app default id', $app->getTranslator()->translate('c_four'));
         $this->assertEquals('c app test en', $app->getTranslator()->translate('c_five'));
         $this->assertEquals('c app test id', $app->getTranslator()->translate('c_six'));
 
 //      action
-        $this->assertEquals('a skully en', $app->getTranslator()->translate('a_one'));
-        $this->assertEquals('a skully id', $app->getTranslator()->translate('a_two'));
         $this->assertEquals('a app default en', $app->getTranslator()->translate('a_three'));
         $this->assertEquals('a app default id', $app->getTranslator()->translate('a_four'));
         $this->assertEquals('a app test en', $app->getTranslator()->translate('a_five'));
@@ -181,7 +147,6 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('common', $app->getTranslator()->translate('big3'));
 
 //      id > en
-        $this->assertEquals('id', $app->getTranslator()->translate('big4'));
         $this->assertEquals('en', $app->getTranslator()->translate('big5'));
 
 //      test > default

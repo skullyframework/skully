@@ -100,8 +100,6 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
         $app = $this->getApp();
         $this->assertEquals('vfs://root/public/', $app->getTheme()->getBasePath());
-        $this->assertEquals('vfs://root/vendor/triodigital/skully/public/', $app->getTheme()->getSkullyBasePath());
-        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/', $app->getTheme()->getSkullyPublicBaseUrl());
         unsetRealpath();
     }
 
@@ -112,7 +110,6 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $app = $this->getApp();
         $this->assertEquals($app->config('baseUrl').'public/test/resources/css/test.css', $app->getTheme()->getUrl('resources/css/test.css'));
         $this->assertEquals($app->config('baseUrl').'public/default/resources/css/default.css', $app->getTheme()->getUrl('resources/css/default.css'));
-        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/default/resources/css/skully.css', $app->getTheme()->getUrl('resources/css/skully.css'));
         unsetRealpath();
     }
 
@@ -132,10 +129,6 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $output = ob_get_clean();
         $this->assertEquals($app->config('baseUrl').'public/default/resources/css/default.css', $output);
 
-        ob_start();
-        $app->runControllerFromRawUrl('themes/skullyTheme');
-        $output = ob_get_clean();
-        $this->assertEquals($app->config('baseUrl').'vendor/triodigital/skully/public/default/resources/css/skully.css?arg1=arg1', $output);
         unsetRealpath();
     }
 

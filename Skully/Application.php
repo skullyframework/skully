@@ -93,6 +93,27 @@ class Application implements ApplicationInterface {
      */
     protected $http;
 
+    protected function setupTheme()
+    {
+        $theme = $this->config('theme');
+
+        if (!$this->configIsEmpty('skullyBasePath')) {
+            $skullyBasePath = $this->config('skullyBasePath');
+        }
+        else {
+            $skullyBasePath = realpath(dirname(__FILE__).'/../') . DIRECTORY_SEPARATOR;
+        }
+
+        $basePath = $this->config('basePath');
+
+        $this->getTheme()->setDirs(
+            array(
+                'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme)),
+                'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default'))
+            )
+        );
+    }
+
     /**
      * @param ConfigInterface $config
      * @throws InvalidConfigException
@@ -102,6 +123,7 @@ class Application implements ApplicationInterface {
         if ($this->configIsEmpty('timezone')) {
             $this->getConfigObject()->setProtected('timezone', 'Asia/Jakarta');
         }
+        $this->setupTheme();
         $this->langAdjustment();
         date_default_timezone_set($this->config('timezone'));
         $this->addLangfile('common', $this->config('language'));
@@ -404,20 +426,10 @@ class Application implements ApplicationInterface {
      */
     public function addLangfile($path, $language)
     {
-        $this->addSkullyLangFile($path,$language);
         $this->addDefaultLangfile($path,$language);
         $this->addThemeLangfile($path,$language);
     }
 
-    /**
-     * @param $path
-     * @param $language
-     */
-    protected function addSkullyLangfile($path, $language)
-    {
-        $completePath = $this->getSkullyBasePath().'public'.DIRECTORY_SEPARATOR.'default'.DIRECTORY_SEPARATOR.'Skully'.DIRECTORY_SEPARATOR.'languages'.DIRECTORY_SEPARATOR.$language.DIRECTORY_SEPARATOR.$path.'Lang.json';
-        $this->innerAddLangFile($completePath);
-    }
 
     /**
      * @param $path

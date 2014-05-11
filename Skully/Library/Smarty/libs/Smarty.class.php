@@ -858,7 +858,7 @@ class Smarty extends Smarty_Internal_TemplateBase
 
         if (is_array($template_dir)) {
             foreach ($template_dir as $k => $v) {
-                $v = str_replace(array('//','\\\\'), DS, rtrim($v, '/\\')) . DS;
+                $v = str_replace(array('\\\\'), DS, rtrim($v, '/\\')) . DS;
                 if (is_int($k)) {
                     // indexes are not merged but appended
                     $this->template_dir[] = $v;
@@ -868,7 +868,7 @@ class Smarty extends Smarty_Internal_TemplateBase
                 }
             }
         } else {           
-            $v = str_replace(array('//','\\\\'), DS, rtrim($template_dir, '/\\')) . DS;
+            $v = str_replace(array('\\\\'), DS, rtrim($template_dir, '/\\')) . DS;
             if ($key !== null) {
                 // override directory at specified index
                 $this->template_dir[$key] = $v;

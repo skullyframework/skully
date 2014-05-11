@@ -52,12 +52,14 @@ class ModelTest extends \Tests\DatabaseTestCase {
 
     public function testMeta()
     {
-        $this->migrate();
-        R::exec(file_get_contents(dirname(__FILE__).'/db/foo.sql'));
-        $test = R::findOne('foo');
-        $test->box()->setMeta('test', array('test'));
-        $exported = $test->box()->export(true);
+        R::freeze(false);
+        $testmodel = $this->app->createModel('testmodel', array('name' => 'test'));
+        R::store($testmodel);
+        $bean = R::findOne('testmodel');
+        $bean->box()->setMeta('test', array('test'));
+        $exported = $bean->box()->export(true);
         $this->assertEquals(array('test'), $exported['test']);
+        R::freeze($this->frozen);
     }
 
     /**

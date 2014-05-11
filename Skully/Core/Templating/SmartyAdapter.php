@@ -44,12 +44,12 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
         $appName = $app->getAppName();
 
         $this->app = $app;
-        if (!empty($app) && !$app->configIsEmpty('skullyBasePath')) {
-            $skullyBasePath = $app->config('skullyBasePath');
-        }
-        else {
-            $skullyBasePath = realpath(dirname(__FILE__).'/../../../') . DIRECTORY_SEPARATOR;
-        }
+//        if (!empty($app) && !$app->configIsEmpty('skullyBasePath')) {
+//            $skullyBasePath = $app->config('skullyBasePath');
+//        }
+//        else {
+//            $skullyBasePath = realpath(dirname(__FILE__).'/../../../') . DIRECTORY_SEPARATOR;
+//        }
 
         $this->smarty = new \Smarty;
         $this->smarty->caching = $caching;
@@ -57,11 +57,20 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
         $this->smarty->setCompileDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'templates_c')).DIRECTORY_SEPARATOR);
         $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
         $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
-        $this->setTemplateDir(array(
-            'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme,$appName,'views')),
-            'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default',$appName,'views')),
-            'skully' => $skullyBasePath.implode(DIRECTORY_SEPARATOR, array('public','default','App','views'))
-        ));
+//        $this->app->getTheme()->setDirs(
+//            array(
+//                'main' => $basePath.implode(DIRECTORY_SEPARATOR, array('public',$theme,$appName)),
+//                'default' => $basePath.implode(DIRECTORY_SEPARATOR, array('public','default',$appName)),
+//                'skully' => $skullyBasePath.implode(DIRECTORY_SEPARATOR, array('public','default','App'))
+//            )
+//        );
+        $dirs = $this->app->getTheme()->getDirs();
+        foreach ($dirs as $key => $dir) {
+            if (strpos($key,'skully') != -1) {
+                $this->addTemplateDir($dir . '/Skully/views', $key);
+            }
+            $this->addTemplateDir($dir . '/' . $appName . '/views', $key);
+        }
         $plugins = array_merge($additionalPluginsDir, array(
             realpath(dirname(__FILE__).'/../../').'/App/smarty/plugins/',
             realpath(dirname(__FILE__).'/../../').'/Library/Smarty/libs/plugins/'

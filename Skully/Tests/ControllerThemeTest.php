@@ -20,84 +20,12 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
      */
     protected $app;
 
-    protected function skullyStructure()
-    {
-        $path = realpath(dirname(__FILE__).'/../../');
-        $path_r = explode(DIRECTORY_SEPARATOR, $path);
-        return array(
-            'vendor' => array(
-                'triodigital' => array(
-                    'skully' => array(
-                        'Skully' => array(
-                        ),
-                        'public' => array(
-                            'default' => array(
-                                'Skully' => array(
-                                    'views' => array(
-                                        'home' => array(
-                                            'index.tpl' => 'This is skully default home'
-                                        ),
-                                        'admin' => array(
-                                            'home' => array(
-                                                'index.tpl' => 'This is skully default admin home'
-                                            )
-                                        )
-                                    )
-                                ),
-                                'resources' => array(
-                                    'scss' => array(
-                                        'main.scss' => 'default main scss',
-                                        'page.scss' => 'default page scss'
-                                    )
-                                )
-                            ),
-                            'test' => array(
-                                'Skully' => array(
-                                    'views' => array(
-                                        'admin' => array(
-                                            'home' => array(
-                                                'index.tpl' => 'This is skully test admin home'
-                                            )
-                                        )
-                                    )
-                                ),
-                                'resources' => array(
-                                    'scss' => array(
-                                        'page.scss' => 'test page scss'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            )
-        );
-    }
-    protected function getSkullyApp()
-    {
-        $structure = $this->skullyStructure();
-        $this->root = vfsStream::setup('root', 777, $structure);
-        $config = new Config();
-        $config->setProtectedFromArray(array(
-            'basePath' => vfsStream::url('root'),
-            'baseUrl' => 'http://localhost/skully/',
-            'skullyBasePath' => vfsStream::url('root/vendor/triodigital/skully/'),
-            'urlRules' => array(
-                '' => 'home/index',
-                'admin' => 'admin/home/index'
-            ),
-            'theme' => 'test',
-            'languages' => array(
-                'en' => array('value' => 'english', 'code' => 'en_us')
-            )
-        ));
-        setRealpath();
-        return new Application($config);
-    }
-
     protected function appStructure()
     {
         $structure = array(
+            'anotherpublic' => array(
+                'file' => 'yes'
+            ),
             'public' => array(
                 'default' => array(
                     'App' => array(
@@ -145,13 +73,12 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
                 )
             )
         );
-        return array_merge($this->skullyStructure(), $structure);
+        return $structure;
     }
     protected function getApp()
     {
         $structure = $this->appStructure();
         $this->root = vfsStream::setup('root', 777, $structure);
-//        print_r(vfsStream::inspect(new vfsStreamStructureVisitor())->getStructure());
         $config = new Config();
         $config->setProtectedFromArray(array(
             'theme' => 'test',
@@ -161,7 +88,8 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
             'urlRules' => array(
                 '' => 'home/index',
                 'admin' => 'admin/home/index'
-            )
+            ),
+            'namespace' => 'App'
         ));
         setRealpath();
         return new \App\Application($config);
@@ -169,17 +97,23 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
 
     public function testSmartyTemplateDir()
     {
-        $app = $this->getSkullyApp();
+        $app = $this->getApp();
         $r = $app->getTemplateEngine()->getTemplateDir();
-        $this->assertEquals($app->config('basePath').'public/test/Skully/views/', $r['main']);
-        $this->assertEquals($app->config('basePath').'public/default/Skully/views/', $r['default']);
-        $this->assertEquals($app->getTheme()->getSkullyBasePath().'default/App/views/', $r['skully']);
+        $this->assertEquals($app->config('basePath').'public/test/App/views/', $r['main']);
+        $this->assertEquals($app->config('basePath').'public/default/App/views/', $r['default']);
         unsetRealpath();
+    }
+
+    public function testAdditionalTemplateDir()
+    {
+        $app = $this->getApp();
+        $app->getTheme()->setDir('vfs://root/anotherpublic', 'plugin');
+        $this->assertEquals('yes', file_get_contents($app->getTheme()->getPath('file')));
     }
 
     public function testSmartyPluginsDir()
     {
-        $app = $this->getSkullyApp();
+        $app = $this->getApp();
         $r = $app->getTemplateEngine()->getPluginsDir();
         $this->assertEquals(realpath(dirname(__FILE__).'/../').'/Library/Smarty/libs/plugins/', $r[count($r)-1]);
         $this->assertEquals(realpath(dirname(__FILE__).'/../').'/App/smarty/plugins/', $r[count($r)-2]);
@@ -194,25 +128,12 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
 
     public function testDirSetupCorrect()
     {
-        $this->getSkullyApp();
+        $this->getApp();
         $this->assertTrue(file_exists('vfs://root'));
         $this->assertTrue(file_exists('vfs://root/'));
 //        Does not work for mac
 //        $this->assertTrue(file_exists('/root'));
 //        $this->assertTrue(file_exists('/root/'));
-        unsetRealpath();
-    }
-
-    public function testLoadSkullyDefaultTheme()
-    {
-        $app = $this->getSkullyApp();
-        $this->assertEquals($app->getTheme()->getSkullyBasePath().'test/Skully/', $app->getTheme()->getAppPath(''));
-        $this->assertEquals($app->getTheme()->getSkullyBasePath().'test/', $app->getTheme()->getPath(''));
-        $this->assertEquals($app->getTheme()->getSkullyBasePath().'default/Skully/views/home/index.tpl', $app->getTheme()->getAppPath('views/home/index.tpl'));
-        $this->assertEquals($app->getTheme()->getSkullyBasePath().'test/Skully/views/admin/home/index.tpl', $app->getTheme()->getAppPath('views/admin/home/index.tpl'));
-        /**@var Controller $controller **/
-        $controller = new \Skully\App\Controllers\HomeController($app, 'index');
-        $this->assertEquals('This is skully default home', $controller->fetch('/home/index'));
         unsetRealpath();
     }
 

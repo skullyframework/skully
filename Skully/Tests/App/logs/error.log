@@ -323,3 +323,16 @@ Call to a member function setMeta() on a non-object
 #0  shutdownHandler()
 
 
+[Monday, 12-May-14 00:42:34 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/Views/ThemePluginTest.php | ln:104
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Skully\Core\Theme\Theme::getSkullyPublicBaseUrl()
+#0  shutdownHandler()
+
+
