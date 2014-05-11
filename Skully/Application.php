@@ -97,13 +97,6 @@ class Application implements ApplicationInterface {
     {
         $theme = $this->config('theme');
 
-        if (!$this->configIsEmpty('skullyBasePath')) {
-            $skullyBasePath = $this->config('skullyBasePath');
-        }
-        else {
-            $skullyBasePath = realpath(dirname(__FILE__).'/../') . DIRECTORY_SEPARATOR;
-        }
-
         $basePath = $this->config('basePath');
 
         $this->getTheme()->setDirs(
