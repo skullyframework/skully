@@ -47,12 +47,13 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
         $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
         $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
         $dirs = $this->app->getTheme()->getDirs();
+        $this->app->getLogger()->log("dirs:  " . print_r($dirs, true));
         foreach ($dirs as $key => $dir) {
             if ($key == 'main' || $key == 'default') {
                 $this->addTemplateDir($dir . '/' . $appName . '/views', $key);
             }
             else {
-                $this->addTemplateDir($dir, $key);
+                $this->addTemplateDir($dir . '/views', $key);
             }
         }
         $plugins = array_merge($additionalPluginsDir, array(

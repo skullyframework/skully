@@ -67,7 +67,7 @@ class Theme implements ThemeInterface {
 //            $this->publicBaseUrl = $baseUrl;
 //        }
 //        else {
-            $this->publicBaseUrl = $baseUrl . $publicDirectory . '/';
+        $this->publicBaseUrl = $baseUrl . $publicDirectory . '/';
 //        }
         $this->basePath = $basePath . $publicDirectory . DIRECTORY_SEPARATOR;
         $this->themeName = $themeName;
@@ -84,15 +84,21 @@ class Theme implements ThemeInterface {
      * Get absolute path of file inside theme directory.
      * Throw ThemeFileNotFoundException Exception when not found
      */
-    public function getPath($path = '', $hideErrors = false)
+    public function getPath($path = '', $hideErrors = false, $useAppName = false)
     {
         $dirs = $this->getDirs();
         $fullPaths = array();
         $fullPath = '';
         foreach($dirs as $key => $dir) {
-            $fullPaths[] = $dir . DIRECTORY_SEPARATOR . $path;
+            $thePath = $path;
+            if ($key == 'main' || $key == 'default') {
+                if ($useAppName) {
+                    $thePath = $this->appName . DIRECTORY_SEPARATOR . $path;
+                }
+            }
+            $fullPaths[] = $dir . DIRECTORY_SEPARATOR . $thePath;
             if (!file_exists($fullPath)) {
-                $fullPath = $dir . DIRECTORY_SEPARATOR . $path;
+                $fullPath = $dir . DIRECTORY_SEPARATOR . $thePath;
             }
         }
 
@@ -134,7 +140,7 @@ class Theme implements ThemeInterface {
      */
     public function getAppPath($path = '', $hideErrors = false)
     {
-        return $this->getPath($this->appName . DIRECTORY_SEPARATOR . $path, $hideErrors);
+        return $this->getPath($path, $hideErrors, true);
     }
 
     /**
