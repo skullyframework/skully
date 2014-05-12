@@ -279,7 +279,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
 
     public function removeProperty($property)
     {
-        unset($this->$property);
+        unset($this->bean->$property);
     }
 
     /**
