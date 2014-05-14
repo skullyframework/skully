@@ -261,21 +261,26 @@ class Application implements ApplicationInterface {
      */
     public function runControllerFromRawUrl($rawUrl, $additionalParams = array()) {
         try {
-            $routeAndParams = $this->getRouter()->rawUrlToRouteAndParams($rawUrl);
-            $controllerAndAction = $this->getRouter()->routeToControllerAndAction($routeAndParams['route']);
-            $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params']);
-            if (!empty($controller)) {
-                $controller->setParams($additionalParams);
-                $controller->setParams($_GET);
+            if (!$this->configIsEmpty('maintenance') && !$this->configIsEmpty('maintenanceIp') && $this->config('maintenance') == true && $_SERVER['REMOTE_ADDR'] != $this->config('maintenanceIp')) {
+                $this->redirect($this->config('maintenancePath'));
+            }
+            else {
+                $routeAndParams = $this->getRouter()->rawUrlToRouteAndParams($rawUrl);
+                $controllerAndAction = $this->getRouter()->routeToControllerAndAction($routeAndParams['route']);
+                $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params']);
+                if (!empty($controller)) {
+                    $controller->setParams($additionalParams);
+                    $controller->setParams($_GET);
 
-                $phpinputs = json_decode(file_get_contents( "php://input" ));
-                $controller->setParams($phpinputs);
+                    $phpinputs = json_decode(file_get_contents( "php://input" ));
+                    $controller->setParams($phpinputs);
 
-                $controller->setParams($_POST);
+                    $controller->setParams($_POST);
 
-                // Run controller's currentAction
-                $controller->runCurrentAction();
-                return $controller;
+                    // Run controller's currentAction
+                    $controller->runCurrentAction();
+                    return $controller;
+                }
             }
         }
         catch (PageNotFoundException $e) {
@@ -285,7 +290,12 @@ class Application implements ApplicationInterface {
                 $this->getLogger()->log('Resource not found: '.$rawUrl, 'warn');
             }
             else {
-                throw $e;
+                if (!$this->configIsEmpty('notFoundPath')) {
+                    $this->redirect($this->config('notFoundPath'));
+                }
+                else {
+                    throw $e;
+                }
             }
         }
         return null;
