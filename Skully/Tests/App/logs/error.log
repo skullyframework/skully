@@ -336,3 +336,16 @@ Call to undefined method Skully\Core\Theme\Theme::getSkullyPublicBaseUrl()
 #0  shutdownHandler()
 
 
+[Thursday, 15-May-14 19:32:24 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Commands/PackCommand.php | ln:36
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function execute() on a non-object
+#0  shutdownHandler()
+
+

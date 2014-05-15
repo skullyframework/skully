@@ -65,6 +65,9 @@ function setCommonConfig(Config &$config, $serverName = null) {
         // Set these to show the site under maintenance page
         'maintenance' => false,
         'maintenanceIp' => '139.195.146.93',
+        'maintenancePath' => 'home/maintenance',
+
+        'notFoundPath' => 'home/notFound',
 
         // Date formats used on the site
         "dateFormatDb" => "Y-m-d H:i:s",

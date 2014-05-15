@@ -20,7 +20,7 @@ class EncryptCommand extends Command {
         $this->setName("skully:encrypt")
             ->setDescription("Encrypt a passed string (decryptable with skully:decrypt command).")
             ->setDefinition(array(
-                new InputArgument('password', InputOption::VALUE_REQUIRED, 'String to encrypt', ''),
+                new InputArgument('password', InputArgument::REQUIRED, 'String to encrypt'),
                 new InputOption('salt', 's', InputOption::VALUE_OPTIONAL, 'Password salt. Set in application config (\'globalSalt\') or override here.', $this->app->config('globalSalt')),
                 new InputOption('adjust', 'a', InputOption::VALUE_OPTIONAL, 'Set adjustments value to obfuscate the password with. Defaults to ' . $adjustments, $adjustments),
                 new InputOption('modulus', 'm', InputOption::VALUE_OPTIONAL, 'Set modulus value to further obfuscate the password. Defaults to ' . $modulus, $modulus)

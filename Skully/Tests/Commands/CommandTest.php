@@ -40,7 +40,15 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
 
     public function testPackCommand()
     {
-
+        $app = __setupApp();
+        $console = new Console($app, true);
+        $packedPath = realpath(__DIR__.'/packerTest/packed.js');
+        if (file_exists($packedPath)) {
+            unlink($packedPath);
+        }
+        $this->assertFalse(file_exists($packedPath));
+        $console->run("skully:pack Commands/packerTest/packerTest.txt");
+        $this->assertTrue(file_exists($packedPath));
     }
 
     protected function deleteDir($dir) {

@@ -34,6 +34,7 @@ EOT
         unset($argv['command']);
         $argv = array_values($argv);
         array_unshift($argv, './ruckus.php');
+        $_SERVER["argv"] = $argv;
 
         $dbConfig = $this->app->config('dbConfig');
         $ruckusingConfig = array_merge(array(
@@ -48,7 +49,6 @@ EOT
                 )
             )
         ), $this->app->config('ruckusingConfig'));
-        $_SERVER["argv"] = $argv;
         $main = new \Ruckusing_FrameworkRunner($ruckusingConfig, $argv);
         echo $main->execute();
     }
