@@ -1056,3 +1056,14 @@ May 15 20:03:35 [info] SELECT version FROM schema_migrations
 May 15 20:03:35 [info] BEGIN
 May 15 20:03:35 [info] INSERT INTO schema_migrations (version) VALUES ('20140515130332')
 May 15 20:03:35 [info] COMMIT
+May 18 02:01:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 18 02:01:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 18 02:01:49 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+May 18 02:01:50 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+May 18 02:01:50 [info] SELECT version FROM schema_migrations
+May 18 02:01:50 [info] SELECT version FROM schema_migrations
+May 18 02:01:50 [info] SELECT version FROM schema_migrations
+May 18 02:01:50 [info] BEGIN
+May 18 02:01:50 [info] INSERT INTO schema_migrations (version) VALUES ('20140517190148')
+May 18 02:01:50 [info] COMMIT

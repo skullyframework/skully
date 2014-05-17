@@ -20,7 +20,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 "user"	    => "root",
                 "password"	=> "oisadj",
                 "port"		=> "3306",
-                "dbname"	=> "skully"
+                "dbname"	=> "skully",
+                'charset'   => 'utf8'
             ),
         );
     }
@@ -36,7 +37,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 "user"	    => "",
                 "password"	=> "",
                 "port"		=> "",
-                "dbname"	=> 'test.db'
+                "dbname"	=> 'test.db',
+                'charset'   => 'utf8'
             ),
         );
     }
@@ -52,7 +54,8 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 "user"	    => "",
                 "password"	=> "",
                 "port"		=> "3306",
-                "dbname"	=> ""
+                "dbname"	=> "",
+                'charset'   => 'utf8'
             )
         );
     }
