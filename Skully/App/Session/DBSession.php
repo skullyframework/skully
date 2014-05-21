@@ -38,22 +38,23 @@ class DBSession extends ApplicationAware implements SessionInterface{
         // todo: empty($this->sessionModel) is required to keep connection to db as low as possible,
         //       but somehow enabling this make session disappears on new page.
 //        if(empty($this->sessionModel)){
-            //echo "try to find with session id: ". session_id() . "\n";
-            $sessionBean = R::findOne('session', "session_id = ?", array(session_id()));
-            if(empty($sessionBean)){
-                //echo "create with session id: ". session_id()."\n";
-                $this->sessionModel = $this->app->createModel('session', array(
-                    "session_id" => session_id()
-                ));
-                R::store($this->sessionModel);
-                //echo "after creation, session model is".get_class($this->sessionModel)."\n";
-            }
-            else {
-                $this->sessionModel = $sessionBean->box();
-            }
+        //echo "try to find with session id: ". session_id() . "\n";
+        $sessionId = session_id();
+        $sessionBean = R::findOne('session', "session_id = ?", array($sessionId));
+        if(empty($sessionBean)){
+            //echo "create with session id: ". session_id()."\n";
+            $this->sessionModel = $this->app->createModel('session', array(
+                "session_id" => $sessionId
+            ));
+            R::store($this->sessionModel);
+            //echo "after creation, session model is".get_class($this->sessionModel)."\n";
+        }
+        else {
+            $this->sessionModel = $sessionBean->box();
+        }
 //        }
 //        else {
-            //echo "this sessionModel not empty, data is ".$this->sessionModel->get('data');
+        //echo "this sessionModel not empty, data is ".$this->sessionModel->get('data');
 //        }
 
         return $this->sessionModel;
