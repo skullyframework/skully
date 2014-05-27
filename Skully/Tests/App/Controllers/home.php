@@ -26,4 +26,13 @@ class HomeController extends \App\Controllers\BaseController {
         ));
         $this->render();
     }
+
+    public function testNoCacheFetch()
+    {
+        $this->app->getLogger()->log("test is " . $this->getParam('test'));
+        $this->app->getTemplateEngine()->assign('test', $this->getParam('test'));
+        $content = $this->fetch('_content');
+        $this->app->getTemplateEngine()->assign('content', $content);
+        $this->render('testNoCacheFetch');
+    }
 }

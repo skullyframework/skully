@@ -84,14 +84,29 @@ class Logger implements LoggerInterface{
                 }
             }
 
-            if (!empty($value['file'])) {
-                return $class.$value['type'].$value['function'].'('.implode(', ',$value['args']).') '.$value['file'].'('.$value['line'].')';
-            }
-            elseif (!empty($value['class'])) {
-                return $class.$value['type'].$value['function'].'('.implode(', ',$value['args']).')';
+            echo "a \n";
+            if (!isset($value['type'])) {
+                $type = '';
             }
             else {
-                return '(unknown file)' . $value['function'] . '('.implode(', ', $value['args']).')';
+                $type = $value['type'];
+            }
+            if (!isset($value['args'])) {
+                $args = array();
+            }
+            else {
+                $args = $value['args'];
+            }
+            echo "b \n";
+
+            if (!empty($value['file'])) {
+                return $class.$type.$value['function'].'('.implode(', ',$args).') '.$value['file'].'('.$value['line'].')';
+            }
+            elseif (!empty($value['class'])) {
+                return $class.$type.$value['function'].'('.implode(', ',$args).')';
+            }
+            else {
+                return '(unknown file)' . $value['function'] . '('.implode(', ', $args).')';
             }
         };
 

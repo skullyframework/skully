@@ -58,6 +58,13 @@ A Skully powered projects are normally structured as follows:
 
 ## Templating with Skully is Fun!
 
+### Smarty's noCache blocks Rules
+
+1. NoCache blocks MUST be put inside blocks.
+2. NoCache blocks MUST be used in both fetched and parent templates.
+
+See Skully/Tests/TemplateTest.tpl for usage information.
+
 ## Command Line Applications
 
 Coming Soon

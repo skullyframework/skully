@@ -43,14 +43,17 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
         }
         // create template object if necessary
         $_template = ($template instanceof $this->template_class)
-        ? $template
-        : $this->smarty->createTemplate($template, $cache_id, $compile_id, $parent, false);
+            ? $template
+            : $this->smarty->createTemplate($template, $cache_id, $compile_id, $parent, false);
         // if called by Smarty object make sure we use current caching status
         if ($this instanceof Smarty) {
             $_template->caching = $this->caching;
         }
+        $logger = new \Skully\Logging\Logger(BASE_PATH);
+        $logger->log("1 \n");
         // merge all variable scopes into template
         if ($merge_tpl_vars) {
+            $logger->log("2 \n");
             // save local variables
             $save_tpl_vars = $_template->tpl_vars;
             $save_config_vars = $_template->config_vars;
@@ -64,6 +67,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
             $tpl_vars = $parent_ptr->tpl_vars;
             $config_vars = $parent_ptr->config_vars;
             while ($parent_ptr = next($ptr_array)) {
+                $logger->log("3 \n");
                 if (!empty($parent_ptr->tpl_vars)) {
                     $tpl_vars = array_merge($tpl_vars, $parent_ptr->tpl_vars);
                 }
@@ -72,26 +76,34 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                 }
             }
             if (!empty(Smarty::$global_tpl_vars)) {
+                $logger->log("4 \n");
                 $tpl_vars = array_merge(Smarty::$global_tpl_vars, $tpl_vars);
+                $logger->log("4-a \n");
             }
             $_template->tpl_vars = $tpl_vars;
             $_template->config_vars = $config_vars;
         }
         // dummy local smarty variable
         if (!isset($_template->tpl_vars['smarty'])) {
+            $logger->log("4-b \n");
             $_template->tpl_vars['smarty'] = new Smarty_Variable;
+            $logger->log("4-c \n");
         }
         if (isset($this->smarty->error_reporting)) {
+            $logger->log("4-d \n");
             $_smarty_old_error_level = error_reporting($this->smarty->error_reporting);
+            $logger->log("4-e \n");
         }
         // check URL debugging control
         if (!$this->smarty->debugging && $this->smarty->debugging_ctrl == 'URL') {
+            $logger->log("5 \n");
             if (isset($_SERVER['QUERY_STRING'])) {
                 $_query_string = $_SERVER['QUERY_STRING'];
             } else {
                 $_query_string = '';
             }
             if (false !== strpos($_query_string, $this->smarty->smarty_debug_id)) {
+                $logger->log("6 \n");
                 if (false !== strpos($_query_string, $this->smarty->smarty_debug_id . '=on')) {
                     // enable debugging for this browser session
                     setcookie('SMARTY_DEBUG', true);
@@ -105,6 +117,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                     $this->smarty->debugging = true;
                 }
             } else {
+                $logger->log("7 \n");
                 if (isset($_COOKIE['SMARTY_DEBUG'])) {
                     $this->smarty->debugging = true;
                 }
@@ -119,6 +132,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
         }
         // checks if template exists
         if (!$_template->source->exists) {
+            $logger->log("8 \n");
             if ($_template->parent instanceof Smarty_Internal_Template) {
                 $parent_resource = " in '{$_template->parent->template_resource}'";
             } else {
@@ -126,12 +140,16 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
             }
             throw new SmartyException("Unable to load template {$_template->source->type} '{$_template->source->name}'{$parent_resource}");
         }
+        $logger->log("8-a \n");
         // read from cache or render
         if (!($_template->caching == Smarty::CACHING_LIFETIME_CURRENT || $_template->caching == Smarty::CACHING_LIFETIME_SAVED) || !$_template->cached->valid) {
+            $logger->log("9 \n");
             // render template (not loaded and not in cache)
             if (!$_template->source->uncompiled) {
+                $logger->log("10 \n");
                 $_smarty_tpl = $_template;
                 if ($_template->source->recompiled) {
+                    $logger->log("11 \n");
                     $code = $_template->compiler->compileTemplate($_template);
                     if ($this->smarty->debugging) {
                         Smarty_Internal_Debug::start_render($_template);
@@ -145,7 +163,9 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                         throw $e;
                     }
                 } else {
+                    $logger->log("12 \n");
                     if (!$_template->compiled->exists || ($_template->smarty->force_compile && !$_template->compiled->isCompiled)) {
+                        $logger->log("13 \n");
                         $_template->compileTemplateSource();
                         $code = file_get_contents($_template->compiled->filepath);
                         eval("?>" . $code);
@@ -157,6 +177,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                         Smarty_Internal_Debug::start_render($_template);
                     }
                     if (!$_template->compiled->loaded) {
+                        $logger->log("14 \n");
                         include($_template->compiled->filepath);
                         if ($_template->mustCompile) {
                             // recompile and load again
@@ -168,11 +189,20 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                         }
                         $_template->compiled->loaded = true;
                     } else {
+                        $logger->log("15 \n");
                         $_template->decodeProperties($_template->compiled->_properties, false);
                     }
                     try {
+                        $logger->log("16 \n");
                         ob_start();
                         if (empty($_template->properties['unifunc']) || !is_callable($_template->properties['unifunc'])) {
+                            $logger->log("for template " . $_template->template_resource);
+                            if (empty($_template->properties['unifunc'])) {
+                                $logger->log('method unifunc is empty');
+                            }
+                            else {
+                                $logger->log("method not callable: " . $_template->properties['unifunc']);
+                            }
                             throw new SmartyException("Invalid compiled template for '{$_template->template_resource}'");
                         }
                         array_unshift($_template->_capture_stack,array());
@@ -186,12 +216,15 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                         }
                         array_shift($_template->_capture_stack);
                     } catch (Exception $e) {
+                        $logger->log("17 \n");
                         ob_get_clean();
                         throw $e;
                     }
                 }
             } else {
+                $logger->log("18 \n");
                 if ($_template->source->uncompiled) {
+                    $logger->log("19 \n");
                     if ($this->smarty->debugging) {
                         Smarty_Internal_Debug::start_render($_template);
                     }
@@ -207,6 +240,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                 }
             }
             $_output = ob_get_clean();
+            $logger->log("20 - output is $_output \n");
             if (!$_template->source->recompiled && empty($_template->properties['file_dependency'][$_template->source->uid])) {
                 $_template->properties['file_dependency'][$_template->source->uid] = array($_template->source->filepath, $_template->source->timestamp, $_template->source->type);
             }
@@ -301,44 +335,50 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
         if (isset($this->error_reporting)) {
             error_reporting($_smarty_old_error_level);
         }
+        $logger->log("a \n");
         // display or fetch
         if ($display) {
+            $logger->log("b \n");
             if ($this->caching && $this->cache_modified_check) {
+                $logger->log("c \n");
                 $_isCached = $_template->isCached() && !$_template->has_nocache_code;
                 $_last_modified_date = @substr($_SERVER['HTTP_IF_MODIFIED_SINCE'], 0, strpos($_SERVER['HTTP_IF_MODIFIED_SINCE'], 'GMT') + 3);
                 if ($_isCached && $_template->cached->timestamp <= strtotime($_last_modified_date)) {
+                    $logger->log("d \n");
                     switch (PHP_SAPI) {
                         case 'cgi':         // php-cgi < 5.3
                         case 'cgi-fcgi':    // php-cgi >= 5.3
                         case 'fpm-fcgi':    // php-fpm >= 5.3.3
-                        header('Status: 304 Not Modified');
-                        break;
+                            header('Status: 304 Not Modified');
+                            break;
 
                         case 'cli':
-                        if (/* ^phpunit */!empty($_SERVER['SMARTY_PHPUNIT_DISABLE_HEADERS'])/* phpunit$ */) {
-                            $_SERVER['SMARTY_PHPUNIT_HEADERS'][] = '304 Not Modified';
-                        }
-                        break;
+                            if (/* ^phpunit */!empty($_SERVER['SMARTY_PHPUNIT_DISABLE_HEADERS'])/* phpunit$ */) {
+                                $_SERVER['SMARTY_PHPUNIT_HEADERS'][] = '304 Not Modified';
+                            }
+                            break;
 
                         default:
-                        header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
-                        break;
+                            header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
+                            break;
                     }
                 } else {
+                    $logger->log("e \n");
                     switch (PHP_SAPI) {
                         case 'cli':
-                        if (/* ^phpunit */!empty($_SERVER['SMARTY_PHPUNIT_DISABLE_HEADERS'])/* phpunit$ */) {
-                            $_SERVER['SMARTY_PHPUNIT_HEADERS'][] = 'Last-Modified: ' . gmdate('D, d M Y H:i:s', $_template->cached->timestamp) . ' GMT';
-                        }
-                        break;
+                            if (/* ^phpunit */!empty($_SERVER['SMARTY_PHPUNIT_DISABLE_HEADERS'])/* phpunit$ */) {
+                                $_SERVER['SMARTY_PHPUNIT_HEADERS'][] = 'Last-Modified: ' . gmdate('D, d M Y H:i:s', $_template->cached->timestamp) . ' GMT';
+                            }
+                            break;
 
                         default:
-                        header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $_template->cached->timestamp) . ' GMT');
-                        break;
+                            header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $_template->cached->timestamp) . ' GMT');
+                            break;
                     }
                     echo $_output;
                 }
             } else {
+                $logger->log("f \n");
                 echo $_output;
             }
             // debug output
@@ -350,7 +390,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
                 $_template->tpl_vars = $save_tpl_vars;
                 $_template->config_vars =  $save_config_vars;
             }
-
+            $logger->log("g \n");
             return;
         } else {
             if ($merge_tpl_vars) {
@@ -542,7 +582,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
         }
         // register the object
         $this->smarty->registered_objects[$object_name] =
-        array($object_impl, (array) $allowed, (boolean) $smarty_args, (array) $block_methods);
+            array($object_impl, (array) $allowed, (boolean) $smarty_args, (array) $block_methods);
 
         return $this;
     }
@@ -696,7 +736,7 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
     {
         if (is_array($function_name)) {
             $_class_name = (is_object($function_name[0]) ?
-            get_class($function_name[0]) : $function_name[0]);
+                get_class($function_name[0]) : $function_name[0]);
 
             return $_class_name . '_' . $function_name[1];
         } else {
@@ -798,14 +838,14 @@ abstract class Smarty_Internal_TemplateBase extends Smarty_Internal_Data
             }
             if ($_is_this) {
                 if ($first3 == 'get')
-                return $this->$property_name;
+                    return $this->$property_name;
                 else
-                return $this->$property_name = $args[0];
+                    return $this->$property_name = $args[0];
             } elseif ($_is_this === false) {
                 if ($first3 == 'get')
-                return $this->smarty->$property_name;
+                    return $this->smarty->$property_name;
                 else
-                return $this->smarty->$property_name = $args[0];
+                    return $this->smarty->$property_name = $args[0];
             } else {
                 throw new SmartyException("property '$property_name' does not exist.");
 

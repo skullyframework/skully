@@ -169,6 +169,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
             if (!isset($compiler->smarty->merged_templates_func[$tpl_name][$uid])) {
                 $tpl = new $compiler->smarty->template_class ($tpl_name, $compiler->smarty, $compiler->template, $compiler->template->cache_id, $compiler->template->compile_id);
                 // save unique function name
+                echo "while compiling, compiled code to be put inside unifunc: " . 'content_' . str_replace(array('.',','), '_', uniqid('', true));
                 $compiler->smarty->merged_templates_func[$tpl_name][$uid]['func'] = $tpl->properties['unifunc'] = 'content_' . str_replace(array('.',','), '_', uniqid('', true));
                 // use current nocache hash for inlined code
                 $compiler->smarty->merged_templates_func[$tpl_name][$uid]['nocache_hash'] = $tpl->properties['nocache_hash'] = $compiler->template->properties['nocache_hash'];
@@ -200,6 +201,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
                         $compiled_code = str_replace("{$tpl->properties['nocache_hash']}", $compiler->template->properties['nocache_hash'], $compiled_code);
                         $compiler->template->has_nocache_code = true;
                     }
+                    echo "compiled code to be put inside unifunc: $compiled_code";
                     $compiler->merged_templates[$tpl->properties['unifunc']] = $compiled_code;
                     $has_compiled_template = true;
                     unset ($tpl);

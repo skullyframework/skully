@@ -1,0 +1,1 @@
+{extends file="test/_mainWrapper.tpl"}{block name=content}{nocache}{$content}{/nocache}{/block}

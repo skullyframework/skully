@@ -63,7 +63,7 @@ class ControllerFactory {
             }
             else {
                 try {
-                    $completeViewPath = $app->getTheme()->getAppPath('views'.DIRECTORY_SEPARATOR.$path.DIRECTORY_SEPARATOR.$viewPath.'.tpl');
+                    $completeViewPath = $path.DIRECTORY_SEPARATOR.$viewPath.'.tpl';
                     $app->getTemplateEngine()->display($completeViewPath);
                 }
                 catch (ThemeFileNotFoundException $e) {

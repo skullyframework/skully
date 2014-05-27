@@ -115,8 +115,9 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $r = $app->getTemplateEngine()->getPluginsDir();
+        print_r($r);
         $this->assertEquals(realpath(dirname(__FILE__).'/../').'/Library/Smarty/libs/plugins/', $r[count($r)-1]);
-        $this->assertEquals(realpath(dirname(__FILE__).'/../').'/App/smarty/plugins/', $r[count($r)-2]);
+        $this->assertEquals(realpath(dirname(__FILE__).'/../../').'/App/smarty/plugins/', $r[count($r)-2]);
         unsetRealpath();
     }
 

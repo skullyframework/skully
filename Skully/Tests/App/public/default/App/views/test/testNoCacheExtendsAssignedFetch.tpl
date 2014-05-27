@@ -1,0 +1,1 @@
+{extends file="test/_assignedFetchWrapper.tpl"}{block name=content}{nocache}{$content}{/nocache}{/block}

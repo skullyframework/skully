@@ -45,19 +45,19 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
         $this->caching = $caching;
         $this->smarty->setCompileDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'templates_c')).DIRECTORY_SEPARATOR);
         $this->smarty->setConfigDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'configs')).DIRECTORY_SEPARATOR);
-        $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')).DIRECTORY_SEPARATOR);
+        $this->smarty->setCacheDir($basePath . implode(DIRECTORY_SEPARATOR, array($appName, 'smarty', 'cache')));
         $dirs = $this->app->getTheme()->getDirs();
         foreach ($dirs as $key => $dir) {
             if ($key == 'main' || $key == 'default') {
-                $this->addTemplateDir($dir . '/' . $appName . '/views', $key);
+                $this->addTemplateDir($dir . DIRECTORY_SEPARATOR . $appName . DIRECTORY_SEPARATOR . 'views', $key);
             }
             else {
-                $this->addTemplateDir($dir . '/views', $key);
+                $this->addTemplateDir($dir . DIRECTORY_SEPARATOR . 'views', $key);
             }
         }
         $plugins = array_merge($additionalPluginsDir, array(
-            realpath(dirname(__FILE__).'/../../').'/App/smarty/plugins/',
-            realpath(dirname(__FILE__).'/../../').'/Library/Smarty/libs/plugins/'
+            $basePath . $appName . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR,
+            realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'Library'.DIRECTORY_SEPARATOR.'Smarty'.DIRECTORY_SEPARATOR.'libs'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR
         ));
         $this->setPluginsDir($plugins);
     }
@@ -125,6 +125,7 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function display($template = null, $cache_id = null, $compile_id = null, $parent = null)
     {
         try {
+            $this->app->getLogger()->log("template to display is $template");
             $this->smarty->display($template, $cache_id, $compile_id, $parent);
         }
         catch (\Exception $e) {
@@ -135,6 +136,13 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function clearAllCache()
     {
         $this->smarty->clearAllCache();
+    }
+
+    public function clearCache($template_name, $cache_id = null, $compile_id = null, $exp_time = null, $type = null)
+    {
+        $template_name .= '.tpl';
+        $this->app->getLogger()->log("delete template $template_name");
+        $this->smarty->clearCache($template_name, $cache_id, $compile_id, $exp_time, $type);
     }
 
     /**
@@ -168,7 +176,6 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
      */
     public function assign($tpl_var, $value = null, $nocache = false)
     {
-//        $this->smarty->clearAssign($tpl_var);
         return $this->smarty->assign($tpl_var, $value, $nocache);
     }
 

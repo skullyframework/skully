@@ -246,7 +246,7 @@ class Controller extends ApplicationAware implements ControllerInterface {
         }
         else {
             if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
-                $completePath = $this->app->getTheme()->getAppPath('views'.$viewPath.'.tpl');
+                $completePath = substr($viewPath, 1).'.tpl';
             }
             else {
                 $completePath = $this->getActionTemplate($viewPath);
@@ -267,12 +267,13 @@ class Controller extends ApplicationAware implements ControllerInterface {
         }
         else {
             if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
-                $completePath = $this->app->getTheme()->getAppPath('views'.$viewPath.'.tpl');
+                $completePath = substr($viewPath, 1).'.tpl';
             }
             else {
                 $completePath = $this->getActionTemplate($viewPath);
             }
         }
+        $this->app->getLogger()->log("fetching $completePath");
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
 
@@ -295,7 +296,7 @@ class Controller extends ApplicationAware implements ControllerInterface {
     protected function getActionTemplate($viewPath)
     {
         $path = $this->getControllerPath();
-        return $this->app->getTheme()->getAppPath('views'.DIRECTORY_SEPARATOR.$path.DIRECTORY_SEPARATOR.$viewPath.'.tpl');
+        return $path.DIRECTORY_SEPARATOR.$viewPath.'.tpl';
     }
     /**
      * @param string $message Message to display.

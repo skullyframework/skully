@@ -1,5 +1,5 @@
 <?php
-
+define('BASE_PATH', __DIR__. DIRECTORY_SEPARATOR);
 
 $_SERVER['SERVER_NAME'] = 'test';
 
