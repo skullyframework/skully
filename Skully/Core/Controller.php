@@ -257,9 +257,11 @@ class Controller extends ApplicationAware implements ControllerInterface {
     /**
      * @param $viewPath
      * @return string
+     * @param array $assignParams
      */
-    public function fetch($viewPath = null)
+    public function fetch($viewPath = null, $assignParams = array())
     {
+        $this->app->getTemplateEngine()->assign($assignParams);
         if (empty($viewPath)) {
             $viewPath = $this->getCurrentAction();
             $completePath = $this->getActionTemplate($viewPath);

@@ -108,9 +108,10 @@ interface ControllerInterface extends ApplicationAwareInterface {
     /**
      * Fetch a path and return it as string.
      * @param $path
+     * @param array $assignParams
      * @return mixed
      */
-    public function fetch($path = null);
+    public function fetch($path = null, $assignParams = array());
 
     /**
      * SubscribeController will return 'subscribe'
