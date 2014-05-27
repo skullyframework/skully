@@ -335,7 +335,6 @@ class Smarty_Internal_Template extends Smarty_Internal_TemplateBase
      */
     public function createTemplateCodeFrame($content = '', $cache = false)
     {
-        $logger = new Skully\Logging\Logger(BASE_PATH);
         $plugins_string = '';
         // include code for plugins
         if (!$cache) {
