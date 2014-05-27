@@ -16,6 +16,11 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $path = realpath(dirname(__FILE__).'/../../../');
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
         return array(
+            'App' => array(
+                'smarty' => array(
+                    'templates_c' => array()
+                )
+            ),
             'logs' => array(
                 'error.log' => ''
             ),

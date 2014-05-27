@@ -84,7 +84,6 @@ class Logger implements LoggerInterface{
                 }
             }
 
-            echo "a \n";
             if (!isset($value['type'])) {
                 $type = '';
             }
@@ -97,7 +96,6 @@ class Logger implements LoggerInterface{
             else {
                 $args = $value['args'];
             }
-            echo "b \n";
 
             if (!empty($value['file'])) {
                 return $class.$type.$value['function'].'('.implode(', ',$args).') '.$value['file'].'('.$value['line'].')';

@@ -1,25 +1,25 @@
-<?php /*%%SmartyHeaderCode:171925183453846d118dcb24-11108408%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:320576996538484320f7921-08203691%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7a34034b800eda8c4a3548a8dfc305e7d1975e89' => 
     array (
       0 => '/media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/test/testNoCacheExtendsAssignedFetch.tpl',
-      1 => 1401187601,
+      1 => 1401193522,
       2 => 'file',
     ),
     '1cb620af214d4ae3943e6dba32f8959452eda4f1' => 
     array (
       0 => '/media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/test/_assignedFetchWrapper.tpl',
-      1 => 1401187601,
+      1 => 1401193522,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '171925183453846d118dcb24-11108408',
+  'nocache_hash' => '320576996538484320f7921-08203691',
   'has_nocache_code' => true,
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_53846d1190d5b6_69408791',
+  'unifunc' => 'content_53848432131b83_88834380',
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53846d1190d5b6_69408791')) {function content_53846d1190d5b6_69408791($_smarty_tpl) {?>Content is <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+<?php if ($_valid && !is_callable('content_53848432131b83_88834380')) {function content_53848432131b83_88834380($_smarty_tpl) {?>Content is <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
 <?php }} ?>

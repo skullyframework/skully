@@ -286,4 +286,19 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $output = ob_get_clean();
         $this->assertEquals('Content is halo2', $output);
     }
+
+    public function testThemeUrlPlugin()
+    {
+        $app = $this->getApp();
+        $appTestDir = __DIR__.'/App/public/default/App/views/test';
+        if (!file_exists($appTestDir)) {
+            mkdir($appTestDir);
+        }
+
+        file_put_contents($appTestDir.'/themeUrl.tpl', '{theme_url value="test"}');
+
+        $output = $app->getTemplateEngine()->fetch('test/themeUrl.tpl');
+
+        $this->assertEquals('http://localhost/skully/public/default/?value=test', $output);
+    }
 }

@@ -4,7 +4,7 @@
 namespace Skully\Core;
 
 use Skully\ApplicationInterface;
-use Skully\Exceptions\ThemeFileNotFoundException;
+use Skully\Exceptions\InvalidTemplateException;
 use Skully\Exceptions\PageNotFoundException;
 
 /**
@@ -66,7 +66,7 @@ class ControllerFactory {
                     $completeViewPath = $path.DIRECTORY_SEPARATOR.$viewPath.'.tpl';
                     $app->getTemplateEngine()->display($completeViewPath);
                 }
-                catch (ThemeFileNotFoundException $e) {
+                catch (InvalidTemplateException $e) {
                     $url = $app->getRouter()->getUrl($path."/$viewPath", $additionalParams);
                     PageNotFoundException::alert($path."/$viewPath", $url);
                 }

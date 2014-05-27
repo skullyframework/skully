@@ -56,7 +56,7 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
             }
         }
         $plugins = array_merge($additionalPluginsDir, array(
-            $basePath . $appName . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR,
+            realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR. 'App' . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR,
             realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'Library'.DIRECTORY_SEPARATOR.'Smarty'.DIRECTORY_SEPARATOR.'libs'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR
         ));
         $this->setPluginsDir($plugins);
@@ -125,7 +125,6 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function display($template = null, $cache_id = null, $compile_id = null, $parent = null)
     {
         try {
-            $this->app->getLogger()->log("template to display is $template");
             $this->smarty->display($template, $cache_id, $compile_id, $parent);
         }
         catch (\Exception $e) {
@@ -141,7 +140,6 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function clearCache($template_name, $cache_id = null, $compile_id = null, $exp_time = null, $type = null)
     {
         $template_name .= '.tpl';
-        $this->app->getLogger()->log("delete template $template_name");
         $this->smarty->clearCache($template_name, $cache_id, $compile_id, $exp_time, $type);
     }
 

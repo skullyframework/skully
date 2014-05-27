@@ -8,9 +8,8 @@
 namespace Skully\Core;
 
 use Skully\ApplicationInterface;
-use Skully\Core\Templating\TemplateEngineAdapterInterface;
+use Skully\Exceptions\InvalidTemplateException;
 use Skully\Exceptions\PageNotFoundException;
-use Skully\Exceptions\ThemeFileNotFoundException;
 
 /**
  * Class Controller
@@ -118,7 +117,7 @@ class Controller extends ApplicationAware implements ControllerInterface {
                     try {
                         $this->render($action);
                     }
-                    catch (ThemeFileNotFoundException $e) {
+                    catch (InvalidTemplateException $e) {
                         $url = $this->app->getRouter()->getUrl($this->getControllerPath()."/$action", $this->getParams());
                         PageNotFoundException::alert($this->getControllerPath()."/$action", $url);
                     }
@@ -273,7 +272,6 @@ class Controller extends ApplicationAware implements ControllerInterface {
                 $completePath = $this->getActionTemplate($viewPath);
             }
         }
-        $this->app->getLogger()->log("fetching $completePath");
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
 

@@ -23,6 +23,11 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     protected function appStructure()
     {
         $structure = array(
+            'App' => array(
+                'smarty' => array(
+                    'templates_c' => array()
+                )
+            ),
             'anotherpublic' => array(
                 'file' => 'yes'
             ),
@@ -115,9 +120,9 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $r = $app->getTemplateEngine()->getPluginsDir();
-        print_r($r);
+        echo "plugin dirs: " . print_r($r, true);
         $this->assertEquals(realpath(dirname(__FILE__).'/../').'/Library/Smarty/libs/plugins/', $r[count($r)-1]);
-        $this->assertEquals(realpath(dirname(__FILE__).'/../../').'/App/smarty/plugins/', $r[count($r)-2]);
+        $this->assertEquals(realpath(dirname(__FILE__).'/../').'/App/smarty/plugins/', $r[count($r)-2]);
         unsetRealpath();
     }
 

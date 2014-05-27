@@ -1,3281 +1,3502 @@
-[Tuesday, 27-May-14 17:20:48 WIB error] test is halo
-[Tuesday, 27-May-14 17:20:48 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:20:48 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:20:48 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] b 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] f 
+[Tuesday, 27-May-14 18:56:08 WIB error] b 
 
-[Tuesday, 27-May-14 17:20:48 WIB error] g 
+[Tuesday, 27-May-14 18:56:08 WIB error] f 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] test is halo2
-[Tuesday, 27-May-14 17:20:49 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] g 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:20:49 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:20:49 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is This is app test admin home 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:20:49 WIB error] for template /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:20:49 WIB error] method unifunc is empty
-[Tuesday, 27-May-14 17:20:49 WIB error] 17 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:22:13 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:22:13 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] b 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] f 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] g 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 20 - output is Content is /*%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/ 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] f 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] g 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:22:13 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:22:13 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:22:13 WIB error] for template /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:22:13 WIB error] method unifunc is empty
-[Tuesday, 27-May-14 17:22:13 WIB error] 17 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:32 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:32 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] b 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] f 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] g 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 20 - output is Content is /*%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/ 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] f 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] g 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] template to display is home/index.tpl
-[Tuesday, 27-May-14 17:24:32 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] f 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:24:32 WIB error] g 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] displaying /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:56 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] b 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] f 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] g 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] 1 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:08 WIB error] 2 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:08 WIB error] 3 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 20 - output is Content is /*%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/ 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:08 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:08 WIB error] 9 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:08 WIB error] 10 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] template to display is /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:08 WIB error] 12 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:08 WIB error] 13 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:08 WIB error] 15 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:08 WIB error] 16 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] 20 - output is Jay is awesome 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:08 WIB error] a 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:08 WIB error] b 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:08 WIB error] f 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:08 WIB error] g 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:09 WIB error] 1 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:09 WIB error] 2 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:09 WIB error] 3 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4 
 
-[Tuesday, 27-May-14 17:24:56 WIB error] for template /media/jay/Data/apache/skully/Skully/Tests/App/public/default/App/views/home/index.tpl
-[Tuesday, 27-May-14 17:24:56 WIB error] method unifunc is empty
-[Tuesday, 27-May-14 17:24:56 WIB error] 17 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] template to display is home/index.tpl
-[Tuesday, 27-May-14 17:25:57 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] 9 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 10 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 12 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] 13 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 15 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 9 
+[Tuesday, 27-May-14 18:56:09 WIB error] 16 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 10 
+[Tuesday, 27-May-14 18:56:09 WIB error] 20 - output is app default en 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 12 
+[Tuesday, 27-May-14 18:56:09 WIB error] a 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 14 
+[Tuesday, 27-May-14 18:56:09 WIB error] b 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 16 
+[Tuesday, 27-May-14 18:56:09 WIB error] f 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 20 - output is Content is /*%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:197327959353844bc05c7bc3-92166374%%*/ 
+[Tuesday, 27-May-14 18:56:09 WIB error] g 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 1 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 2 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] f 
+[Tuesday, 27-May-14 18:56:09 WIB error] 3 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] g 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] template to display is home/index.tpl
-[Tuesday, 27-May-14 17:25:57 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 9 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 10 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] 12 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 13 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 15 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 16 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] f 
+[Tuesday, 27-May-14 18:56:09 WIB error] 20 - output is http://localhost/skully/public/test/resources/css/test.css 
 
-[Tuesday, 27-May-14 17:25:57 WIB error] g 
+[Tuesday, 27-May-14 18:56:09 WIB error] a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] test is halo
-[Tuesday, 27-May-14 17:26:20 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:26:20 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] f 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] g 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] 1 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 2 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 3 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 9 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 10 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 12 
+[Tuesday, 27-May-14 18:56:09 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 14 
+[Tuesday, 27-May-14 18:56:09 WIB error] 9 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 16 
+[Tuesday, 27-May-14 18:56:09 WIB error] 10 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 18:56:09 WIB error] 12 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 13 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:26:20 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 15 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 16 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] 20 - output is http://localhost/skully/public/default/resources/css/default.css 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] f 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] g 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 1 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 9 
+[Tuesday, 27-May-14 18:56:09 WIB error] 2 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 10 
+[Tuesday, 27-May-14 18:56:09 WIB error] 3 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 12 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 14 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 16 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 9 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] f 
+[Tuesday, 27-May-14 18:56:09 WIB error] 10 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] g 
+[Tuesday, 27-May-14 18:56:09 WIB error] 12 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] test is halo2
-[Tuesday, 27-May-14 17:26:20 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:26:20 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 13 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 15 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] 16 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] 20 - output is http://localhost/skully/public/images/test.jpg 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] f 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] g 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 1 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:26:20 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 2 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 3 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:09 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 9 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] a 
+[Tuesday, 27-May-14 18:56:09 WIB error] 10 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] b 
+[Tuesday, 27-May-14 18:56:09 WIB error] 12 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] f 
+[Tuesday, 27-May-14 18:56:09 WIB error] 13 
 
-[Tuesday, 27-May-14 17:26:20 WIB error] g 
+[Tuesday, 27-May-14 18:56:09 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:09 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:09 WIB error] 20 - output is http://localhost/skully/public/images/test.jpg?arg=arg1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:09 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:09 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:09 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:09 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 13 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 15 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 20 - output is /*%%SmartyNocache:165355798053846902712a99-59548116%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:165355798053846902712a99-59548116%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is halo 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] test is halo
-[Tuesday, 27-May-14 17:29:22 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] test is halo2
-[Tuesday, 27-May-14 17:29:22 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is halo2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:29:22 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:22 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:34675932453847d5c6aa8e2-71806048%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:34675932453847d5c6aa8e2-71806048%%*/ 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 20 - output is /*%%SmartyNocache:165355798053846902712a99-59548116%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:165355798053846902712a99-59548116%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:29 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:168328680453847d5c7392e3-15010309%%*/<?php echo $_smarty_tpl->getSubTemplate ("test/_included.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+/*/%%SmartyNocache:168328680453847d5c7392e3-15010309%%*/ 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:51 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 20 - output is /*%%SmartyNocache:165355798053846902712a99-59548116%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:165355798053846902712a99-59548116%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is halo 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:52 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 20 - output is /*%%SmartyNocache:165355798053846902712a99-59548116%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:165355798053846902712a99-59548116%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is halo2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] test is halo
-[Tuesday, 27-May-14 17:29:56 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is Content is /*%%SmartyNocache:75037852153847d5c7ebf82-88502100%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:75037852153847d5c7ebf82-88502100%%*/ 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] test is halo2
-[Tuesday, 27-May-14 17:29:56 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:29:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is Content is /*%%SmartyNocache:209915683053847d5c8c4e70-48705609%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:209915683053847d5c8c4e70-48705609%%*/ 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:29:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 13 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 15 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:5243109853847d5c91c5b8-70076060%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:5243109853847d5c91c5b8-70076060%%*/ 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 13 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 15 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 20 - output is /*%%SmartyNocache:193299404753846a5087e318-77819237%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:193299404753846a5087e318-77819237%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:166332837353847d5c93b638-29997603%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:166332837353847d5c93b638-29997603%%*/ 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] test is halo
-[Tuesday, 27-May-14 17:34:56 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:108044615853847d5c959368-42464133%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:108044615853847d5c959368-42464133%%*/ 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] test is halo2
-[Tuesday, 27-May-14 17:34:56 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:34:56 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is Content is /*%%SmartyNocache:121283168353847d5c9a8d96-92673294%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:121283168353847d5c9a8d96-92673294%%*/ 
 
-[Tuesday, 27-May-14 17:34:56 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:35:08 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] test is halo
+[Tuesday, 27-May-14 18:56:12 WIB error] fetching home/_content.tpl
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 20 - output is /*%%SmartyNocache:193299404753846a5087e318-77819237%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:193299404753846a5087e318-77819237%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is /*%%SmartyNocache:192429157353847d5ca3a722-59687533%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:192429157353847d5ca3a722-59687533%%*/ 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:35:08 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:35:08 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is Content is /*%%SmartyNocache:105470750053847d5ca6f298-76488212%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:105470750053847d5ca6f298-76488212%%*/ 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] test is halo2
+[Tuesday, 27-May-14 18:56:12 WIB error] fetching home/_content.tpl
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:36:23 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 9 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 10 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 12 
+[Tuesday, 27-May-14 18:56:12 WIB error] b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 14 
+[Tuesday, 27-May-14 18:56:12 WIB error] f 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 16 
+[Tuesday, 27-May-14 18:56:12 WIB error] g 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 20 - output is /*%%SmartyNocache:193299404753846a5087e318-77819237%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:193299404753846a5087e318-77819237%%*/ 
+[Tuesday, 27-May-14 18:56:12 WIB error] 1 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 2 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 3 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] f 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] g 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4 
+[Tuesday, 27-May-14 18:56:12 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 9 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-b 
+[Tuesday, 27-May-14 18:56:12 WIB error] 10 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-c 
+[Tuesday, 27-May-14 18:56:12 WIB error] 12 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 8-a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 13 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] a 
+[Tuesday, 27-May-14 18:56:12 WIB error] 15 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:36:23 WIB error] 1 
+[Tuesday, 27-May-14 18:56:12 WIB error] 16 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 2 
+[Tuesday, 27-May-14 18:56:12 WIB error] 20 - output is http://localhost/skully/public/default/?value=test 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 3 
+[Tuesday, 27-May-14 18:56:12 WIB error] a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4 
+[Tuesday, 27-May-14 18:59:04 WIB error] 1 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-a 
+[Tuesday, 27-May-14 18:59:04 WIB error] 2 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-b 
+[Tuesday, 27-May-14 18:59:04 WIB error] 3 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 4-c 
+[Tuesday, 27-May-14 18:59:04 WIB error] 4 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] 8-a 
+[Tuesday, 27-May-14 18:59:04 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] a 
+[Tuesday, 27-May-14 18:59:04 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] b 
+[Tuesday, 27-May-14 18:59:04 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] f 
+[Tuesday, 27-May-14 18:59:04 WIB error] 8 
 
-[Tuesday, 27-May-14 17:36:23 WIB error] g 
+[Tuesday, 27-May-14 19:00:50 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 1 
+[Tuesday, 27-May-14 19:00:50 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 2 
+[Tuesday, 27-May-14 19:00:50 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4 
+[Tuesday, 27-May-14 19:00:50 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-a 
+[Tuesday, 27-May-14 19:00:50 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-b 
+[Tuesday, 27-May-14 19:00:50 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-c 
+[Tuesday, 27-May-14 19:00:50 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 8-a 
+[Tuesday, 27-May-14 19:00:50 WIB error] 8 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 9 
+[Tuesday, 27-May-14 19:05:24 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 10 
+[Tuesday, 27-May-14 19:05:24 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 12 
+[Tuesday, 27-May-14 19:05:24 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 14 
+[Tuesday, 27-May-14 19:05:24 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 16 
+[Tuesday, 27-May-14 19:05:24 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:05:24 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] a 
+[Tuesday, 27-May-14 19:05:24 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:38:25 WIB error] 1 
+[Tuesday, 27-May-14 19:05:24 WIB error] 8 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 2 
+[Tuesday, 27-May-14 19:06:14 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 3 
+[Tuesday, 27-May-14 19:06:14 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4 
+[Tuesday, 27-May-14 19:06:14 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-a 
+[Tuesday, 27-May-14 19:06:14 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-b 
+[Tuesday, 27-May-14 19:06:14 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 4-c 
+[Tuesday, 27-May-14 19:06:14 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 8-a 
+[Tuesday, 27-May-14 19:06:14 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 9 
+[Tuesday, 27-May-14 19:06:14 WIB error] 8 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 10 
+[Tuesday, 27-May-14 19:08:36 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 12 
+[Tuesday, 27-May-14 19:08:36 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 13 
+[Tuesday, 27-May-14 19:08:36 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 15 
+[Tuesday, 27-May-14 19:08:36 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:25 WIB error] 16 
+[Tuesday, 27-May-14 19:08:36 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 20 - output is Content is /*%%SmartyNocache:104199385253846b21f05a46-43979131%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:104199385253846b21f05a46-43979131%%*/ 
+[Tuesday, 27-May-14 19:08:36 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] a 
+[Tuesday, 27-May-14 19:08:36 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] b 
+[Tuesday, 27-May-14 19:08:36 WIB error] 8 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] f 
+[Tuesday, 27-May-14 19:09:14 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] g 
+[Tuesday, 27-May-14 19:09:14 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 1 
+[Tuesday, 27-May-14 19:09:14 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 2 
+[Tuesday, 27-May-14 19:09:14 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4 
+[Tuesday, 27-May-14 19:09:14 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-a 
+[Tuesday, 27-May-14 19:09:14 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-b 
+[Tuesday, 27-May-14 19:09:14 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-c 
+[Tuesday, 27-May-14 19:09:14 WIB error] 8 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 1 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 2 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:38:26 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] 3 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 3 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 9 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 10 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 12 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 13 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] f 
+[Tuesday, 27-May-14 19:10:11 WIB error] 15 
 
-[Tuesday, 27-May-14 17:38:26 WIB error] g 
+[Tuesday, 27-May-14 19:10:11 WIB error] 16 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] f 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] g 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 9 
+[Tuesday, 27-May-14 19:10:11 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 10 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 12 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 14 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 16 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:10:11 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:39:45 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 3 
+[Tuesday, 27-May-14 19:10:11 WIB error] 13 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 9 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 10 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 12 
+[Tuesday, 27-May-14 19:10:11 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 14 
+[Tuesday, 27-May-14 19:10:11 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 16 
+[Tuesday, 27-May-14 19:10:11 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 20 - output is Content is /*%%SmartyNocache:104199385253846b21f05a46-43979131%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:104199385253846b21f05a46-43979131%%*/ 
+[Tuesday, 27-May-14 19:10:11 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 13 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 15 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] f 
+[Tuesday, 27-May-14 19:10:11 WIB error] 16 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] g 
+[Tuesday, 27-May-14 19:10:11 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] f 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] g 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:39:45 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 3 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] 8 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] f 
+[Tuesday, 27-May-14 19:10:11 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:45 WIB error] g 
+[Tuesday, 27-May-14 19:10:11 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] test is halo
-[Tuesday, 27-May-14 17:39:59 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:39:59 WIB error] 1 
+[Tuesday, 27-May-14 19:10:11 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 2 
+[Tuesday, 27-May-14 19:10:11 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 3 
+[Tuesday, 27-May-14 19:10:11 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4 
+[Tuesday, 27-May-14 19:10:11 WIB error] 13 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] 15 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-b 
+[Tuesday, 27-May-14 19:10:11 WIB error] 16 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-c 
+[Tuesday, 27-May-14 19:10:11 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 8-a 
+[Tuesday, 27-May-14 19:10:11 WIB error] a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 9 
+[Tuesday, 27-May-14 19:10:11 WIB error] b 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 10 
+[Tuesday, 27-May-14 19:10:11 WIB error] f 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 12 
+[Tuesday, 27-May-14 19:10:11 WIB error] g 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 14 
+[Tuesday, 27-May-14 19:23:58 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 16 
+[Tuesday, 27-May-14 19:23:58 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 19:23:58 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:39:59 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 3 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4 
+[Tuesday, 27-May-14 19:23:58 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-c 
+[Tuesday, 27-May-14 19:23:58 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 8-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 13 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 9 
+[Tuesday, 27-May-14 19:23:58 WIB error] 15 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 10 
+[Tuesday, 27-May-14 19:23:58 WIB error] 16 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 12 
+[Tuesday, 27-May-14 19:23:58 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 14 
+[Tuesday, 27-May-14 19:23:58 WIB error] a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 16 
+[Tuesday, 27-May-14 19:23:58 WIB error] b 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 19:23:58 WIB error] f 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] g 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] f 
+[Tuesday, 27-May-14 19:23:58 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] g 
+[Tuesday, 27-May-14 19:23:58 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] test is halo2
-[Tuesday, 27-May-14 17:39:59 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:39:59 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 3 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-c 
+[Tuesday, 27-May-14 19:23:58 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 8-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 13 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:39:59 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] 1 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] 2 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 3 
+[Tuesday, 27-May-14 19:23:58 WIB error] 3 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 4-c 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] 8-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 9 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 10 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] f 
+[Tuesday, 27-May-14 19:23:58 WIB error] 12 
 
-[Tuesday, 27-May-14 17:39:59 WIB error] g 
+[Tuesday, 27-May-14 19:23:58 WIB error] 13 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] 15 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] 16 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4 
+[Tuesday, 27-May-14 19:23:58 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-b 
+[Tuesday, 27-May-14 19:23:58 WIB error] b 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-c 
+[Tuesday, 27-May-14 19:23:58 WIB error] f 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 8-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] g 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 9 
+[Tuesday, 27-May-14 19:23:58 WIB error] 1 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 10 
+[Tuesday, 27-May-14 19:23:58 WIB error] 2 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 12 
+[Tuesday, 27-May-14 19:23:58 WIB error] 3 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 14 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 16 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:40:58 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] 8 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] 1 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 3 
+[Tuesday, 27-May-14 19:23:58 WIB error] 2 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4 
+[Tuesday, 27-May-14 19:23:58 WIB error] 3 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-c 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 8-a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 9 
+[Tuesday, 27-May-14 19:23:58 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 10 
+[Tuesday, 27-May-14 19:23:58 WIB error] 9 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 12 
+[Tuesday, 27-May-14 19:23:58 WIB error] 10 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 14 
+[Tuesday, 27-May-14 19:23:58 WIB error] 12 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 16 
+[Tuesday, 27-May-14 19:23:58 WIB error] 13 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 20 - output is Content is /*%%SmartyNocache:104199385253846b21f05a46-43979131%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:104199385253846b21f05a46-43979131%%*/ 
+[Tuesday, 27-May-14 19:23:58 WIB error] 15 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] a 
+[Tuesday, 27-May-14 19:23:58 WIB error] 16 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] b 
+[Tuesday, 27-May-14 19:23:58 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] f 
+[Tuesday, 27-May-14 19:23:58 WIB error] a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] g 
+[Tuesday, 27-May-14 19:23:58 WIB error] b 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 1 
+[Tuesday, 27-May-14 19:23:58 WIB error] f 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 2 
+[Tuesday, 27-May-14 19:23:58 WIB error] g 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:40:58 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 3 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 13 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] b 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] f 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:40:58 WIB error] g 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 9 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 10 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 12 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 14 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 16 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 20 - output is halo 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] b 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:41:38 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] f 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] g 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 3 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 9 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 10 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 12 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:38 WIB error] 14 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 16 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 20 - output is Content is /*%%SmartyNocache:104199385253846b21f05a46-43979131%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:104199385253846b21f05a46-43979131%%*/ 
+[Tuesday, 27-May-14 19:24:25 WIB error] 13 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] f 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is This is app test admin home 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] g 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:41:39 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 3 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] b 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] f 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] b 
+[Tuesday, 27-May-14 19:24:25 WIB error] g 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] f 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:39 WIB error] g 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 9 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 10 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 12 
+[Tuesday, 27-May-14 19:24:25 WIB error] 13 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 14 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 16 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:41:52 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 3 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 13 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 9 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 10 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 12 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 14 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 16 
+[Tuesday, 27-May-14 19:24:25 WIB error] b 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 19:24:25 WIB error] f 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] g 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] f 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] g 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 1 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 2 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 3 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:41:52 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 3 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 9 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 4-c 
+[Tuesday, 27-May-14 19:24:25 WIB error] 10 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] 8-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 12 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] a 
+[Tuesday, 27-May-14 19:24:25 WIB error] 13 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] b 
+[Tuesday, 27-May-14 19:24:25 WIB error] 15 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] f 
+[Tuesday, 27-May-14 19:24:25 WIB error] 16 
 
-[Tuesday, 27-May-14 17:41:52 WIB error] g 
+[Tuesday, 27-May-14 19:24:25 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 1 
+[Tuesday, 27-May-14 19:24:25 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 2 
+[Tuesday, 27-May-14 19:24:25 WIB error] b 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4 
+[Tuesday, 27-May-14 19:24:25 WIB error] f 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:24:25 WIB error] g 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 9 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 10 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 12 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 14 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 16 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:42:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 13 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:01 WIB error] 15 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 16 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 9 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 10 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 12 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 14 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 16 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 20 - output is Content is /*%%SmartyNocache:104199385253846b21f05a46-43979131%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:104199385253846b21f05a46-43979131%%*/ 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] f 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] g 
+[Tuesday, 27-May-14 19:25:01 WIB error] 15 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 16 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] b 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] f 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] g 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:42:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 13 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] f 
+[Tuesday, 27-May-14 19:25:01 WIB error] 15 
 
-[Tuesday, 27-May-14 17:42:14 WIB error] g 
+[Tuesday, 27-May-14 19:25:01 WIB error] 16 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 20 - output is This is app test admin home 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 9 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 10 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 12 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 14 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 16 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 20 - output is /*%%SmartyNocache:16770013753846a508248f5-26806786%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:16770013753846a508248f5-26806786%%*/ 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 15 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:42:32 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 16 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 3 
+[Tuesday, 27-May-14 19:25:01 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] b 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] f 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] g 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 9 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 10 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 12 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 14 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 16 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] f 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] g 
+[Tuesday, 27-May-14 19:25:01 WIB error] 13 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:42:32 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 9 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 10 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 3 
+[Tuesday, 27-May-14 19:25:01 WIB error] 12 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 13 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 15 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 16 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] a 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] a 
+[Tuesday, 27-May-14 19:25:01 WIB error] b 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] b 
+[Tuesday, 27-May-14 19:25:01 WIB error] f 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] f 
+[Tuesday, 27-May-14 19:25:01 WIB error] g 
 
-[Tuesday, 27-May-14 17:42:32 WIB error] g 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] test is halo
-[Tuesday, 27-May-14 17:43:53 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:43:53 WIB error] 1 
+[Tuesday, 27-May-14 19:25:01 WIB error] 2 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 2 
+[Tuesday, 27-May-14 19:25:01 WIB error] 3 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 3 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:01 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:01 WIB error] 8 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:01 WIB error] 1 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 9 
+[Tuesday, 27-May-14 19:25:02 WIB error] 2 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 10 
+[Tuesday, 27-May-14 19:25:02 WIB error] 3 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 12 
+[Tuesday, 27-May-14 19:25:02 WIB error] 4 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 14 
+[Tuesday, 27-May-14 19:25:02 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 16 
+[Tuesday, 27-May-14 19:25:02 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 19:25:02 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] a 
+[Tuesday, 27-May-14 19:25:02 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:43:53 WIB error] 1 
+[Tuesday, 27-May-14 19:25:02 WIB error] 9 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 2 
+[Tuesday, 27-May-14 19:25:02 WIB error] 10 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 3 
+[Tuesday, 27-May-14 19:25:02 WIB error] 12 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4 
+[Tuesday, 27-May-14 19:25:02 WIB error] 13 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:02 WIB error] 15 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:02 WIB error] 16 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:02 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:02 WIB error] a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 9 
+[Tuesday, 27-May-14 19:25:02 WIB error] b 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 10 
+[Tuesday, 27-May-14 19:25:02 WIB error] f 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 12 
+[Tuesday, 27-May-14 19:25:02 WIB error] g 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 14 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 16 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 20 - output is Content is /*%%SmartyNocache:156183593253845e3b303eb1-95119661%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:156183593253845e3b303eb1-95119661%%*/ 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] test is halo2
-[Tuesday, 27-May-14 17:43:53 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:43:53 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 13 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:43:53 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:43:53 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] test is halo
-[Tuesday, 27-May-14 17:44:14 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:44:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] b 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] f 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] g 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 9 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 10 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 12 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 14 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 16 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 20 - output is /*%%SmartyNocache:192111847853845e1cb99443-30140957%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:192111847853845e1cb99443-30140957%%*/ 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:44:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 13 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is This is app test admin home 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 9 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 10 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 12 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 14 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 16 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 20 - output is Content is halo 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] test is halo2
-[Tuesday, 27-May-14 17:44:14 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:44:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is This is app default home 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] b 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] f 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] g 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:44:14 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 13 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:44:14 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/test.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:17 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is No action, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is halo 
+[Tuesday, 27-May-14 19:25:17 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/test.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/test.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:17 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:17 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:17 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:17 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:17 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:17 WIB error] 20 - output is No controller, but should be visible anyway 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:17 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:17 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:17 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] delete template test/test.tpl.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/test.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:17 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is halo2 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is Jay is awesome 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCache.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:211745430953846d115b3213-11336425%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:211745430953846d115b3213-11336425%%*/ 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is app default en 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCache.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheInclude.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is http://localhost/skully/public/test/resources/css/test.css 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:169979305353846d11651246-48277190%%*/<?php echo $_smarty_tpl->getSubTemplate ("test/_included.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
-/*/%%SmartyNocache:169979305353846d11651246-48277190%%*/ 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is halo 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is http://localhost/skully/public/default/resources/css/default.css 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheInclude.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is http://localhost/skully/public/images/test.jpg 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is halo2 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:18 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:18 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheExtends.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:18 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:18 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:18 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:18 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:18 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:18 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:18 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:18 WIB error] 20 - output is http://localhost/skully/public/images/test.jpg?arg=arg1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:18 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:18 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is Content is /*%%SmartyNocache:143272304053846d116a5672-79864722%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:143272304053846d116a5672-79864722%%*/ 
+[Tuesday, 27-May-14 19:25:18 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:18 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheExtends.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is halo 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is home/index.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is Content is /*%%SmartyNocache:74621070253846d1170e215-57978021%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:74621070253846d1170e215-57978021%%*/ 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is home/index.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is halo2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:98151679153846d11782695-07558743%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:98151679153846d11782695-07558743%%*/ 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is /*%%SmartyNocache:115390157453848431d3c322-09853067%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:115390157453848431d3c322-09853067%%*/ 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:99318070153846d117f4894-21200177%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:99318070153846d117f4894-21200177%%*/ 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:189529548653846d1184f258-42119330%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:189529548653846d1184f258-42119330%%*/ 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is /*%%SmartyNocache:77560011553848431dc4b30-43466840%%*/<?php echo $_smarty_tpl->getSubTemplate ("test/_included.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+/*/%%SmartyNocache:77560011553848431dc4b30-43466840%%*/ 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheAssignedFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is halo 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is halo2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is Content is /*%%SmartyNocache:171925183453846d118dcb24-11108408%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:171925183453846d118dcb24-11108408%%*/ 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 20 - output is Content is /*%%SmartyNocache:60302982953848431ea3506-39682297%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:60302982953848431ea3506-39682297%%*/ 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is test/testNoCacheExtendsAssignedFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:21 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:21 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:21 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] test is halo
-[Tuesday, 27-May-14 17:46:41 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:21 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:21 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:21 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:21 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:21 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:21 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:21 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:21 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:21 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:21 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is /*%%SmartyNocache:62375518953846d11932038-85864599%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
-/*/%%SmartyNocache:62375518953846d11932038-85864599%%*/ 
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is Content is /*%%SmartyNocache:66431577453848431f38650-27022224%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:66431577453848431f38650-27022224%%*/ 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 9 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 10 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 12 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 13 
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 15 
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 16 
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 20 - output is Content is /*%%SmartyNocache:46785845853846d1194b460-85845747%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-/*/%%SmartyNocache:46785845853846d1194b460-85845747%%*/ 
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] test is halo2
-[Tuesday, 27-May-14 17:46:41 WIB error] fetching home/_content.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] template to display is home/testNoCacheFetch.tpl
-[Tuesday, 27-May-14 17:46:41 WIB error] 1 
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 2 
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 3 
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is /*%%SmartyNocache:188949086753848432049a44-09816048%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:188949086753848432049a44-09816048%%*/ 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4 
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-b 
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 4-c 
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] 8-a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] a 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] b 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] f 
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
 
-[Tuesday, 27-May-14 17:46:41 WIB error] g 
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is /*%%SmartyNocache:4848062615384843208da06-61838751%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:4848062615384843208da06-61838751%%*/ 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is /*%%SmartyNocache:66652959538484320ba854-28283498%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:66652959538484320ba854-28283498%%*/ 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is Content is /*%%SmartyNocache:320576996538484320f7921-08203691%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:320576996538484320f7921-08203691%%*/ 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] test is halo
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is /*%%SmartyNocache:16465313075384843216f125-04737976%%*/<?php echo $_smarty_tpl->tpl_vars['test']->value;?>
+/*/%%SmartyNocache:16465313075384843216f125-04737976%%*/ 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is Content is /*%%SmartyNocache:150588433153848432194887-41974835%%*/<?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+/*/%%SmartyNocache:150588433153848432194887-41974835%%*/ 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] test is halo2
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] f 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] g 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 1 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 2 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 3 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-b 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 4-c 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 8-a 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 9 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 10 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 12 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 13 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 15 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 16 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] 20 - output is http://localhost/skully/public/default/?value=test 
+
+[Tuesday, 27-May-14 19:25:22 WIB error] a 
 
