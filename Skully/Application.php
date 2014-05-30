@@ -234,7 +234,7 @@ class Application implements ApplicationInterface {
      */
     public function configIsEmpty($key) {
         $config = $this->config($key);
-        return empty($config);
+        return is_null($config);
     }
 
 

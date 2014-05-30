@@ -1320,3 +1320,29 @@ May 27 19:25:21 [info] SELECT version FROM schema_migrations
 May 27 19:25:21 [info] BEGIN
 May 27 19:25:21 [info] INSERT INTO schema_migrations (version) VALUES ('20140527122518')
 May 27 19:25:21 [info] COMMIT
+May 30 14:22:33 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:33 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:33 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+May 30 14:22:34 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:34 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:34 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+May 30 14:22:34 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+May 30 14:22:35 [info] SELECT version FROM schema_migrations
+May 30 14:22:35 [info] SELECT version FROM schema_migrations
+May 30 14:22:35 [info] SELECT version FROM schema_migrations
+May 30 14:22:35 [info] BEGIN
+May 30 14:22:35 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072231')
+May 30 14:22:35 [info] COMMIT
+May 30 14:22:47 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:47 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+May 30 14:22:47 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+May 30 14:22:47 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+May 30 14:22:47 [info] SELECT version FROM schema_migrations
+May 30 14:22:47 [info] SELECT version FROM schema_migrations
+May 30 14:22:47 [info] SELECT version FROM schema_migrations
+May 30 14:22:47 [info] BEGIN
+May 30 14:22:47 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+May 30 14:22:47 [info] COMMIT
