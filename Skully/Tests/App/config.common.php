@@ -56,6 +56,9 @@ function setCommonConfig(Config &$config, $serverName = null) {
     }
 
     $config_r = array_merge(array(
+        // freeze = false for development the RedBean way.
+        'freeze' => true,
+
         'namespace' => 'App',
 
         // 0: no caching, 1: cache all with same lifetime, 2: cache with different lifetime per template.

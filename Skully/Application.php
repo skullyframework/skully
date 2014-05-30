@@ -140,6 +140,10 @@ class Application implements ApplicationInterface {
                 self::setupRedBean("sqlite:{$dbConfig['dbname']}", $dbConfig['user'], $dbConfig['password'], $config->getProtected('isDevMode'));
             }
 
+            if (!$this->configIsEmpty('freeze') && $this->config('freeze') == false) {
+                R::freeze(false);
+            }
+
             // Below is needed so that RedBeanPHP\SimpleModel may use $this->app:
             SimpleFacadeBeanHelper::setFactoryFunction( function( $beanTypeName ) {
                 /** @var \Skully\App\Models\BaseModel $model */
