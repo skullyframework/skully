@@ -10,6 +10,7 @@ trait HasTimestamp {
     {
         /** @var \Skully\App\Models\BaseModel $this */
         $this->created_at = date(\DateTime::ISO8601);
+        $this->updated_at = date(\DateTime::ISO8601);
     }
 
     public function beforeSave()
