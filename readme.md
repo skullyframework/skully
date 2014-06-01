@@ -1,6 +1,21 @@
 # Skully PHP Framework
 
-Skully Framework is a simple php framework you could use as a skeleton for any php project.
+Skully Framework is an MVC framework focusing mainly on a better separation of directories for
+collaborative work between web programmer and web designer.
+
+It is also a simple php framework you could use as a skeleton for any php project, hence the name Skully.
+
+With Skully Framework you may give access to just the public directory to web designers, and complete access
+to the project's main programmers. Ideally This system would allow you to work remotely with multiple
+team members.
+
+Features:
+
+1. RedBeanPHP as its ORM.
+2. Javascript compressing tool.
+3. Sass / Scss
+4. Templating system supported by Smarty. Templates are also completely separated from rest of the project's code. This allows for work division between client and server developers.
+5. Ruckusing for database schema.
 
 Skully project aims to teach its adapters best practices in PHP programming, and programming in general as adapters use it in their projects. We are a big fan of project [PHP The Right Way](http://phptherightway.com) so we built a framework around the concepts written there.
 
