@@ -102,7 +102,9 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     public function getTableName() {
-        return strtolower(get_called_class());
+        $tableName = strtolower(get_called_class());
+        $tableName_r = explode('\\', $tableName);
+        return $tableName_r[count($tableName_r)-1];
     }
 
     /**
