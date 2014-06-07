@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Traits;
+namespace Skully\App\Models\Traits;
 
 use RedBeanPHP\Facade as R;
 
