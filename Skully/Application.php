@@ -294,6 +294,7 @@ class Application implements ApplicationInterface {
                 $this->getLogger()->log('Resource not found: '.$rawUrl, 'warn');
             }
             else {
+                $this->getLogger()->log('Path not found: '.$rawUrl, 'warn');
                 if (!$this->configIsEmpty('notFoundPath')) {
                     $this->redirect($this->config('notFoundPath'));
                 }
