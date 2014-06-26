@@ -9,6 +9,7 @@ use Skully\App\Helpers\UtilitiesHelper;
  * Trait used for models having a field "images" which is a json text containing list of images.
  * Field name must be named as exactly "images".
  * If you need to use different field name, override the methods you need.
+ * This trait is required so images can be uploaded with Skully Admin.
  */
 trait HasImages {
 
