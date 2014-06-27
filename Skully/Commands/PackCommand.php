@@ -48,7 +48,7 @@ EOT
         $output = array();
 
         $packPath = realpath(__DIR__.'/../Library/pack/pack');
-        $runme = $packPath. ' '.implode(' ', $argv);
+        $runme = 'ruby ' . $packPath. ' '.implode(' ', $argv);
         echo "running pack ($runme)...\n";
         exec($runme, $output);
         echo implode("\n",$output)."\n";
