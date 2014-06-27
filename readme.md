@@ -126,6 +126,9 @@ Then run the following:
 
 `./console skully:pack address/to/config/file`
 
+Or, on windows:
+`php console skully:pack address\\to\\config\\file`
+
 You can technically use this to pack your css files, but in our workflow we prefer to use SCSS and Compass for packing CSS.
 
 ### Password Encryption Tool
