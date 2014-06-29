@@ -20,7 +20,7 @@
     },
     "require": {
         "php": ">=5.4",
-        "symfony/console": "2.5.x-dev",
+        "symfony/console": "2.5.*",
         "ruckusing/ruckusing-migrations": "1.0.1"
     },
     "autoload": {
