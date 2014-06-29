@@ -140,4 +140,4 @@ and
 
 # What now?
 
-Go to http://github.com/triodigital/skully-project to grab a copy and start playing with it!
+Go to http://github.com/skullyframework/skully-project to grab a copy and start playing with it!
