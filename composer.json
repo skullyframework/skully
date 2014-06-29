@@ -29,7 +29,7 @@
             "RedBeanPHP\\" : "Skully/Library/redbean"
         }
     },
-    "license": "LGPL-2.1",
+    "license": "MIT",
     "suggest": {
         "ext-runkit": "For using the runkit API."
     }
