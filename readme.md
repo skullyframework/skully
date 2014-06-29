@@ -3,7 +3,7 @@
 Skully Framework is an MVC framework focusing mainly on a better separation of directories for
 collaborative work between web programmer and web designer.
 
-It is also a simple php framework you could use as a skeleton for any php project, hence the name Skully.
+It is a simple php framework you could use as a skeleton for any php project, hence the name Skully.
 
 With Skully Framework you may give access to just the public directory to web designers, and complete access
 to the project's main programmers. Ideally This system would allow you to work remotely with multiple
@@ -140,4 +140,4 @@ and
 
 # What now?
 
-Go to http://github.com/skullyframework/skully-project to grab a copy and start playing with it!
+Go to http://github.com/skullyframework/project to grab a copy and start playing with it!
