@@ -37,6 +37,13 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     /**
+     * @return ApplicationInterface
+     */
+    public function getApp() {
+        return $this->app;
+    }
+
+    /**
      * Magic Getter to make the bean properties available from
      * the $this-scope.
      *
