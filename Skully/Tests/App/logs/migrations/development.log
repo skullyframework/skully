@@ -1467,3 +1467,157 @@ Jul 20 19:59:29 [info] SELECT version FROM schema_migrations
 Jul 20 19:59:29 [info] BEGIN
 Jul 20 19:59:29 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
 Jul 20 19:59:29 [info] COMMIT
+Jul 20 20:03:13 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:03:13 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:03:13 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:03:13 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:03:13 [info] SELECT version FROM schema_migrations
+Jul 20 20:03:13 [info] SELECT version FROM schema_migrations
+Jul 20 20:03:13 [info] SELECT version FROM schema_migrations
+Jul 20 20:03:13 [info] BEGIN
+Jul 20 20:03:13 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:03:13 [info] COMMIT
+Jul 20 20:04:42 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:04:42 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:04:42 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:04:42 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:04:42 [info] SELECT version FROM schema_migrations
+Jul 20 20:04:42 [info] SELECT version FROM schema_migrations
+Jul 20 20:04:42 [info] SELECT version FROM schema_migrations
+Jul 20 20:04:42 [info] BEGIN
+Jul 20 20:04:42 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:04:42 [info] COMMIT
+Jul 20 20:05:52 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:05:52 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:05:52 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:05:53 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:05:53 [info] SELECT version FROM schema_migrations
+Jul 20 20:05:53 [info] SELECT version FROM schema_migrations
+Jul 20 20:05:53 [info] SELECT version FROM schema_migrations
+Jul 20 20:05:53 [info] BEGIN
+Jul 20 20:05:53 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:05:53 [info] COMMIT
+Jul 20 20:06:32 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:06:32 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:06:32 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:06:33 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:06:33 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:33 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:33 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:33 [info] BEGIN
+Jul 20 20:06:33 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:06:33 [info] COMMIT
+Jul 20 20:06:57 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:06:57 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:06:57 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:06:58 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:06:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:06:58 [info] BEGIN
+Jul 20 20:06:58 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:06:58 [info] COMMIT
+Jul 20 20:08:45 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:08:45 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:08:45 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:08:46 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:08:46 [info] SELECT version FROM schema_migrations
+Jul 20 20:08:46 [info] SELECT version FROM schema_migrations
+Jul 20 20:08:46 [info] SELECT version FROM schema_migrations
+Jul 20 20:08:46 [info] BEGIN
+Jul 20 20:08:46 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:08:46 [info] COMMIT
+Jul 20 20:10:16 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:10:16 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:10:16 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:10:16 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:10:16 [info] SELECT version FROM schema_migrations
+Jul 20 20:10:16 [info] SELECT version FROM schema_migrations
+Jul 20 20:10:16 [info] SELECT version FROM schema_migrations
+Jul 20 20:10:16 [info] BEGIN
+Jul 20 20:10:16 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:10:16 [info] COMMIT
+Jul 20 20:11:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:11:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:11:49 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:11:49 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:11:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:11:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:11:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:11:49 [info] BEGIN
+Jul 20 20:11:49 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:11:49 [info] COMMIT
+Jul 20 20:12:21 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:12:21 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:12:21 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:12:21 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:12:21 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:21 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:21 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:21 [info] BEGIN
+Jul 20 20:12:21 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:12:21 [info] COMMIT
+Jul 20 20:12:58 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:12:58 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:12:58 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:12:58 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:12:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:58 [info] SELECT version FROM schema_migrations
+Jul 20 20:12:58 [info] BEGIN
+Jul 20 20:12:58 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:12:58 [info] COMMIT
+Jul 20 20:14:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:14:49 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:14:49 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:14:49 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:14:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:14:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:14:49 [info] SELECT version FROM schema_migrations
+Jul 20 20:14:49 [info] BEGIN
+Jul 20 20:14:49 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:14:49 [info] COMMIT
+Jul 20 20:15:36 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:15:36 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:15:36 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:15:37 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:15:37 [info] SELECT version FROM schema_migrations
+Jul 20 20:15:37 [info] SELECT version FROM schema_migrations
+Jul 20 20:15:37 [info] SELECT version FROM schema_migrations
+Jul 20 20:15:37 [info] BEGIN
+Jul 20 20:15:37 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:15:37 [info] COMMIT
+Jul 20 20:17:26 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:17:26 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:17:26 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:17:26 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:17:27 [info] SELECT version FROM schema_migrations
+Jul 20 20:17:27 [info] SELECT version FROM schema_migrations
+Jul 20 20:17:27 [info] SELECT version FROM schema_migrations
+Jul 20 20:17:27 [info] BEGIN
+Jul 20 20:17:27 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:17:27 [info] COMMIT
+Jul 20 20:18:54 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:18:54 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Jul 20 20:18:54 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Jul 20 20:18:54 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Jul 20 20:18:55 [info] SELECT version FROM schema_migrations
+Jul 20 20:18:55 [info] SELECT version FROM schema_migrations
+Jul 20 20:18:55 [info] SELECT version FROM schema_migrations
+Jul 20 20:18:55 [info] BEGIN
+Jul 20 20:18:55 [info] INSERT INTO schema_migrations (version) VALUES ('20140530072244')
+Jul 20 20:18:55 [info] COMMIT

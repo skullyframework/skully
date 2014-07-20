@@ -117,6 +117,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     /**
      * Instead of overriding this method, override methods
      * called by this (beforeUpdate,Save,Create and validatesOnCreate,Save,Update)
+     * This method won't get called when R::store() called when no change to instance is made.
      * @throws \Exception
      */
     final public function update()
@@ -175,6 +176,9 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         $this->afterSave($this->oldMe);
     }
 
+    /**
+     * This method won't get called when R::store() called when no change to instance is made.
+     */
     public function validates()
     {
         $this->errors = array();
@@ -186,6 +190,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         $this->validatesOnSave();
         $mustExists = $this->validatesExistenceOf();
+
         if (!$this->getID()) {
             $mustExists = array_merge($mustExists, $this->validatesExistenceOnCreateOf());
         }
@@ -213,7 +218,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         if (!empty($mustUnique)) {
             foreach ($mustUnique as $var) {
-                $count = R::count($this->getTableName(), "$var = ?", array($this->get($var)));
+                $count = R::count($this->getTableName(), "`$var` = ?", array($this->get($var)));
                 $varStr = str_replace('_', ' ', $var);
                 $varStr = preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $varStr);
                 $varStr = ucfirst(strtolower($varStr));
