@@ -177,6 +177,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
 
     public function validates()
     {
+        $this->errors = array();
         if (!$this->getID()) {
             $this->validatesOnCreate();
         }
@@ -185,6 +186,12 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         $this->validatesOnSave();
         $mustExists = $this->validatesExistenceOf();
+        if (!$this->getID()) {
+            $mustExists = array_merge($mustExists, $this->validatesExistenceOnCreateOf());
+        }
+        else {
+            $mustExists = array_merge($mustExists, $this->validatesExistenceOnUpdateOf());
+        }
         if (!empty($mustExists)) {
             foreach($mustExists as $var) {
                 $value = $this->$var;
@@ -198,6 +205,12 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
             }
         }
         $mustUnique = $this->validatesUniquenessOf();
+        if (!$this->getID()) {
+            $mustUnique = array_merge($mustUnique, $this->validatesUniquenessOnCreateOf());
+        }
+        else {
+            $mustUnique = array_merge($mustUnique, $this->validatesUniquenessOnUpdateOf());
+        }
         if (!empty($mustUnique)) {
             foreach ($mustUnique as $var) {
                 $count = R::count($this->getTableName(), "$var = ?", array($this->get($var)));
@@ -322,7 +335,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
      * ---------------------------------
      *        Methods to Override
      * ---------------------------------
-    **/
+     **/
 
     public function validatesExistenceOf()
     {
@@ -330,6 +343,26 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     public function validatesUniquenessOf()
+    {
+        return array();
+    }
+
+    public function validatesUniquenessOnCreateOf()
+    {
+        return array();
+    }
+
+    public function validatesUniquenessOnUpdateOf()
+    {
+        return array();
+    }
+
+    public function validatesExistenceOnCreateOf()
+    {
+        return array();
+    }
+
+    public function validatesExistenceOnUpdateOf()
     {
         return array();
     }

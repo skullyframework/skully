@@ -34,10 +34,46 @@ class ModelTest extends \Tests\DatabaseTestCase {
         R::freeze($this->frozen);
     }
 
-    public function testValidation()
+    public function testValidatesExistenceOf()
     {
-        $product = $this->app->createModel('testmodel');
-        $this->assertEquals(array('name'), $product->validatesExistenceOf());
+        $foo = $this->app->createModel('foo');
+        try {
+            R::store($foo);
+        }
+        catch (\Exception $e) {
+            $this->assertNotEmpty($foo->getErrors('name'));
+        }
+    }
+
+    public function testValidatesExistenceOnUpdateOf()
+    {
+        $foo = $this->app->createModel('foo');
+        try {
+            R::store($foo);
+        }
+        catch (\Exception $e) {
+            $this->assertEmpty($foo->getErrors('exists_update'));
+        }
+
+        $foo->import(array(
+            'name' => 'name',
+            'exists_create' => 'exists_create'
+        ));
+        try {
+            R::store($foo);
+        }
+        catch (\Exception $e) {
+            print_r($foo->getErrors());
+            $this->assertEmpty($foo->getErrors('exists_update'));
+        }
+
+        try {
+            R::store($foo);
+        }
+        catch (\Exception $e) {
+            print_r($foo->getErrors());
+            $this->assertNotEmpty($foo->getErrors('exists_update'));
+        }
     }
 
     public function testCreateSuccess()
