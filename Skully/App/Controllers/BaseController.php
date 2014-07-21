@@ -49,8 +49,10 @@ class BaseController extends Controller {
             'clientConfig' => $this->app->clientConfig(),
             'isAjax' => $this->app->isAjax(),
             'params' => $this->params,
-            'route' => $this->getControllerPath(),
-            'action' => $this->getCurrentAction(),
+            '_path' => array(
+                'route' => $this->getControllerPath(),
+                'action' => $this->getCurrentAction()
+            )
         ));
 
         $this->setAdditionalAssign();
