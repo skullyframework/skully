@@ -46,7 +46,8 @@ EOT
                     'port' => $dbConfig['port'],
                     'user' => $dbConfig['user'],
                     'password' => $dbConfig['password'],
-                    'charset' => $dbConfig['charset']
+                    'charset' => $dbConfig['charset'],
+                    'directory' => $dbConfig['directory']
                 )
             )
         ), $this->app->config('ruckusingConfig'));
