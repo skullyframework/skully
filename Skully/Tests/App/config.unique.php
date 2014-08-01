@@ -56,7 +56,7 @@ function setUniqueConfig(Config &$config, $serverName = null) {
                 "port"		=> "3306",
                 "dbname"	=> "online_database",
                 'charset'   => 'utf8',
-                
+
                 // Added on Skully v0.1.6
                 // The following is added so when we migrate, get data from "skully"
                 // directory, instead of "online_database" directory.

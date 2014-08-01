@@ -37,18 +37,21 @@ EOT
         $_SERVER["argv"] = $argv;
 
         $dbConfig = $this->app->config('dbConfig');
+        $developmentConfig = array(
+            'type' => $dbConfig['type'],
+            'database' => $dbConfig['dbname'],
+            'host' => $dbConfig['host'],
+            'port' => $dbConfig['port'],
+            'user' => $dbConfig['user'],
+            'password' => $dbConfig['password'],
+            'charset' => $dbConfig['charset']
+        );
+        if (!empty($dbConfig['directory'])) {
+            $developmentConfig['directory'] = $dbConfig['directory'];
+        }
         $ruckusingConfig = array_merge(array(
             'db' => array(
-                'development' => array(
-                    'type' => $dbConfig['type'],
-                    'database' => $dbConfig['dbname'],
-                    'host' => $dbConfig['host'],
-                    'port' => $dbConfig['port'],
-                    'user' => $dbConfig['user'],
-                    'password' => $dbConfig['password'],
-                    'charset' => $dbConfig['charset'],
-                    'directory' => $dbConfig['directory']
-                )
+                'development' => $developmentConfig
             )
         ), $this->app->config('ruckusingConfig'));
         $main = new \Ruckusing_FrameworkRunner($ruckusingConfig, $argv);
