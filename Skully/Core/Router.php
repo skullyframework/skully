@@ -178,7 +178,7 @@ class Router implements RouterInterface {
             } else {
                 $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
             }
-            return $pageURL;
+            return $pageURL.(!empty($parameters)?"?".http_build_query($parameters):'');
         }
         else {
             $answer = $route;

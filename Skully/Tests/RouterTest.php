@@ -19,10 +19,21 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
             'products/c/%cid' => 'products/viewCategory',
             'products/index' => 'products/index',
             'products/%id' => 'products/view',
+            'products/%category/%id' => 'products/view2',
             'admin/loginProcess' => 'admin/admins/loginProcess',
             'admin/login' => 'admin/admins/login',
         );
         $this->router = new Router('/', 'http://localhost/skully/', $config_r);
+    }
+    public function testRawUrlWithTwoParams()
+    {
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('products/categoryName/product-id');
+        $this->assertEquals('products/view2', $routeAndParams['route']);
+        $this->assertEquals('product-id', $routeAndParams['params']['id']);
+        $this->assertEquals('categoryName', $routeAndParams['params']['category']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('products', $controllerAndAction['controller']);
+        $this->assertEquals('view2', $controllerAndAction['action']);
     }
     public function testRawUrlToRouteAndParams()
     {

@@ -3519,3 +3519,11 @@ Call to undefined function runkit_function_rename()
 #0  shutdownHandler()
 
 
+[Friday, 01-Aug-14 22:04:40 WIB error] test is halo
+[Friday, 01-Aug-14 22:04:40 WIB error] test is halo2
+[Friday, 01-Aug-14 22:04:55 WIB error] test is halo
+[Friday, 01-Aug-14 22:04:55 WIB error] test is halo2
+[Friday, 01-Aug-14 22:05:05 WIB error] test is halo
+[Friday, 01-Aug-14 22:05:05 WIB error] test is halo2
+[Monday, 04-Aug-14 11:17:19 WIB error] test is halo
+[Monday, 04-Aug-14 11:17:19 WIB error] test is halo2
