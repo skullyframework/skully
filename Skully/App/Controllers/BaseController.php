@@ -49,8 +49,10 @@ class BaseController extends Controller {
             'clientConfig' => $this->app->clientConfig(),
             'isAjax' => $this->app->isAjax(),
             'params' => $this->params,
-            'route' => $this->getControllerPath(),
-            'action' => $this->getCurrentAction(),
+            '_path' => array(
+                'route' => $this->getControllerPath(),
+                'action' => $this->getCurrentAction()
+            )
         ));
 
         $this->setAdditionalAssign();
@@ -65,6 +67,17 @@ class BaseController extends Controller {
     {
         $this->setDefaultAssign();
         parent::render($viewPath, $assignParams);
+    }
+
+    /**
+     * @param $viewPath
+     * @return string
+     * @param array $assignParams
+     */
+    public function fetch($viewPath = null, $assignParams = array())
+    {
+        $this->setDefaultAssign();
+        return parent::fetch($viewPath, $assignParams);
     }
 
     protected function setAdditionalAssign(){

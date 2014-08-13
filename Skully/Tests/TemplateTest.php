@@ -87,6 +87,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('halo2', $output);
     }
 
+    /**
+     * This proves nocache tag works.
+     */
     public function testNoCache()
     {
         $app = $this->getApp();
@@ -111,6 +114,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('halo2', $output);
     }
 
+    /**
+     * This proves nocache affects included files.
+     */
     public function testNoCacheInclude()
     {
         $app = $this->getApp();
@@ -136,6 +142,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('halo2', $output);
     }
 
+    /**
+     * This proves nocache within a file that has extends would still work.
+     */
     public function testNoCacheExtends()
     {
         $app = $this->getApp();
@@ -160,6 +169,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('Content is halo2', $output);
     }
 
+    /**
+     * nocache tag test, this time with a controller.
+     */
     public function testNoCacheWithActiveController()
     {
         $app = $this->getApp();
@@ -185,6 +197,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('Content is halo2', $output);
     }
 
+    /**
+     * This proves nocache also works with fetch.
+     */
     public function testNoCacheFetch()
     {
         $app = $this->getApp();
@@ -205,6 +220,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('halo2', $output);
     }
 
+    /**
+     * This proves nocache also works with fetched text that is assigned to a template.
+     */
     public function testNoCacheAssignedFetch()
     {
         $app = $this->getApp();
@@ -232,6 +250,9 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('halo2', $output);
     }
 
+    /**
+     * This proves nocache also works with fetch that is assigned into an extended template, WITH a rule written below.
+     */
     public function testNoCacheExtendsAssignedFetch()
     {
         $app = $this->getApp();

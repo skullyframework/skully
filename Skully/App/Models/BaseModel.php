@@ -37,6 +37,13 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     /**
+     * @return ApplicationInterface
+     */
+    public function getApp() {
+        return $this->app;
+    }
+
+    /**
      * Magic Getter to make the bean properties available from
      * the $this-scope.
      *
@@ -110,6 +117,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     /**
      * Instead of overriding this method, override methods
      * called by this (beforeUpdate,Save,Create and validatesOnCreate,Save,Update)
+     * This method won't get called when R::store() called when no change to instance is made.
      * @throws \Exception
      */
     final public function update()
@@ -168,8 +176,12 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         $this->afterSave($this->oldMe);
     }
 
+    /**
+     * This method won't get called when R::store() called when no change to instance is made.
+     */
     public function validates()
     {
+        $this->errors = array();
         if (!$this->getID()) {
             $this->validatesOnCreate();
         }
@@ -178,6 +190,13 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         $this->validatesOnSave();
         $mustExists = $this->validatesExistenceOf();
+
+        if (!$this->getID()) {
+            $mustExists = array_merge($mustExists, $this->validatesExistenceOnCreateOf());
+        }
+        else {
+            $mustExists = array_merge($mustExists, $this->validatesExistenceOnUpdateOf());
+        }
         if (!empty($mustExists)) {
             foreach($mustExists as $var) {
                 $value = $this->$var;
@@ -191,9 +210,15 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
             }
         }
         $mustUnique = $this->validatesUniquenessOf();
+        if (!$this->getID()) {
+            $mustUnique = array_merge($mustUnique, $this->validatesUniquenessOnCreateOf());
+        }
+        else {
+            $mustUnique = array_merge($mustUnique, $this->validatesUniquenessOnUpdateOf());
+        }
         if (!empty($mustUnique)) {
             foreach ($mustUnique as $var) {
-                $count = R::count($this->getTableName(), "$var = ?", array($this->get($var)));
+                $count = R::count($this->getTableName(), "`$var` = ?", array($this->get($var)));
                 $varStr = str_replace('_', ' ', $var);
                 $varStr = preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $varStr);
                 $varStr = ucfirst(strtolower($varStr));
@@ -315,7 +340,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
      * ---------------------------------
      *        Methods to Override
      * ---------------------------------
-    **/
+     **/
 
     public function validatesExistenceOf()
     {
@@ -323,6 +348,26 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     public function validatesUniquenessOf()
+    {
+        return array();
+    }
+
+    public function validatesUniquenessOnCreateOf()
+    {
+        return array();
+    }
+
+    public function validatesUniquenessOnUpdateOf()
+    {
+        return array();
+    }
+
+    public function validatesExistenceOnCreateOf()
+    {
+        return array();
+    }
+
+    public function validatesExistenceOnUpdateOf()
     {
         return array();
     }
