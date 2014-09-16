@@ -65,7 +65,7 @@ class BaseController extends Controller {
      */
     public function render($viewPath = null, $assignParams = array())
     {
-        $this->setDefaultAssign();
+        $this->beforeRender();
         parent::render($viewPath, $assignParams);
     }
 
@@ -76,7 +76,7 @@ class BaseController extends Controller {
      */
     public function fetch($viewPath = null, $assignParams = array())
     {
-        $this->setDefaultAssign();
+        $this->beforeRender();
         return parent::fetch($viewPath, $assignParams);
     }
 
