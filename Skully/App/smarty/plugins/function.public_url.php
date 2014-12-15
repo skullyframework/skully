@@ -22,12 +22,15 @@ function smarty_function_public_url($params = array(), &$smarty) {
     /** @var \Skully\ApplicationInterface $app */
     $app = $smarty->getRegisteredObject('app');
 
+    if(strpos($path, "http://") !== 0 && strpos($path, "https://") !== 0){
+        $path = $app->getTheme()->getPublicBaseUrl().$path;
+    }
 
     if (!empty($arguments)) {
         $argumentsStr = http_build_query($arguments);
-        return $app->getTheme()->getPublicBaseUrl().$path.'?'.$argumentsStr;
+        return $path.'?'.$argumentsStr;
     }
     else {
-        return $app->getTheme()->getPublicBaseUrl().$path;
+        return $path;
     }
 }

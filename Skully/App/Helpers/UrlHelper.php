@@ -16,7 +16,7 @@ class UrlHelper {
     public static function toPathId($name, $id)
     {
         $str = substr(strtolower($name), 0, 255);
-        return str_replace(array(' ', '_'), '-', $str).'-'.$id;
+        return str_replace(array(' ', '_'), '-', preg_replace('/[^a-z_ \-0-9]/i', '', $str)).'-'.$id;
     }
 
     /**

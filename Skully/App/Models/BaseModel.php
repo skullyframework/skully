@@ -218,18 +218,18 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         if (!empty($mustUnique)) {
             foreach ($mustUnique as $var) {
-                $count = R::count($this->getTableName(), "`$var` = ?", array($this->get($var)));
+                $rows = R::findAll($this->getTableName(), "$var = ?", array($this->get($var)));
+                $count = count($rows);
                 $varStr = str_replace('_', ' ', $var);
                 $varStr = preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $varStr);
                 $varStr = ucfirst(strtolower($varStr));
-                if ($this->getID()) {
-                    if ($count > 1) {
-                        $this->addError($this->app->getTranslator()->translate('mustUnique', array('varStr' => $varStr)), $var);
-                    }
-                }
-                else {
-                    if ($count > 0) {
-                        $this->addError($this->app->getTranslator()->translate('mustUnique', array('varStr' => $varStr)), $var);
+                if($count > 0){
+                    $id = $this->getID() ? $this->getID() : 0;
+                    foreach($rows as $row){
+                        if($row->getID() != $id){
+                            $this->addError($this->app->getTranslator()->translate('mustUnique', array('varStr' => $varStr)), $var);
+                            break;
+                        }
                     }
                 }
             }
