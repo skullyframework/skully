@@ -45,7 +45,7 @@ abstract class Setting extends BaseModel{
      */
     public function afterDestroy($oldMe)
     {
-        if($oldMe->get('input_type') == "image"){
+        if($this->bean->old('input_type') == "image"){
             //delete images
             if(file_exists($oldMe->imagePath()))
                 FileHelper::removeFolder($oldMe->imagePath());

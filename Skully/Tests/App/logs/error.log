@@ -3527,3 +3527,29 @@ Call to undefined function runkit_function_rename()
 [Friday, 01-Aug-14 22:05:05 WIB error] test is halo2
 [Monday, 04-Aug-14 11:17:19 WIB error] test is halo
 [Monday, 04-Aug-14 11:17:19 WIB error] test is halo2
+[Monday, 15-Dec-2014 15:58:54 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
+[Monday, 15-Dec-2014 16:00:08 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
