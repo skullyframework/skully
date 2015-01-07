@@ -69,4 +69,17 @@ trait Authorizable {
     {
         return $this->password_confirmation;
     }
+
+    function generateActivationKey() {
+        $this->activationKey = sha1(mt_rand(10000,99999).time());
+    }
+
+    function resetPassword() {
+        $new_password = base_convert(mt_rand(0x19A100, 0x39AA3FF), 10, 36);
+        $this->set('salt', time());
+//        $this->setPassword(UtilitiesHelper::toHash($new_password, $this->get('salt'), $this->app->config('globalSalt')));
+        $this->setPassword($new_password);
+        $this->setPasswordConfirmation($new_password);
+        return $new_password;
+    }
 } 

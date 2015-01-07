@@ -23,7 +23,7 @@ class TextHelper
 //        return preg_match($pcre_regex, $string);
         try {
             $json = json_decode($string);
-            return !empty($json);
+            return !empty($json) && is_array($json);
         }
         catch (\Exception $e) {
             return false;
