@@ -1,6 +1,7 @@
 <?php
 namespace Skully\App\Models\Traits;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\App\Helpers\UtilitiesHelper;
 
 /**
