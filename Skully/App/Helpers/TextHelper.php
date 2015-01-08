@@ -22,7 +22,7 @@ class TextHelper
 //';
 //        return preg_match($pcre_regex, $string);
         try {
-            $json = json_decode($string);
+            $json = json_decode($string, true);
             return !empty($json) && is_array($json);
         }
         catch (\Exception $e) {
