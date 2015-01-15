@@ -14,8 +14,8 @@
             <!--<file>Helpers/BaseHelperTest.php</file>-->
             <!--<file>Commands/CommandTest.php</file>-->
             <!--<file>ImageProcessor/ImageTest.php</file>-->
-            <!--<file>ModelTest.php</file>-->
-            <file>TemplateTest.php</file>
+            <file>ModelTest.php</file>
+            <!--<file>TemplateTest.php</file>-->
         </testsuite>
     </testsuites>
 </phpunit>

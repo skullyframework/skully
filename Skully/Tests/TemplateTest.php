@@ -318,6 +318,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
 
         file_put_contents(FileHelper::replaceSeparators($appTestDir.'/themeUrl.tpl'), '{theme_url value="test"}');
 
+        print_r($app->getTemplateEngine()->getPluginsDir());
         $output = $app->getTemplateEngine()->fetch('test/themeUrl.tpl');
 
         $this->assertEquals('http://localhost/skully/public/default/?value=test', $output);
