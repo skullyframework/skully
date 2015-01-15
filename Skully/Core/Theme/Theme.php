@@ -97,13 +97,12 @@ class Theme implements ThemeInterface {
                 }
             }
             $fullPaths[] = $dir . DIRECTORY_SEPARATOR . $thePath;
-            if (!file_exists($fullPath)) {
+            if (!file_exists(rtrim($fullPath, DIRECTORY_SEPARATOR))) {
                 $fullPath = $dir . DIRECTORY_SEPARATOR . $thePath;
             }
         }
-
-        if (!file_exists($fullPath) && !$hideErrors) {
-            throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
+        if (!file_exists(rtrim($fullPath, DIRECTORY_SEPARATOR)) && !$hideErrors) {
+            throw new ThemeFileNotFoundException("Theme file '$fullPath' not found after searching at these locations: \n".
                 implode("\n", $fullPaths)
             );
         }

@@ -30,10 +30,10 @@ class InvalidTemplateException extends \Exception {
      */
     public static function throwError($e, $file) {
         if (strpos($e->getMessage(), 'Undefined index') !== false) {
-            throw new self($e->getMessage() . " at $file", self::$UNDEFINED_INDEX);
+            throw new self($e->getMessage() . " at file $file", self::$UNDEFINED_INDEX);
         }
         else {
-            throw new self($e->getMessage(), self::$OTHERS);
+            throw new self($e->getTraceAsString(), self::$OTHERS);
         }
     }
 } 

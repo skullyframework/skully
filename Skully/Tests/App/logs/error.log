@@ -3553,3 +3553,251 @@ Call to undefined function runkit_function_rename()
 #0  shutdownHandler()
 
 
+[Thursday, 15-Jan-2015 14:52:08 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 17:11:14 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:02:19 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:99
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\setRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:03:12 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:142
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:03:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:184
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:12:56 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:31:36 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:32:05 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\Views\TranslatorPluginTest.php | ln:99
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\Views\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:37:09 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:37:53 WIB error] lvl: 4096 | msg:Argument 1 passed to Patchwork\undo() must be an instance of Patchwork\Interceptor\PatchHandle, null given, called in D:\apache\skully\Skully\Tests\realpath_custom.php on line 38 and defined | file:D:\apache\skully\vendor\antecedent\patchwork\Patchwork.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+
+
+
+[Thursday, 15-Jan-2015 19:37:53 WIB fatal] [SHUTDOWN] lvl:4096 | file:D:\apache\skully\vendor\antecedent\patchwork\Patchwork.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Argument 1 passed to Patchwork\undo() must be an instance of Patchwork\Interceptor\PatchHandle, null given, called in D:\apache\skully\Skully\Tests\realpath_custom.php on line 38 and defined
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:38:47 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:38:47 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:38:47 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:39:18 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:39:18 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:39:18 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:40:23 WIB warn] Path not found: test/test
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:40:23 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:40:23 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:44:06 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:44:06 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:44:06 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:44:50 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:44:50 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:44:50 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:45:35 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:45:35 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:45:35 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+

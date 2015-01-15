@@ -56,8 +56,8 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
             }
         }
         $plugins = array_merge($additionalPluginsDir, array(
-            realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR. 'App' . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR,
-            realpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'Library'.DIRECTORY_SEPARATOR.'Smarty'.DIRECTORY_SEPARATOR.'libs'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR
+            $this->app->getRealpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR. 'App' . DIRECTORY_SEPARATOR . 'smarty' . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR,
+            $this->app->getRealpath(dirname(__FILE__). DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'Library'.DIRECTORY_SEPARATOR.'Smarty'.DIRECTORY_SEPARATOR.'libs'.DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR
         ));
         $this->setPluginsDir($plugins);
     }
@@ -157,6 +157,7 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function fetch($template = null, $cache_id = null, $compile_id = null, $parent = null, $display = false, $merge_tpl_vars = true, $no_output_filter = false)
     {
         try {
+            echo "\ncaching is ".$this->smarty->caching;
             return $this->smarty->fetch($template, $cache_id, $compile_id, $parent, $display, $merge_tpl_vars, $no_output_filter);
         }
         catch (\Exception $e) {

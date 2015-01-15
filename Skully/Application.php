@@ -653,7 +653,7 @@ class Application implements ApplicationInterface {
             return $this->config('skullyBasePath');
         }
         else {
-            return realpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
+            return $this->getRealpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
         }
     }
 
@@ -707,5 +707,13 @@ class Application implements ApplicationInterface {
                 }
             }
         }
+    }
+
+    /**
+     * @param $path
+     * Use this instead of built-in function realpath so we can replace it when testing.
+     */
+    public function getRealpath($path) {
+        realpath($path);
     }
 }

@@ -1,12 +1,46 @@
 <?php
-
-
 /**
  * @param $path
  * @return mixed
  * Replacement of realpath method to work with vfsStream
  */
 use \org\bovigo\vfs\vfsStream;
+
+$__handle = null;
+
+function setRealpath()
+{
+    global $__handle;
+    $__handle = Patchwork\replace("Skully\\Application::getRealpath", function($path)
+    {
+        if (substr($path, 0, 3) == 'vfs') {
+            return $path;
+        }
+        else {
+            $originalPath = realpath($path);
+            $check = realpath(__DIR__.'/../../../');
+            $check_r = explode(DIRECTORY_SEPARATOR, $check);
+            if ($check_r[count($check_r)-1] == 'vendor') {
+                $basePath = realpath(__DIR__.'/../../../../../');
+            }
+            else {
+                $basePath = realpath(__DIR__.'/../../');
+            }
+            $newPath = str_replace($basePath, vfsStream::url('root'), $originalPath);
+            return $newPath;
+        }
+    });
+}
+
+function unsetRealpath()
+{
+    global $__handle;
+    if (!is_null($__handle)) {
+        Patchwork\undo($__handle);
+    }
+}
+
+/*
 function realpath_custom($path) {
     if (substr($path, 0, 3) == 'vfs') {
         return $path;
@@ -51,3 +85,4 @@ function unsetRealpath()
         runkit_function_rename('realpath_original', 'realpath');
     }
 }
+*/
