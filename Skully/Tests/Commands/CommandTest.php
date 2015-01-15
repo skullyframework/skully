@@ -4,6 +4,7 @@ namespace Skully\Tests\Commands;
 set_time_limit(0);
 require_once(dirname(__FILE__).'/../DatabaseTestCase.php');
 
+use Skully\App\Helpers\FileHelper;
 use Skully\Console\Console;
 use Symfony\Component\Console\Application;
 
@@ -42,12 +43,13 @@ class CommandTest extends \PHPUnit_Framework_TestCase {
     {
         $app = __setupApp();
         $console = new Console($app, true);
-        $packedPath = realpath(__DIR__.'/packerTest/packed.js');
+        $packedPath = FileHelper::replaceSeparators(realpath(__DIR__.'/packerTest/packed.js'));
         if (file_exists($packedPath)) {
             unlink($packedPath);
         }
         $this->assertFalse(file_exists($packedPath));
-        $console->run("skully:pack Commands/packerTest/packerTest.txt");
+        $output = $console->run("skully:pack Commands/packerTest/packerTest.txt");
+        echo $output->fetch();
         $this->assertTrue(file_exists($packedPath));
     }
 

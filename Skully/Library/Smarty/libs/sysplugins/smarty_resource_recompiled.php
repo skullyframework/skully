@@ -2,16 +2,17 @@
 /**
  * Smarty Resource Plugin
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage TemplateResources
- * @author     Rodney Rehm
+ * @author Rodney Rehm
  */
 
 /**
  * Smarty Resource Plugin
+ *
  * Base implementation for resource plugins that don't compile cache
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage TemplateResources
  */
 abstract class Smarty_Resource_Recompiled extends Smarty_Resource
@@ -21,7 +22,6 @@ abstract class Smarty_Resource_Recompiled extends Smarty_Resource
      *
      * @param  Smarty_Template_Compiled $compiled  compiled object
      * @param  Smarty_Internal_Template $_template template object
-     *
      * @return void
      */
     public function populateCompiledFilepath(Smarty_Template_Compiled $compiled, Smarty_Internal_Template $_template)
@@ -30,4 +30,5 @@ abstract class Smarty_Resource_Recompiled extends Smarty_Resource
         $compiled->timestamp = false;
         $compiled->exists = false;
     }
+
 }

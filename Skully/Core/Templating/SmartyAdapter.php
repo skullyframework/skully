@@ -157,7 +157,6 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function fetch($template = null, $cache_id = null, $compile_id = null, $parent = null, $display = false, $merge_tpl_vars = true, $no_output_filter = false)
     {
         try {
-            echo "\ncaching is ".$this->smarty->caching;
             return $this->smarty->fetch($template, $cache_id, $compile_id, $parent, $display, $merge_tpl_vars, $no_output_filter);
         }
         catch (\Exception $e) {

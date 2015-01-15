@@ -38,19 +38,19 @@ class Logger implements LoggerInterface{
             if (!file_exists($this->basePath.'logs')) {
                 mkdir($this->basePath.'logs');
             }
-            if (!file_exists($this->basePath.'logs/error.log')) {
-                file_put_contents($this->basePath.'logs/error.log', '');
+            if (!file_exists($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log')) {
+                file_put_contents($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log', '');
             }
-            if (filesize($this->basePath.'logs/error.log') > 5000000) {
+            if (filesize($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log') > 5000000) {
                 $count = 1;
-                while(file_exists($this->basePath.'logs/error'.$count.'.log')) {
+                while(file_exists($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error'.$count.'.log')) {
                     $count+=1;
                 }
-                copy($this->basePath.'logs/error.log', $this->basePath.'logs/error'.$count.'.log');
-                unlink($this->basePath.'logs/error.log');
+                copy($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log', $this->basePath.'logs'.DIRECTORY_SEPARATOR.'error'.$count.'.log');
+                unlink($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log');
             }
-//            $this->prepend($this->basePath.'logs/error.log', "[".$datetime->format(\DateTime::COOKIE)." $code] ".$message."\n");
-            file_put_contents($this->basePath.'logs/error.log', "[".$datetime->format(\DateTime::COOKIE)." $code] ".$message."\n", FILE_APPEND);
+//            $this->prepend($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log', "[".$datetime->format(\DateTime::COOKIE)." $code] ".$message."\n");
+            file_put_contents($this->basePath.'logs'.DIRECTORY_SEPARATOR.'error.log', "[".$datetime->format(\DateTime::COOKIE)." $code] ".$message."\n", FILE_APPEND);
             return true;
         }
         else {

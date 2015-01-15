@@ -3,6 +3,7 @@
 
 namespace Skully\Core\Theme;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\Exceptions\ThemeFileNotFoundException;
 
 /**
@@ -153,9 +154,9 @@ class Theme implements ThemeInterface {
     {
         $fullUrl = $path;
         $fullPath = $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
-        if (!file_exists($fullPath)) {
+        if (!file_exists(FileHelper::replaceSeparators($fullPath))) {
             $fullPath = $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
-            if (!file_exists($fullPath)) {
+            if (!file_exists(FileHelper::replaceSeparators($fullPath))) {
             }
             else {
                 $fullUrl = $this->getPublicBaseUrl() . 'default/' . $path;
@@ -165,10 +166,10 @@ class Theme implements ThemeInterface {
             $fullUrl = $this->getPublicBaseUrl() . $this->themeName . '/' . $path;
         }
 
-        if (!file_exists($fullPath) && !$hideErrors) {
+        if (!file_exists(FileHelper::replaceSeparators($fullPath)) && !$hideErrors) {
             throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
-                $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path . "\n"
+                $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . FileHelper::replaceSeparators($path) . "\n".
+                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . FileHelper::replaceSeparators($path) . "\n"
             );
         }
         if (empty($params)) {

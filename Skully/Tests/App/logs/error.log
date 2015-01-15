@@ -3801,3 +3801,178 @@ Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
 #0  shutdownHandler()
 
 
+[Friday, 16-Jan-2015 00:38:05 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:110
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:38:24 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:111
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:38:42 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:111
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:39:59 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\Views\ThemePluginTest.php | ln:107
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\Views\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:57:26 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:57:52 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:31 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:59:23 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:59:53 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Library\redbean\RedBeanPHP\Facade.php | ln:404
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function freeze() on a non-object
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:00:04 WIB error] test is halo
+[Friday, 16-Jan-2015 01:00:04 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:00:16 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:00:21 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:01:46 WIB error] test is halo
+[Friday, 16-Jan-2015 01:01:46 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:03:05 WIB error] test is halo
+[Friday, 16-Jan-2015 01:03:05 WIB error] test is halo2

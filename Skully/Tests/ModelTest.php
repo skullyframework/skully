@@ -2,9 +2,11 @@
 
 namespace Tests;
 
-require_once(dirname(__FILE__).'/DatabaseTestCase.php');
 
 use RedBeanPHP\Facade as R;
+use Skully\App\Helpers\FileHelper;
+
+require_once(FileHelper::replaceSeparators(dirname(__FILE__).'/DatabaseTestCase.php'));
 
 class ModelTest extends \Tests\DatabaseTestCase {
 
@@ -47,6 +49,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
 
     public function testValidatesExistence()
     {
+        echo "wow";
         R::freeze(false);
         $foo = $this->app->createModel('foo');
         try {

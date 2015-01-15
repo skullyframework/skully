@@ -4,6 +4,7 @@
 namespace Skully\Tests\Views;
 
 use \org\bovigo\vfs\vfsStream;
+use Skully\App\Helpers\FileHelper;
 use \Skully\Core\Config;
 
 require_once(realpath(dirname(__FILE__) . '/../') . '/realpath_custom.php');
@@ -104,7 +105,7 @@ class ThemePluginTest extends \PHPUnit_Framework_TestCase {
         $path = realpath(dirname(__FILE__).'/../../../');
         $path_r = explode(DIRECTORY_SEPARATOR, $path);
         $app = $this->getApp();
-        $this->assertEquals('vfs://root/public/', $app->getTheme()->getBasePath());
+        $this->assertEquals(FileHelper::replaceSeparators('vfs://root/public/'), FileHelper::replaceSeparators($app->getTheme()->getBasePath()));
         unsetRealpath();
     }
 

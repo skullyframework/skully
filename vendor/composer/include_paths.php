@@ -9,8 +9,10 @@ return array(
     $vendorDir . '/phpunit/php-text-template',
     $vendorDir . '/phpunit/php-timer',
     $vendorDir . '/phpunit/php-file-iterator',
-    $vendorDir . '/phpunit/dbunit',
-    $vendorDir . '/symfony/yaml',
     $vendorDir . '/phpunit/php-code-coverage',
     $vendorDir . '/phpunit/phpunit-selenium',
+    $vendorDir . '/phpunit/dbunit',
+    $vendorDir . '/symfony/yaml',
+    $vendorDir . '/phpunit/phpunit',
+    $vendorDir . '/symfony/yaml',
 );

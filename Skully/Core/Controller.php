@@ -275,7 +275,6 @@ class Controller extends ApplicationAware implements ControllerInterface {
             }
         }
 
-        echo "complete path is $completePath";
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
 

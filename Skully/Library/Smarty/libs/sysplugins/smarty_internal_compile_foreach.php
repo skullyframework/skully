@@ -1,17 +1,18 @@
 <?php
 /**
  * Smarty Internal Plugin Compile Foreach
+ *
  * Compiles the {foreach} {foreachelse} {/foreach} tags
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage Compiler
- * @author     Uwe Tews
+ * @author Uwe Tews
  */
 
 /**
  * Smarty Internal Plugin Compile Foreach Class
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
@@ -36,7 +37,7 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
      * @var array
      * @see Smarty_Internal_CompileBase
      */
-    public $shorttag_order = array('from', 'item', 'key', 'name');
+    public $shorttag_order = array('from','item','key','name');
 
     /**
      * Compiles code for the {foreach} tag
@@ -44,7 +45,6 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
      * @param  array  $args      array with attributes from parser
      * @param  object $compiler  compiler object
      * @param  array  $parameter array with compilation parameter
-     *
      * @return string compiled code
      */
     public function compile($args, $compiler, $parameter)
@@ -170,7 +170,7 @@ class Smarty_Internal_Compile_Foreach extends Smarty_Internal_CompileBase
 /**
  * Smarty Internal Plugin Compile Foreachelse Class
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreachelse extends Smarty_Internal_CompileBase
@@ -181,7 +181,6 @@ class Smarty_Internal_Compile_Foreachelse extends Smarty_Internal_CompileBase
      * @param  array  $args      array with attributes from parser
      * @param  object $compiler  compiler object
      * @param  array  $parameter array with compilation parameter
-     *
      * @return string compiled code
      */
     public function compile($args, $compiler, $parameter)
@@ -194,12 +193,13 @@ class Smarty_Internal_Compile_Foreachelse extends Smarty_Internal_CompileBase
 
         return "<?php }\nif (!\$_smarty_tpl->tpl_vars[$item]->_loop) {\n?>";
     }
+
 }
 
 /**
  * Smarty Internal Plugin Compile Foreachclose Class
  *
- * @package    Smarty
+ * @package Smarty
  * @subpackage Compiler
  */
 class Smarty_Internal_Compile_Foreachclose extends Smarty_Internal_CompileBase
@@ -210,7 +210,6 @@ class Smarty_Internal_Compile_Foreachclose extends Smarty_Internal_CompileBase
      * @param  array  $args      array with attributes from parser
      * @param  object $compiler  compiler object
      * @param  array  $parameter array with compilation parameter
-     *
      * @return string compiled code
      */
     public function compile($args, $compiler, $parameter)
@@ -226,4 +225,5 @@ class Smarty_Internal_Compile_Foreachclose extends Smarty_Internal_CompileBase
 
         return "<?php } ?>";
     }
+
 }

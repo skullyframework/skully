@@ -2,10 +2,8 @@
 
 
 namespace Skully\Tests;
-
-require_once __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'antecedent'.DIRECTORY_SEPARATOR.'patchwork'.DIRECTORY_SEPARATOR.'Patchwork.php';
-
 use \org\bovigo\vfs\vfsStream;
+use Skully\App\Helpers\FileHelper;
 use \Skully\Application;
 use \Skully\Core\Config;
 use \Skully\Core\Controller;
@@ -32,6 +30,9 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
             ),
             'anotherpublic' => array(
                 'file' => 'yes'
+            ),
+            'logs' => array(
+                'error.log' => ''
             ),
             'public' => array(
                 'default' => array(
@@ -107,15 +108,15 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $r = $app->getTemplateEngine()->getTemplateDir();
-        $this->assertEquals(replaceSeparators($app->config('basePath').'public/test/App/views/'), replaceSeparators($r['main']));
-        $this->assertEquals(replaceSeparators($app->config('basePath').'public/default/App/views/'), replaceSeparators($r['default']));
+        $this->assertEquals(FileHelper::replaceSeparators($app->config('basePath').'public/test/App/views/'), FileHelper::replaceSeparators($r['main']));
+        $this->assertEquals(FileHelper::replaceSeparators($app->config('basePath').'public/default/App/views/'), FileHelper::replaceSeparators($r['default']));
         unsetRealpath();
     }
 
     public function testAdditionalTemplateDir()
     {
         $app = $this->getApp();
-        $app->getTheme()->setDir(replaceSeparators('vfs://root/anotherpublic'), 'plugin');
+        $app->getTheme()->setDir(FileHelper::replaceSeparators('vfs://root/anotherpublic'), 'plugin');
         $this->assertEquals('yes', file_get_contents($app->getTheme()->getPath('file')));
     }
 
@@ -123,18 +124,18 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $r = $app->getTemplateEngine()->getPluginsDir();
-        $this->assertEquals(replaceSeparators($app->getRealpath(dirname(__FILE__).'/../').'/Library/Smarty/libs/plugins/'), $r[count($r)-1]);
-        $this->assertEquals(replaceSeparators($app->getRealpath(dirname(__FILE__).'/../').'/App/smarty/plugins/'), $r[count($r)-2]);
+        $this->assertEquals(FileHelper::replaceSeparators($app->getRealpath(dirname(__FILE__).'/../').'/Library/Smarty/libs/plugins/'), $r[count($r)-1]);
+        $this->assertEquals(FileHelper::replaceSeparators($app->getRealpath(dirname(__FILE__).'/../').'/App/smarty/plugins/'), $r[count($r)-2]);
         unsetRealpath();
     }
 
     public function testDirSetupCorrect()
     {
         $this->getApp();
-        $this->assertTrue(file_exists(replaceSeparators('vfs://root')));
+        $this->assertTrue(file_exists(FileHelper::replaceSeparators('vfs://root')));
 
         // This cannot be asserted as it is True on Linux but False on Windows
-        // $this->assertFalse(file_exists(replaceSeparators('vfs://root/')));
+        // $this->assertFalse(file_exists(FileHelper::replaceSeparators('vfs://root/')));
         unsetRealpath();
     }
 
@@ -142,10 +143,10 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $app = $this->getApp();
         $this->assertTrue(file_exists('vfs://root/public/test/App/'));
-        $this->assertEquals(replaceSeparators('vfs://root/public/test/App/'), $app->getTheme()->getAppPath(''));
-        $this->assertEquals(replaceSeparators('vfs://root/public/test/'), $app->getTheme()->getPath(''));
-        $this->assertEquals(replaceSeparators('vfs://root/public/default/App/views/home/index.tpl'), $app->getTheme()->getAppPath(replaceSeparators('views/home/index.tpl')));
-        $this->assertEquals(replaceSeparators('vfs://root/public/test/App/views/admin/home/index.tpl'), $app->getTheme()->getAppPath(replaceSeparators('views/admin/home/index.tpl')));
+        $this->assertEquals(FileHelper::replaceSeparators('vfs://root/public/test/App/'), $app->getTheme()->getAppPath(''));
+        $this->assertEquals(FileHelper::replaceSeparators('vfs://root/public/test/'), $app->getTheme()->getPath(''));
+        $this->assertEquals(FileHelper::replaceSeparators('vfs://root/public/default/App/views/home/index.tpl'), $app->getTheme()->getAppPath(FileHelper::replaceSeparators('views/home/index.tpl')));
+        $this->assertEquals(FileHelper::replaceSeparators('vfs://root/public/test/App/views/admin/home/index.tpl'), $app->getTheme()->getAppPath(FileHelper::replaceSeparators('views/admin/home/index.tpl')));
         /**@var Controller $controller **/
         $controller = new \App\Controllers\HomeController($app, 'index');
         $this->assertEquals('This is app default home', $controller->fetch('/home/index'));
@@ -153,14 +154,14 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         ob_start();
         $controller->render();
         $output = ob_get_clean();
-        //$this->assertEquals('This is app default home', $output);
+        $this->assertEquals('This is app default home', $output);
         $controller = new \App\Controllers\Admin\HomeController($app, 'index');
         $this->assertEquals('This is app test admin home', $controller->fetch());
 
         unsetRealpath();
     }
 
-    public function xtestAppRunControllerFromRawUrl()
+    public function testAppRunControllerFromRawUrl()
     {
         $app = $this->getApp();
         ob_start();
@@ -174,7 +175,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
      * @expectedException \Skully\Exceptions\InvalidTemplateException
      * @expectedExceptionCode 99
      */
-    public function xtestSmartyInvalidTemplateError()
+    public function testSmartyInvalidTemplateError()
     {
         $app = $this->getApp();
         $app->runControllerFromRawUrl('home/error');
@@ -186,7 +187,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
 //     * @expectedException \Skully\Exceptions\InvalidTemplateException
 //     * @expectedExceptionCode 1
 //     */
-//    public function xtestSmartyInvalidTemplateUndefinedIndex()
+//    public function testSmartyInvalidTemplateUndefinedIndex()
 //    {
 //        $app = $this->getApp();
 //        ob_start();
@@ -196,7 +197,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
 //        unsetRealpath();
 //    }
 
-    public function xtestNoActionVisible()
+    public function testNoActionVisible()
     {
         $app = $this->getApp();
         ob_start();
@@ -208,7 +209,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     /**
      * @expectedException \Skully\Exceptions\PageNotFoundException
      */
-    public function xtestNoActionInvisible()
+    public function testNoActionInvisible()
     {
         $app = $this->getApp();
         ob_start();
@@ -219,7 +220,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     /**
      * @expectedException \Skully\Exceptions\PageNotFoundException
      */
-    public function xtestNoActionNotFound()
+    public function testNoActionNotFound()
     {
         $app = $this->getApp();
         ob_start();
@@ -227,7 +228,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         ob_clean();
     }
 
-    public function xtestNoActionInvisibleUrl()
+    public function testNoActionInvisibleUrl()
     {
         $app = $this->getApp();
         try {
@@ -243,7 +244,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
      * This is why you must add '_' to any views you do not want to directly accessible via
      * URL, even for wrapper views.
      */
-    public function xtestNoControllerVisible()
+    public function testNoControllerVisible()
     {
         $app = $this->getApp();
         ob_start();
@@ -255,7 +256,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     /**
      * @expectedException \Skully\Exceptions\PageNotFoundException
      */
-    public function xtestNoControllerInvisible()
+    public function testNoControllerInvisible()
     {
         $app = $this->getApp();
         ob_start();
@@ -263,7 +264,7 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
         ob_clean();
     }
 
-    public function xtestNoControllerInvisibleUrl()
+    public function testNoControllerInvisibleUrl()
     {
         $app = $this->getApp();
         try {
