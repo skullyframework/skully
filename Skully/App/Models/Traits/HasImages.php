@@ -1,6 +1,7 @@
 <?php
 namespace Skully\App\Models\Traits;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\App\Helpers\UtilitiesHelper;
 
 /**
@@ -92,4 +93,13 @@ trait HasImages {
     }
 
     // END //
+
+    public function afterDestroy($oldMe)
+    {
+        $oldId = $this->bean->old("id");
+        $classname = $this->classname();
+        /** @var \Skully\App\Models\BaseModel $this */
+        $imagePath = $this->getApp()->getTheme()->getPublicBasePath() . 'images/'.$classname.'/' . $oldId . '/';
+        FileHelper::removeFolder($imagePath);
+    }
 }

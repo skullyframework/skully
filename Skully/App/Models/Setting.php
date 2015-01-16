@@ -5,6 +5,10 @@ use \Skully\App\Helpers\FileHelper;
 use \Skully\Library\EncryptionClass\EncryptionClass;
 
 abstract class Setting extends BaseModel{
+    const IS_CLIENT_FALSE = 0;
+    const IS_CLIENT_JAVASCRIPT = 1;
+    const IS_CLIENT_TEMPLATE = 2;
+
     protected function protectedFields() {
         return array('isClient', 'type');
     }
