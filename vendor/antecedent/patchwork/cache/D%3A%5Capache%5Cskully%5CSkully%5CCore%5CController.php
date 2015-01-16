@@ -1,0 +1,351 @@
+<?php
+/**
+ * Created by Trio Design Team (jay@tgitriodesign.com).
+ * Date: 12/21/13
+ * Time: 3:06 PM
+ */
+
+namespace Skully\Core; \Patchwork\Interceptor\applyScheduledPatches();
+
+use Skully\ApplicationInterface;
+use Skully\Exceptions\InvalidTemplateException;
+use Skully\Exceptions\PageNotFoundException;
+
+/**
+ * Class Controller
+ * @package Skully\Core
+ * Instance creation should only be done via ControllerFactory, unless you know what you are doing.
+ */
+class Controller extends ApplicationAware implements ControllerInterface {
+    /**
+     * @var array
+     *
+     */
+    protected $params = array();
+    /**
+     * @var
+     */
+    protected $currentAction;
+    /**
+     * @var array
+     */
+    protected $lang = array();
+
+    /** @var bool When true, stop doing runAction. Initiate this by calling $this->stopAction() at beforeAction method. */
+    protected $stopAction = false;
+
+    /** When this is called, stop doing runAction. Initiate this by calling $this->stopAction() at beforeAction method. */
+    public function stopAction()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->stopAction = true;
+    }
+    /**
+     * @param ApplicationInterface $app
+     * @param null $additionalParams
+     * @param string $action
+     * $controllerStr uses similar format with one returned from Router, e.g. Home, Admin\Home
+     */
+    public function __construct(ApplicationInterface $app, $action = null, $additionalParams = null) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->setCurrentAction($action);
+        $this->setApp($app);
+        $this->setLanguage($this->app->getLanguage());
+        $this->setParams($additionalParams);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCurrentAction()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return $this->currentAction;
+    }
+
+
+    /**
+     *
+     */
+    public function runCurrentAction() {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return $this->runAction($this->getCurrentAction());
+    }
+
+    /**
+     * @param mixed $action
+     */
+    public function setCurrentAction($action) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->currentAction = $action;
+    }
+
+    /**
+     * Get current route i.e. home/index
+     * This should be called after currentAction is set.
+     * @return string
+     */
+    public function getRoute()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return $this->getControllerPath().'/'.$this->getCurrentAction();
+    }
+
+    /**
+     * Get current page's route and params.
+     * This should be usable in Router's getUrl() method.
+     * @return array
+     */
+    public function getRouteAndParams()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return $this->app->getRouter()->rawUrlToRouteAndParams($_GET['_url']);
+    }
+    /**
+     * @param $action
+     * @return mixed
+     */
+    public function runAction($action) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $value = null;
+        $this->setCurrentAction($action);
+        $this->stopAction = false;
+        $this->beforeAction();
+        if (!$this->stopAction) {
+            if (method_exists($this, $action)) {
+                $value = $this->$action();
+            }
+            else {
+//          Action not found, but we check to see if view is available anyway.
+                if ($action[0] == '_') {
+                    $url = $this->app->getRouter()->getUrl($this->getControllerPath()."/$action", $this->getParams());
+                    PageNotFoundException::alert($this->getControllerPath()."/$action", $url);
+                }
+                else {
+                    try {
+                        $this->render($action);
+                    }
+                    catch (InvalidTemplateException $e) {
+                        $url = $this->app->getRouter()->getUrl($this->getControllerPath()."/$action", $this->getParams());
+                        PageNotFoundException::alert($this->getControllerPath()."/$action", $url);
+                    }
+                }
+            }
+            $this->afterAction();
+        }
+        else {
+            $this->stopAction = false;
+        }
+        return $value;
+    }
+
+    /**
+     * @param array $parameters
+     * @return void
+     */
+    public function setParams($parameters)
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        if (!empty($parameters)) {
+            $this->params = array_merge($this->params, $parameters);
+        }
+    }
+
+    /**
+     * @param $parameter
+     * @return bool
+     */
+    public function hasParam($parameter)
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return isset($this->params[$parameter]) && !is_null($this->params[$parameter]);
+    }
+
+    /**
+     * Reset all of this controller's current parameters
+     */
+    public function resetParams()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->params = array();
+    }
+
+    /**
+     * @param $method String null, POST, GET, REQUEST, or FILES
+     * @return mixed
+     * Get all params set for this controller.
+     * Params here are combination of both GET and POST parameters.
+     */
+    public function getParams($method = null) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        switch ($method) {
+            case 'POST':
+                return $_POST;
+                break;
+            case 'GET':
+                $params = $_GET;
+                unset($params['_url']);
+                return $params;
+                break;
+            case 'REQUEST':
+                return $_REQUEST;
+                break;
+            case 'FILES':
+                return $_FILES;
+                break;
+            default:
+                return $this->params;
+                break;
+        }
+    }
+
+    /**
+     * @param $params
+     */
+    public function addParams($params) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->params = array_merge($this->getParams(), $params);
+    }
+
+    /**
+     * @param $key
+     * @return mixed
+     * Return param with given key
+     * Params here are combination of both GET and POST parameters.
+     */
+    public function getParam($key) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        return (isset($this->params[$key])) ? $this->params[$key] : null;
+    }
+
+    /**
+     * @param $language
+     * Set this controller's language
+     */
+    protected function setLanguage($language) {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $path = $this->getControllerPath();
+        $path_r = explode(DIRECTORY_SEPARATOR, $path);
+        $pathSoFar = '';
+        $actionStr = $this->getCurrentAction();
+        foreach($path_r as $pathItem) {
+            $pathSoFar .= $pathItem . DIRECTORY_SEPARATOR;
+            $this->app->addLangfile($pathSoFar.'_'.$pathItem, $this->app->config('language'));
+
+        }
+        if (!empty($actionStr)) {
+            $this->app->addLangfile($pathSoFar.$actionStr, $this->app->config('language'));
+        }
+        $pathSoFar = '';
+        foreach($path_r as $pathItem) {
+            $pathSoFar .= $pathItem . DIRECTORY_SEPARATOR;
+            $this->app->addLangfile($pathSoFar.'_'.$pathItem, $language);
+        }
+        if (!empty($actionStr)) {
+            $this->app->addLangfile($pathSoFar.$actionStr, $language);
+        }
+    }
+
+    /**
+     * @param null $viewPath
+     * @param array $assignParams
+     * @return void
+     */
+    public function render($viewPath = null, $assignParams = array())
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->app->getTemplateEngine()->assign($assignParams);
+        if (empty($viewPath)) {
+            $viewPath = $this->getCurrentAction();
+            $completePath = $this->getActionTemplate($viewPath);
+        }
+        else {
+            if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
+                $completePath = substr($viewPath, 1).'.tpl';
+            }
+            else {
+                $completePath = $this->getActionTemplate($viewPath);
+            }
+        }
+        $this->app->getTemplateEngine()->display($completePath);
+    }
+
+    /**
+     * @param $viewPath
+     * @return string
+     * @param array $assignParams
+     */
+    public function fetch($viewPath = null, $assignParams = array())
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->app->getTemplateEngine()->assign($assignParams);
+        if (empty($viewPath)) {
+            $viewPath = $this->getCurrentAction();
+            $completePath = $this->getActionTemplate($viewPath);
+        }
+        else {
+            if ($viewPath[0] == '/' || $viewPath[0] == '\\') {
+                $completePath = substr($viewPath, 1).'.tpl';
+            }
+            else {
+                $completePath = $this->getActionTemplate($viewPath);
+            }
+        }
+
+        return $this->app->getTemplateEngine()->fetch($completePath);
+    }
+
+    /**
+     * @return string
+     * SubscribeController will return 'subscribe'
+     * Admin\HomeController will return 'admin/home'
+     */
+    public function getControllerPath() {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $class = get_class($this);
+        return $this->app->getRouter()->getControllerPathFromClass($class);
+    }
+
+
+    /**
+     * @param $viewPath
+     * @return string
+     * Get template path of an action
+     */
+    protected function getActionTemplate($viewPath)
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $path = $this->getControllerPath();
+        return $path.DIRECTORY_SEPARATOR.$viewPath.'.tpl';
+    }
+    /**
+     * @param string $message Message to display.
+     * @param string $as Display as what? E.g. 'message', 'notice' or 'error', can be used
+     *        for design.
+     * Use this to set notification messages before redirect.
+     * To show message / error in this page right away,
+     * use showMessage
+     */
+    public function setMessage($message, $as = 'message') {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $_SESSION[$as] = $message;
+    }
+
+    /**
+     * @param string $message Message to display.
+     * @param string $as Display as what? E.g. 'message', 'notice' or 'error', can be used
+     *        for design.
+     * Display message / error in this page.
+     */
+    public function showMessage($message, $as = 'message') {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        $this->app->getTemplateEngine()->assign(array($as => $message));
+    }
+
+    /**
+     * Following code is used to support setting message and error after redirect.
+     * Override this in your own BaseController as required.
+     */
+    protected function showSetMessages() {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+    }
+
+    /**
+     * To be overridden in controllers.
+     * Get current action with $this->getCurrentAction() here.
+     */
+    protected function beforeAction()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+        if (!empty($this->params['_language'])) {
+            $_SESSION['language'] = $this->params['_language'];
+        }
+        return true;
+    }
+
+    /**
+     * To be overridden in controllers.
+     * Get current action with $this->getCurrentAction() here.
+     */
+    protected function afterAction()
+    {$__pwClosureName=__NAMESPACE__?__NAMESPACE__."\{closure}":"{closure}";$__pwClass=(__CLASS__&&__FUNCTION__!==$__pwClosureName)?__CLASS__:null;$__pwCalledClass=$__pwClass?\get_called_class():null;if(!empty(\Patchwork\Interceptor\State::$patches[$__pwClass][__FUNCTION__])){$__pwFrame=\count(\debug_backtrace(false));if(\Patchwork\Interceptor\intercept($__pwClass,$__pwCalledClass,__FUNCTION__,$__pwFrame,$__pwResult)){return$__pwResult;}}unset($__pwClass,$__pwCalledClass,$__pwResult,$__pwClosureName,$__pwFrame);
+
+    }
+}\Patchwork\Interceptor\applyScheduledPatches();
