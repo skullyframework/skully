@@ -3,6 +3,7 @@
 
 namespace Skully;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\Core\ConfigInterface;
 use Skully\Core\ControllerInterface;
 use Skully\Core\RouterInterface;
@@ -653,7 +654,7 @@ class Application implements ApplicationInterface {
             return $this->config('skullyBasePath');
         }
         else {
-            return realpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
+            return $this->getRealpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
         }
     }
 
@@ -664,7 +665,7 @@ class Application implements ApplicationInterface {
      */
     protected function additionalTemplateEnginePluginsDir()
     {
-        return array($this->config('basePath').$this->getAppName().'/smarty/plugins/');
+        return array(FileHelper::replaceSeparators($this->config('basePath').$this->getAppName().'/smarty/plugins/'));
     }
 
     /**
@@ -707,5 +708,14 @@ class Application implements ApplicationInterface {
                 }
             }
         }
+    }
+
+    /**
+     * @param $path
+     * @return string
+     * Use this instead of built-in function realpath so we can replace it when testing.
+     */
+    public function getRealpath($path) {
+        return realpath($path);
     }
 }

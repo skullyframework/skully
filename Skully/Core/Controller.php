@@ -274,6 +274,7 @@ class Controller extends ApplicationAware implements ControllerInterface {
                 $completePath = $this->getActionTemplate($viewPath);
             }
         }
+
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
 

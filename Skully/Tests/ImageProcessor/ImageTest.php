@@ -4,6 +4,7 @@
 namespace Tests\Features;
 
 require_once(dirname(__FILE__) . '/../DatabaseTestCase.php');
+use Skully\App\Helpers\FileHelper;
 use Skully\Library\ImageProcessor\ImageProcessor;
 
 class ImageTest extends \PHPUnit_Framework_TestCase {
@@ -19,7 +20,7 @@ class ImageTest extends \PHPUnit_Framework_TestCase {
         ));
         $imagesize = getimagesize($path);
         $this->assertEquals(300,$imagesize[0]);
-        $this->assertEquals(dirname(__FILE__).'/resizeSmall.jpg', $path);
+        $this->assertEquals(FileHelper::replaceSeparators(dirname(__FILE__).'/resizeSmall.jpg'), $path);
 
         $path = ImageProcessor::resize($originalPath, array(
             'maxOnly' => true,
@@ -30,7 +31,7 @@ class ImageTest extends \PHPUnit_Framework_TestCase {
         $imagesize = getimagesize($path);
         $originalImagesize = getimagesize($originalPath);
         $this->assertEquals($originalImagesize[0],$imagesize[0]);
-        $this->assertEquals(dirname(__FILE__).'/resizedOriginal.jpg', $path);
+        $this->assertEquals(FileHelper::replaceSeparators(dirname(__FILE__).'/resizedOriginal.jpg'), $path);
     }
     public function testResizedWithoutMaxOnly()
     {
@@ -42,6 +43,6 @@ class ImageTest extends \PHPUnit_Framework_TestCase {
         ));
         $imagesize = getimagesize($path);
         $this->assertEquals(1500,$imagesize[0]);
-        $this->assertEquals(dirname(__FILE__).'/stretched.jpg', $path);
+        $this->assertEquals(FileHelper::replaceSeparators(dirname(__FILE__).'/stretched.jpg'), $path);
     }
 }

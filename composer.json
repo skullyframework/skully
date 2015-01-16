@@ -13,6 +13,7 @@
         }
     ],
     "require-dev": {
+        "antecedent/patchwork": "*",
         "phpunit/phpunit": "3.7.28",
         "phpunit/phpunit-selenium": ">=1.2",
         "phpunit/dbunit": ">=1.2",

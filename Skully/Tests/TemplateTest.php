@@ -311,13 +311,14 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     public function testThemeUrlPlugin()
     {
         $app = $this->getApp();
-        $appTestDir = __DIR__.'/App/public/default/App/views/test';
+        $appTestDir = FileHelper::replaceSeparators(__DIR__.'/App/public/default/App/views/test');
         if (!file_exists($appTestDir)) {
             mkdir($appTestDir);
         }
 
-        file_put_contents($appTestDir.'/themeUrl.tpl', '{theme_url value="test"}');
+        file_put_contents(FileHelper::replaceSeparators($appTestDir.'/themeUrl.tpl'), '{theme_url value="test"}');
 
+        print_r($app->getTemplateEngine()->getPluginsDir());
         $output = $app->getTemplateEngine()->fetch('test/themeUrl.tpl');
 
         $this->assertEquals('http://localhost/skully/public/default/?value=test', $output);
