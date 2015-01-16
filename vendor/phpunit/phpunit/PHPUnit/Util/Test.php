@@ -2,7 +2,7 @@
 /**
  * PHPUnit
  *
- * Copyright (c) 2001-2012, Sebastian Bergmann <sebastian@phpunit.de>.
+ * Copyright (c) 2001-2013, Sebastian Bergmann <sebastian@phpunit.de>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -37,7 +37,7 @@
  * @package    PHPUnit
  * @subpackage Util
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2013 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
  * @link       http://www.phpunit.de/
  * @since      File available since Release 3.0.0
@@ -49,9 +49,8 @@
  * @package    PHPUnit
  * @subpackage Util
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2013 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @version    Release: @package_version@
  * @link       http://www.phpunit.de/
  * @since      Class available since Release 3.0.0
  */
@@ -123,6 +122,10 @@ class PHPUnit_Util_Test
                 $requires[$matches['name'][$i]] = $matches['value'][$i];
             }
         }
+
+        // https://bugs.php.net/bug.php?id=63055
+        $matches = array();
+
         if ($count = preg_match_all(self::REGEX_REQUIRES, $docComment, $matches)) {
             for ($i = 0; $i < $count; $i++) {
                 $name = $matches['name'][$i] . 's';
@@ -148,6 +151,7 @@ class PHPUnit_Util_Test
     {
         $reflector  = new ReflectionMethod($className, $methodName);
         $docComment = $reflector->getDocComment();
+        $docComment = substr($docComment, 3, -2);
 
         if (preg_match(self::REGEX_EXPECTED_EXCEPTION, $docComment, $matches)) {
             $annotations = self::parseTestMethodAnnotations(
@@ -267,6 +271,10 @@ class PHPUnit_Util_Test
         }
 
         if ($data !== NULL) {
+            if (is_object($data)) {
+                $data = iterator_to_array($data);
+            }
+
             foreach ($data as $key => $value) {
                 if (!is_array($value)) {
                     throw new PHPUnit_Framework_Exception(

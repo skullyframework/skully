@@ -16,7 +16,7 @@ PHPUnit %s by Sebastian Bergmann.
 
 ..F
 
-Time: %i %s, Memory: %sMb
+Time: %s, Memory: %sMb
 
 There was 1 failure:
 
@@ -28,7 +28,6 @@ Failed asserting that two strings are equal.
 -'foo'
 +'bar'
 
-%s:%i
 
 FAILURES!
 Tests: 3, Assertions: 3, Failures: 1.

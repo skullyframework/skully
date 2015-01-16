@@ -2,7 +2,7 @@
 /**
  * PHPUnit
  *
- * Copyright (c) 2001-2012, Sebastian Bergmann <sebastian@phpunit.de>.
+ * Copyright (c) 2001-2013, Sebastian Bergmann <sebastian@phpunit.de>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -36,7 +36,7 @@
  *
  * @package    PHPUnit
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2013 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
  * @link       http://www.phpunit.de/
  * @since      File available since Release 3.3.6
@@ -52,9 +52,8 @@ require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . '_files' . DIRECTORY_SEPAR
  *
  * @package    PHPUnit
  * @author     Sebastian Bergmann <sebastian@phpunit.de>
- * @copyright  2001-2012 Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2001-2013 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
- * @version    Release: @package_version@
  * @link       http://www.phpunit.de/
  * @since      Class available since Release 3.3.6
  */
@@ -104,6 +103,10 @@ class Util_TestTest extends PHPUnit_Framework_TestCase
         $this->assertSame(
           array('class' => 'Class', 'code' => ExceptionTest::ERROR_CODE, 'message' => ExceptionTest::ERROR_MESSAGE),
           PHPUnit_Util_Test::getExpectedException('ExceptionTest', 'testNine')
+        );
+        $this->assertSame(
+          array('class' => 'Class', 'code' => NULL, 'message' => ''),
+          PHPUnit_Util_Test::getExpectedException('ExceptionTest', 'testSingleLine')
         );
         $this->assertSame(
             array('class' => 'Class', 'code' => My\Space\ExceptionNamespaceTest::ERROR_CODE, 'message' => My\Space\ExceptionNamespaceTest::ERROR_MESSAGE),

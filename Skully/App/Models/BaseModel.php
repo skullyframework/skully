@@ -218,7 +218,7 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
         }
         if (!empty($mustUnique)) {
             foreach ($mustUnique as $var) {
-                $rows = R::findAll($this->getTableName(), "$var = ?", array($this->get($var)));
+                $rows = R::findAll($this->getTableName(), "`$var` = ?", array($this->get($var)));
                 $count = count($rows);
                 $varStr = str_replace('_', ' ', $var);
                 $varStr = preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $varStr);

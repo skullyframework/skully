@@ -14,13 +14,13 @@ PHPUnit %s by Sebastian Bergmann.
 
 F
 
-Time: %i %s, Memory: %sMb
+Time: %s, Memory: %sMb
 
 There was 1 failure:
 
 1) Warning
 No tests found in class "Foo_Bar_Issue684Test".
-%s/684.php:%i
+
 
 FAILURES!
 Tests: 1, Assertions: 0, Failures: 1.

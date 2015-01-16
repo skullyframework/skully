@@ -1,34 +1,37 @@
 #!/usr/bin/env php
 <?php
-function phpunit_autoload($class = NULL)
-{
-    static $classes = NULL;
-
-    if ($classes === NULL) {
-        $classes = array(
-          ___CLASSLIST___
-        );
-    }
-
-    if ($class === NULL) {
-        $result = array(__FILE__);
-
-        foreach ($classes as $file) {
-            $result[] = 'phar://___PHAR___' . $file;
-        }
-
-        return $result;
-    }
-
-    $class = strtolower($class);
-
-    if (isset($classes[$class])) {
-        require 'phar://___PHAR___' . $classes[$class];
-    }
+if ($GLOBALS['_SERVER']['SCRIPT_NAME'] != '-') {
+    $phar = realpath($GLOBALS['_SERVER']['SCRIPT_NAME']);
+} else {
+    $files = get_included_files();
+    $phar = $files[0];
 }
 
-spl_autoload_register('phpunit_autoload');
+define('__PHPUNIT_PHAR__', str_replace(DIRECTORY_SEPARATOR, '/', $phar));
 
-PHPUnit_TextUI_Command::main();
+spl_autoload_register(
+  function ($class)
+  {
+      static $classes = NULL;
+
+      if ($classes === NULL) {
+          $classes = array(
+            ___CLASSLIST___
+          );
+      }
+
+      $class = strtolower($class);
+
+      if (isset($classes[$class])) {
+          require 'phar://___PHAR___' . $classes[$class];
+      }
+  }
+);
+
+Phar::mapPhar('___PHAR___');
+
+if ($GLOBALS['_SERVER']['SCRIPT_NAME'] != '-') {
+    PHPUnit_TextUI_Command::main();
+}
 
 __HALT_COMPILER();

@@ -14,7 +14,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
      * Cant have camelcased beans
      * @expectedException \RedBeanPHP\RedException
      */
-    public function xtestTwoWordsCamelcasedBean()
+    public function testTwoWordsCamelcasedBean()
     {
         R::freeze(false);
         $testName = R::dispense('testName');
@@ -27,7 +27,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
      * Cant have underscored beans
      * @expectedException \RedBeanPHP\RedException
      */
-    public function xtestTwoWordsUnderscoredBean()
+    public function testTwoWordsUnderscoredBean()
     {
         R::freeze(false);
         $testName = R::dispense('test_name');
@@ -36,7 +36,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
         R::freeze($this->frozen);
     }
 
-    public function xtestValidatesExistenceOf()
+    public function testValidatesExistenceOf()
     {
         $foo = $this->app->createModel('foo');
         try {
@@ -49,7 +49,6 @@ class ModelTest extends \Tests\DatabaseTestCase {
 
     public function testValidatesExistence()
     {
-        echo "wow";
         R::freeze(false);
         $foo = $this->app->createModel('foo');
         try {
@@ -97,6 +96,8 @@ class ModelTest extends \Tests\DatabaseTestCase {
         ));
         R::store($foo1);
         $this->assertNotEmpty($foo1->getID());
+        $rows = R::findAll('foo', "`unique` = ?", array('unique'));
+        $this->assertEquals(1, count($rows));
 
         $foo = $this->app->createModel('foo', array(
             'name' => 'a',
@@ -144,7 +145,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
         R::freeze($this->frozen);
     }
 
-    public function xtestCreateSuccess()
+    public function testCreateSuccess()
     {
         R::freeze(false);
         $testmodel = $this->app->createModel('testmodel', array('name' => 'test'));
@@ -154,7 +155,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
         R::freeze($this->frozen);
     }
 
-    public function xtestMeta()
+    public function testMeta()
     {
         R::freeze(false);
         $testmodel = $this->app->createModel('testmodel', array('name' => 'test'));
@@ -171,7 +172,7 @@ class ModelTest extends \Tests\DatabaseTestCase {
      * todo: Fix SQLite bug
      * @expectedException \RedBeanPHP\RedException\SQL
      */
-    public function xtestTitleField()
+    public function testTitleField()
     {
         $this->migrate();
         $news = R::dispense('bar');

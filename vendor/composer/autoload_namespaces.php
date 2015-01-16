@@ -13,5 +13,4 @@ return array(
     'Skully\\' => array($baseDir . '/'),
     'Ruckusing' => array($vendorDir . '/ruckusing/ruckusing-migrations/lib'),
     'RedBeanPHP\\' => array($baseDir . '/Skully/Library/redbean'),
-    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
 );

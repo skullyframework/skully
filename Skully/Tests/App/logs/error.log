@@ -4013,3 +4013,133 @@ Call to undefined method Tests\ModelTest::generate()
 #0  shutdownHandler()
 
 
+[Friday, 16-Jan-15 09:50:22 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:03 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Smarty_Internal_TemplateCompilerBase' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:04 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:14 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:54:27 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:55:26 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 10:14:30 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Saturday, 17-Jan-2015 04:23:11 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:23:11 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:23:54 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Saturday, 17-Jan-2015 04:47:01 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:47:02 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:49:28 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:49:28 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:50:10 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:50:10 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:50:36 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:50:36 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:51:38 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:51:38 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:52:06 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:52:06 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:52:29 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:52:30 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:53:27 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:53:27 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:54:18 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:54:18 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:56:15 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:56:15 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:57:42 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:57:42 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:58:48 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:58:48 WIB error] test is halo2
