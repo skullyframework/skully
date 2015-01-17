@@ -317,10 +317,65 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         }
 
         file_put_contents(FileHelper::replaceSeparators($appTestDir.'/themeUrl.tpl'), '{theme_url value="test"}');
-
-        print_r($app->getTemplateEngine()->getPluginsDir());
         $output = $app->getTemplateEngine()->fetch('test/themeUrl.tpl');
 
         $this->assertEquals('http://localhost/skully/public/default/?value=test', $output);
+    }
+
+    public function testSSL()
+    {
+        $app = $this->getApp();
+        $appHomeDir = FileHelper::replaceSeparators(__DIR__.'/App/public/default/App/views/home');
+
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl.tpl'), '{public_url value="test"}');
+        ob_start();
+        $_SERVER['HTTPS'] = true;
+        $app->runControllerFromRawUrl('/home/ssl');
+        $_SERVER['HTTPS'] = false;
+        $output = ob_get_clean();
+        $this->assertEquals('https://localhost/skully/public/?value=test', $output);
+
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl1.tpl'), '{public_url value="test" __ssl=true}');
+        ob_start();
+        $app->runControllerFromRawUrl('/home/ssl1');
+        $output = ob_get_clean();
+        $this->assertEquals('https://localhost/skully/public/?value=test', $output);
+
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl2.tpl'), '{theme_url value="test"}');
+        ob_start();
+        $_SERVER['HTTPS'] = true;
+        $app->runControllerFromRawUrl('/home/ssl2');
+        $_SERVER['HTTPS'] = false;
+        $output = ob_get_clean();
+        $this->assertEquals('https://localhost/skully/public/default/?value=test', $output);
+
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl3.tpl'), '{theme_url value="test" __ssl=true}');
+        ob_start();
+        $app->runControllerFromRawUrl('/home/ssl3');
+        $output = ob_get_clean();
+
+        $this->assertEquals('https://localhost/skully/public/default/?value=test', $output);
+
+        /**
+         * Testing SSL with url() function.
+         */
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl4.tpl'), '{url path="home/ssltest"}');
+        ob_start();
+        $_SERVER['HTTPS'] = true;
+        $app->runControllerFromRawUrl('/home/ssl4');
+        $_SERVER['HTTPS'] = false;
+        $output = ob_get_clean();
+        $this->assertEquals('https://localhost/skully/home/ssltest', $output);
+
+        // If pointing to other site, do not attempt to change http.
+        file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl5.tpl'), '{url path="http://teguhwijaya.com"}');
+        ob_start();
+        $_SERVER['HTTPS'] = true;
+        $app->runControllerFromRawUrl('/home/ssl5');
+        $_SERVER['HTTPS'] = false;
+        $output = ob_get_clean();
+
+        $this->assertEquals('http://teguhwijaya.com', $output);
+
     }
 }

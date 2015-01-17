@@ -94,6 +94,7 @@ class Application implements ApplicationInterface {
      */
     protected $http;
 
+
     protected function setupTheme()
     {
         $theme = $this->config('theme');
@@ -261,10 +262,11 @@ class Application implements ApplicationInterface {
     /**
      * @param $rawUrl
      * @param array $additionalParams
+     * @param boolean $secure - When true convert http to https.
      * @return null|\Skully\Core\ControllerInterface
      * @throws PageNotFoundException
      */
-    public function runControllerFromRawUrl($rawUrl, $additionalParams = array()) {
+    public function runControllerFromRawUrl($rawUrl, $additionalParams = array(), $secure = false) {
         try {
             if (!$this->configIsEmpty('maintenance') && !$this->configIsEmpty('maintenanceIp') && $this->config('maintenance') == true && $_SERVER['REMOTE_ADDR'] != $this->config('maintenanceIp')) {
                 $this->redirect($this->config('maintenancePath'));
@@ -272,7 +274,7 @@ class Application implements ApplicationInterface {
             else {
                 $routeAndParams = $this->getRouter()->rawUrlToRouteAndParams($rawUrl);
                 $controllerAndAction = $this->getRouter()->routeToControllerAndAction($routeAndParams['route']);
-                $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params']);
+                $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params'], $secure);
                 if (!empty($controller)) {
                     $controller->setParams($additionalParams);
                     $controller->setParams($_GET);

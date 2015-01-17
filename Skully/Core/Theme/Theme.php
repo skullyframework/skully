@@ -147,10 +147,11 @@ class Theme implements ThemeInterface {
      * @param string $path
      * @param array $params
      * @param boolean $hideErrors True to hide errors from file not found.
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      * @throws \Skully\Exceptions\ThemeFileNotFoundException Given a path, must find that path within the themes/ directory
      * @return string
      */
-    public function getUrl($path = '', $params = array(), $hideErrors = false)
+    public function getUrl($path = '', $params = array(), $hideErrors = false, $ssl = null)
     {
         $fullUrl = $path;
         $fullPath = $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
@@ -159,11 +160,11 @@ class Theme implements ThemeInterface {
             if (!file_exists(FileHelper::replaceSeparators($fullPath))) {
             }
             else {
-                $fullUrl = $this->getPublicBaseUrl() . 'default/' . $path;
+                $fullUrl = $this->getPublicBaseUrl($ssl) . 'default/' . $path;
             }
         }
         else {
-            $fullUrl = $this->getPublicBaseUrl() . $this->themeName . '/' . $path;
+            $fullUrl = $this->getPublicBaseUrl($ssl) . $this->themeName . '/' . $path;
         }
 
         if (!file_exists(FileHelper::replaceSeparators($fullPath)) && !$hideErrors) {
@@ -200,10 +201,18 @@ class Theme implements ThemeInterface {
 
     /**
      * @return string
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      */
-    public function getPublicBaseUrl()
+    public function getPublicBaseUrl($ssl = null)
     {
-        return $this->publicBaseUrl;
+        $url = $this->publicBaseUrl;
+        if ($ssl === true) {
+            $url = str_replace('http://', 'https://', $url);
+        }
+        elseif ($ssl === false) {
+            $url = str_replace('https://', 'http://', $url);
+        }
+        return $url;
     }
 
     /**

@@ -41,9 +41,10 @@ interface ThemeInterface {
      * @param string $path
      * @param array $params
      * @param boolean $hideErrors True to hide errors from file not found.
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      * @return string
      */
-    public function getUrl($path = '', $params = array(), $hideErrors = false);
+    public function getUrl($path = '', $params = array(), $hideErrors = false, $ssl = null);
 
     /**
      * Get path to public directory e.g. /appname/public/
@@ -58,9 +59,10 @@ interface ThemeInterface {
     public function getPublicBasePath();
 
     /**
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      * @return string
      */
-    public function getPublicBaseUrl();
+    public function getPublicBaseUrl($ssl = null);
 
     /**
      * @return string

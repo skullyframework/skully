@@ -28,4 +28,10 @@ class UrlHelper {
         $path_r = explode('-', $path);
         return $path_r[count($path_r)-1];
     }
+
+    public static function isSecure() {
+        return
+            (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+            || (!empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
+    }
 } 

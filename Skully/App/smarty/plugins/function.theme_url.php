@@ -3,6 +3,9 @@
 
 /**
  * @param array $params
+ * SSL default behaviour:
+ * Decided by current page.
+ * Set parameter __ssl to true or false to override default ssl behaviour.
  * @param Smarty $smarty
  * @return string
  */
@@ -11,6 +14,14 @@ function smarty_function_theme_url($params = array(), &$smarty) {
     if (!empty($params['path'])) {
         $path = $params['path'];
         unset($params['path']);
+    }
+
+    if (!empty($params['__ssl'])) {
+        $ssl = $params['__ssl'];
+        unset($params['__ssl']);
+    }
+    else {
+        $ssl = \Skully\App\Helpers\UrlHelper::isSecure();
     }
 
     $arguments = array();
@@ -22,5 +33,5 @@ function smarty_function_theme_url($params = array(), &$smarty) {
     /** @var \Skully\ApplicationInterface $app */
     $app = $smarty->getRegisteredObject('app');
 
-    return $app->getTheme()->getUrl($path, $arguments);
+    return $app->getTheme()->getUrl($path, $arguments, false, $ssl);
 }

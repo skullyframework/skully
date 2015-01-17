@@ -2,6 +2,7 @@
 
 
 namespace Skully\Core;
+use Skully\App\Helpers\UrlHelper;
 
 
 /**
@@ -164,11 +165,13 @@ class Router implements RouterInterface {
     /**
      * @param null $route
      * @param array $parameters
+     * @param boolean $ssl
      * @return string
      * Takes a route and parameters, returns url based from the mapping
      * If route is null, get current page's url instead.
+     * Can also take external URL - useful for urls which https/http can change according to current page.
      */
-    public function getUrl($route = null, $parameters = array()) {
+    public function getUrl($route = null, $parameters = array(), $ssl = null) {
         if ($route == null) {
             $pageURL = 'http';
             if (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
@@ -178,16 +181,18 @@ class Router implements RouterInterface {
             } else {
                 $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
             }
-            return $pageURL.(!empty($parameters)?"?".http_build_query($parameters):'');
+            return $this->setHttps($pageURL,$ssl).(!empty($parameters)?"?".http_build_query($parameters):'');
         }
         else {
             $answer = $route;
             $urlRules = $this->urlRules;
+            $internal = (strpos($route, 'https://') !== 0 && strpos($route, 'http://') !== 0);
             if (!empty($urlRules)) {
                 foreach($urlRules as $displayedPath => $systemPath) {
 
                     if ($systemPath == $route) {
                         $answer = $displayedPath;
+                        $internal = true;
                         break;
                     }
                 }
@@ -209,8 +214,24 @@ class Router implements RouterInterface {
                 }
             }
 
-            return $this->baseUrl.$answer.(!empty($parameters)?"?".http_build_query($parameters):'');
+            if ($internal) {
+                $base = $this->setHttps($this->baseUrl, $ssl);
+            }
+            else {
+                $base = '';
+            }
+            return $base.$answer.(!empty($parameters)?"?".http_build_query($parameters):'');
         }
+    }
+
+    private function setHttps($url, $ssl) {
+        if ($ssl === true || UrlHelper::isSecure()) {
+            $url = str_replace('http://', 'https://', $url);
+        }
+        elseif ($ssl === false) {
+            $url = str_replace('https://', 'http://', $url);
+        }
+        return $url;
     }
 
     /**
