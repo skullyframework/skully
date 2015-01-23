@@ -15,6 +15,8 @@ trait Authorizable {
 
     protected $password_confirmation;
 
+    protected $minPasswordLength = 5;
+
     public function validatesOnCreate()
     {
         if (empty($this->password)) {
@@ -75,7 +77,13 @@ trait Authorizable {
     }
 
     function resetPassword() {
-        $new_password = base_convert(mt_rand(0x19A100, 0x39AA3FF), 10, 36);
+        $new_password = "";
+        for($i=0; $i<floor($this->minPasswordLength / 5); $i++)
+            $new_password .= base_convert(mt_rand(0x19A100, 0x39AA3FF), 10, 36);
+        $mod = $this->minPasswordLength % 5;
+        if($mod > 0)
+            $new_password .= base_convert(mt_rand( pow(36, $mod-1), (pow(36, $mod) - 1) ), 10, 36);
+
         $this->set('salt', time());
 //        $this->setPassword(UtilitiesHelper::toHash($new_password, $this->get('salt'), $this->app->config('globalSalt')));
         $this->setPassword($new_password);
