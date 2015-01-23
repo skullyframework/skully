@@ -72,15 +72,31 @@ trait Authorizable {
         return $this->password_confirmation;
     }
 
+    /**
+     * @param mixed $length
+     */
+    public function setMinPasswordLength($length)
+    {
+        $this->minPasswordLength = $length;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMinPasswordLength()
+    {
+        return $this->minPasswordLength;
+    }
+
     function generateActivationKey() {
         $this->activationKey = sha1(mt_rand(10000,99999).time());
     }
 
     function resetPassword() {
         $new_password = "";
-        for($i=0; $i<floor($this->minPasswordLength / 5); $i++)
+        for($i=0; $i<floor($this->getMinPasswordLength() / 5); $i++)
             $new_password .= base_convert(mt_rand(0x19A100, 0x39AA3FF), 10, 36);
-        $mod = $this->minPasswordLength % 5;
+        $mod = $this->getMinPasswordLength() % 5;
         if($mod > 0)
             $new_password .= base_convert(mt_rand( pow(36, $mod-1), (pow(36, $mod) - 1) ), 10, 36);
 
