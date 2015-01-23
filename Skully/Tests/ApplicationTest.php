@@ -6,6 +6,7 @@ namespace Tests\Controllers;
 use Skully\Application;
 use Skully\Core\Config;
 
+
 class ApplicationTest extends \PHPUnit_Framework_TestCase {
 
 

@@ -120,4 +120,15 @@ class FileHelper extends ApplicationAwareHelper
         }
         return rmdir($dir);
     }
+
+    /**
+     * @param $text
+     * @return string
+     * Replace directory separators i.e. '/' and '\' to DIRECTORY_SEPARATOR
+     */
+    public static function replaceSeparators($text) {
+        $text = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $text);
+        $text = str_replace(':\\\\', '://', $text);
+        return $text;
+    }
 }

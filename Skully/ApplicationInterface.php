@@ -35,12 +35,13 @@ interface ApplicationInterface {
     /**
      * @param $rawUrl
      * @param array $additionalParams
+     * @param boolean $secure - When true, convert http to https
      * @return null
      * @throws \Skully\Exceptions\PageNotFoundException
      * Get controller from raw url e.g. thisurl/is/good
      * Rules will be applied to the url before controller is called.
      */
-    public function runControllerFromRawUrl($rawUrl, $additionalParams = array());
+    public function runControllerFromRawUrl($rawUrl, $additionalParams = array(), $secure = false);
 
     /**
      * @param ConfigInterface $config

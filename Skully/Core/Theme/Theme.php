@@ -3,6 +3,7 @@
 
 namespace Skully\Core\Theme;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\Exceptions\ThemeFileNotFoundException;
 
 /**
@@ -97,13 +98,12 @@ class Theme implements ThemeInterface {
                 }
             }
             $fullPaths[] = $dir . DIRECTORY_SEPARATOR . $thePath;
-            if (!file_exists($fullPath)) {
+            if (!file_exists(rtrim($fullPath, DIRECTORY_SEPARATOR))) {
                 $fullPath = $dir . DIRECTORY_SEPARATOR . $thePath;
             }
         }
-
-        if (!file_exists($fullPath) && !$hideErrors) {
-            throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
+        if (!file_exists(rtrim($fullPath, DIRECTORY_SEPARATOR)) && !$hideErrors) {
+            throw new ThemeFileNotFoundException("Theme file '$fullPath' not found after searching at these locations: \n".
                 implode("\n", $fullPaths)
             );
         }
@@ -147,29 +147,30 @@ class Theme implements ThemeInterface {
      * @param string $path
      * @param array $params
      * @param boolean $hideErrors True to hide errors from file not found.
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      * @throws \Skully\Exceptions\ThemeFileNotFoundException Given a path, must find that path within the themes/ directory
      * @return string
      */
-    public function getUrl($path = '', $params = array(), $hideErrors = false)
+    public function getUrl($path = '', $params = array(), $hideErrors = false, $ssl = null)
     {
         $fullUrl = $path;
         $fullPath = $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path;
-        if (!file_exists($fullPath)) {
+        if (!file_exists(FileHelper::replaceSeparators($fullPath))) {
             $fullPath = $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path;
-            if (!file_exists($fullPath)) {
+            if (!file_exists(FileHelper::replaceSeparators($fullPath))) {
             }
             else {
-                $fullUrl = $this->getPublicBaseUrl() . 'default/' . $path;
+                $fullUrl = $this->getPublicBaseUrl($ssl) . 'default/' . $path;
             }
         }
         else {
-            $fullUrl = $this->getPublicBaseUrl() . $this->themeName . '/' . $path;
+            $fullUrl = $this->getPublicBaseUrl($ssl) . $this->themeName . '/' . $path;
         }
 
-        if (!file_exists($fullPath) && !$hideErrors) {
+        if (!file_exists(FileHelper::replaceSeparators($fullPath)) && !$hideErrors) {
             throw new ThemeFileNotFoundException("Theme file not found after searching at these locations: \n".
-                $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . $path . "\n".
-                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . $path . "\n"
+                $this->getBasePath() . $this->themeName . DIRECTORY_SEPARATOR . FileHelper::replaceSeparators($path) . "\n".
+                $this->getBasePath() . 'default' . DIRECTORY_SEPARATOR . FileHelper::replaceSeparators($path) . "\n"
             );
         }
         if (empty($params)) {
@@ -200,10 +201,18 @@ class Theme implements ThemeInterface {
 
     /**
      * @return string
+     * @param boolean $ssl When true or false force to change security mode (http or https).
      */
-    public function getPublicBaseUrl()
+    public function getPublicBaseUrl($ssl = null)
     {
-        return $this->publicBaseUrl;
+        $url = $this->publicBaseUrl;
+        if ($ssl === true) {
+            $url = str_replace('http://', 'https://', $url);
+        }
+        elseif ($ssl === false) {
+            $url = str_replace('https://', 'http://', $url);
+        }
+        return $url;
     }
 
     /**

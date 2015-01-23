@@ -34,6 +34,8 @@ class Controller extends ApplicationAware implements ControllerInterface {
     /** @var bool When true, stop doing runAction. Initiate this by calling $this->stopAction() at beforeAction method. */
     protected $stopAction = false;
 
+    protected $secure = false;
+
     /** When this is called, stop doing runAction. Initiate this by calling $this->stopAction() at beforeAction method. */
     public function stopAction()
     {
@@ -274,6 +276,7 @@ class Controller extends ApplicationAware implements ControllerInterface {
                 $completePath = $this->getActionTemplate($viewPath);
             }
         }
+
         return $this->app->getTemplateEngine()->fetch($completePath);
     }
 

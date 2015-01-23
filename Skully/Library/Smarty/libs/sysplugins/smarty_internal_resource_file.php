@@ -27,6 +27,7 @@ class Smarty_Internal_Resource_File extends Smarty_Resource
     public function populate(Smarty_Template_Source $source, Smarty_Internal_Template $_template=null)
     {
         $source->filepath = $this->buildFilepath($source, $_template);
+        $source->filepath = str_replace(':\\\\', '://', $source->filepath);
 
         if ($source->filepath !== false) {
             if (is_object($source->smarty->security_policy)) {

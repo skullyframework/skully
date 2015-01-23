@@ -3553,3 +3553,671 @@ Call to undefined function runkit_function_rename()
 #0  shutdownHandler()
 
 
+[Thursday, 15-Jan-2015 14:52:08 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 17:11:14 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\realpath_custom.php | ln:34
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function runkit_function_rename()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:02:19 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:99
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\setRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:03:12 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:142
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:03:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:184
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 18:12:56 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:31:36 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:32:05 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\Views\TranslatorPluginTest.php | ln:99
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\Views\unsetRealpath()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:37:09 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit\src\Framework\TestResult.php | ln:317
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method IDE_PHPUnit_Framework_TestListener::addRiskyTest()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:37:53 WIB error] lvl: 4096 | msg:Argument 1 passed to Patchwork\undo() must be an instance of Patchwork\Interceptor\PatchHandle, null given, called in D:\apache\skully\Skully\Tests\realpath_custom.php on line 38 and defined | file:D:\apache\skully\vendor\antecedent\patchwork\Patchwork.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+
+
+
+[Thursday, 15-Jan-2015 19:37:53 WIB fatal] [SHUTDOWN] lvl:4096 | file:D:\apache\skully\vendor\antecedent\patchwork\Patchwork.php | ln:49
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Argument 1 passed to Patchwork\undo() must be an instance of Patchwork\Interceptor\PatchHandle, null given, called in D:\apache\skully\Skully\Tests\realpath_custom.php on line 38 and defined
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:38:47 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:38:47 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:38:47 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:39:18 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:39:18 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:39:18 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:40:23 WIB warn] Path not found: test/test
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:40:23 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:40:23 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:40:23 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:44:06 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:44:06 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:44:06 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:44:50 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:44:50 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:44:50 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Thursday, 15-Jan-2015 19:45:35 WIB error] test is halo
+[Thursday, 15-Jan-2015 19:45:35 WIB error] test is halo2
+[Thursday, 15-Jan-2015 19:45:35 WIB fatal] [SHUTDOWN] lvl:1 | file:C:\xampp\php\pear\PHPUnit\TextUI\ResultPrinter.php | ln:446
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method PHPUnit_Framework_TestResult::deprecatedFeaturesCount()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:38:05 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:110
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:38:24 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:111
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:38:42 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\ControllerThemeTest.php | ln:111
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:39:59 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Tests\Views\ThemePluginTest.php | ln:107
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined function Skully\Tests\Views\replaceSeparators()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:57:26 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:57:52 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:31 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:58:55 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:59:23 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 00:59:53 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Library\redbean\RedBeanPHP\Facade.php | ln:404
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to a member function freeze() on a non-object
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:00:04 WIB error] test is halo
+[Friday, 16-Jan-2015 01:00:04 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:00:16 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:00:21 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-2015 01:01:46 WIB error] test is halo
+[Friday, 16-Jan-2015 01:01:46 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:03:05 WIB error] test is halo
+[Friday, 16-Jan-2015 01:03:05 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:08:08 WIB error] test is halo
+[Friday, 16-Jan-2015 01:08:08 WIB error] test is halo
+[Friday, 16-Jan-2015 01:08:08 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:08:08 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:11:29 WIB error] test is halo
+[Friday, 16-Jan-2015 01:11:29 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:14:24 WIB error] test is halo
+[Friday, 16-Jan-2015 01:14:24 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:14:53 WIB error] test is halo
+[Friday, 16-Jan-2015 01:14:53 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:15:43 WIB error] test is halo
+[Friday, 16-Jan-2015 01:15:43 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:17:20 WIB error] test is halo
+[Friday, 16-Jan-2015 01:17:20 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:18:13 WIB error] test is halo
+[Friday, 16-Jan-2015 01:18:13 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:18:40 WIB error] test is halo
+[Friday, 16-Jan-2015 01:18:40 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:19:16 WIB error] test is halo
+[Friday, 16-Jan-2015 01:19:16 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:19:34 WIB error] test is halo
+[Friday, 16-Jan-2015 01:19:34 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:19:44 WIB error] test is halo
+[Friday, 16-Jan-2015 01:19:44 WIB error] test is halo2
+[Friday, 16-Jan-2015 01:19:57 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:50:22 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects/src/Framework/MockObject/Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:03 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php | ln:24
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class 'Smarty_Internal_TemplateCompilerBase' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:04 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:51:14 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:54:27 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 09:55:26 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Friday, 16-Jan-15 10:14:30 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Saturday, 17-Jan-2015 04:23:11 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:23:11 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:23:54 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\vendor\phpunit\phpunit-mock-objects\src\Framework\MockObject\Generator.php | ln:247
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method Tests\ModelTest::generate()
+#0  shutdownHandler()
+
+
+[Saturday, 17-Jan-2015 04:47:01 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:47:02 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:49:28 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:49:28 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:50:10 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:50:10 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:50:36 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:50:36 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:51:38 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:51:38 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:52:06 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:52:06 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:52:29 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:52:30 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:53:27 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:53:27 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:54:18 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:54:18 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:56:15 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:56:15 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:57:42 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:57:42 WIB error] test is halo2
+[Saturday, 17-Jan-2015 04:58:48 WIB error] test is halo
+[Saturday, 17-Jan-2015 04:58:48 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:45:17 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:45:17 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:46:00 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:46:00 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:47:27 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:47:27 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:47:27 WIB warn] Path not found: test/themeUrlSSL.tpl
+[Saturday, 17-Jan-2015 06:51:18 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:51:18 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:51:18 WIB warn] Path not found: home/ssl2.tpl
+[Saturday, 17-Jan-2015 06:52:05 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:52:05 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:52:05 WIB warn] Path not found: home/ssl2.tpl
+[Saturday, 17-Jan-2015 06:52:19 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:52:19 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:52:19 WIB warn] Path not found: /home/ssl2.tpl
+[Saturday, 17-Jan-2015 06:52:35 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:52:35 WIB error] test is halo2
+[Saturday, 17-Jan-2015 06:53:07 WIB error] test is halo
+[Saturday, 17-Jan-2015 06:53:07 WIB error] test is halo2
+[Saturday, 17-Jan-2015 07:47:01 WIB error] test is halo
+[Saturday, 17-Jan-2015 07:47:01 WIB error] test is halo2
+[Saturday, 17-Jan-2015 07:48:16 WIB error] test is halo
+[Saturday, 17-Jan-2015 07:48:16 WIB error] test is halo2
+[Saturday, 17-Jan-2015 07:49:12 WIB error] test is halo
+[Saturday, 17-Jan-2015 07:49:12 WIB error] test is halo2
+[Saturday, 17-Jan-2015 07:50:12 WIB error] test is halo
+[Saturday, 17-Jan-2015 07:50:12 WIB error] test is halo2
+[Saturday, 17-Jan-2015 07:58:23 WIB error] test is halo
+[Saturday, 17-Jan-2015 07:58:23 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:00:00 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:00:00 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:00:18 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:00:18 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:01:50 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:01:50 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:03:47 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:03:47 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:10:40 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:10:40 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:13:22 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:13:22 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:14:19 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:14:19 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:15:49 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:15:49 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:16:17 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:16:17 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:17:25 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:17:25 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:18:41 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:18:41 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:25:38 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:25:38 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:29:59 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:30:00 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:30:00 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:30:00 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:31:18 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:31:18 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:37:00 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:37:00 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:37:35 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:37:35 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:38:13 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:38:13 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:39:23 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:39:23 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:39:42 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:39:42 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:41:03 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:41:03 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:42:00 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:42:01 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:42:21 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:42:21 WIB error] test is halo2
+[Saturday, 17-Jan-2015 08:42:28 WIB error] test is halo
+[Saturday, 17-Jan-2015 08:42:28 WIB error] test is halo2

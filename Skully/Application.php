@@ -3,6 +3,7 @@
 
 namespace Skully;
 
+use Skully\App\Helpers\FileHelper;
 use Skully\Core\ConfigInterface;
 use Skully\Core\ControllerInterface;
 use Skully\Core\RouterInterface;
@@ -92,6 +93,7 @@ class Application implements ApplicationInterface {
      * @var Http
      */
     protected $http;
+
 
     protected function setupTheme()
     {
@@ -260,10 +262,11 @@ class Application implements ApplicationInterface {
     /**
      * @param $rawUrl
      * @param array $additionalParams
+     * @param boolean $secure - When true convert http to https.
      * @return null|\Skully\Core\ControllerInterface
      * @throws PageNotFoundException
      */
-    public function runControllerFromRawUrl($rawUrl, $additionalParams = array()) {
+    public function runControllerFromRawUrl($rawUrl, $additionalParams = array(), $secure = false) {
         try {
             if (!$this->configIsEmpty('maintenance') && !$this->configIsEmpty('maintenanceIp') && $this->config('maintenance') == true && $_SERVER['REMOTE_ADDR'] != $this->config('maintenanceIp')) {
                 $this->redirect($this->config('maintenancePath'));
@@ -271,7 +274,7 @@ class Application implements ApplicationInterface {
             else {
                 $routeAndParams = $this->getRouter()->rawUrlToRouteAndParams($rawUrl);
                 $controllerAndAction = $this->getRouter()->routeToControllerAndAction($routeAndParams['route']);
-                $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params']);
+                $controller = $this->getController($controllerAndAction['controller'], $controllerAndAction['action'], $routeAndParams['params'], $secure);
                 if (!empty($controller)) {
                     $controller->setParams($additionalParams);
                     $controller->setParams($_GET);
@@ -653,7 +656,7 @@ class Application implements ApplicationInterface {
             return $this->config('skullyBasePath');
         }
         else {
-            return realpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
+            return $this->getRealpath(dirname(__FILE__).'/../').DIRECTORY_SEPARATOR;
         }
     }
 
@@ -664,7 +667,7 @@ class Application implements ApplicationInterface {
      */
     protected function additionalTemplateEnginePluginsDir()
     {
-        return array($this->config('basePath').$this->getAppName().'/smarty/plugins/');
+        return array(FileHelper::replaceSeparators($this->config('basePath').$this->getAppName().'/smarty/plugins/'));
     }
 
     /**
@@ -707,5 +710,14 @@ class Application implements ApplicationInterface {
                 }
             }
         }
+    }
+
+    /**
+     * @param $path
+     * @return string
+     * Use this instead of built-in function realpath so we can replace it when testing.
+     */
+    public function getRealpath($path) {
+        return realpath($path);
     }
 }
