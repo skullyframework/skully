@@ -18,7 +18,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $config = new Config();
         $config->setProtectedFromArray(array(
             'publicDir' => 'public/',
-            'caching' => 0,
+            'caching' => 1,
             'theme' => 'test',
             'basePath' => realpath(__DIR__.DIRECTORY_SEPARATOR.'App').DIRECTORY_SEPARATOR,
             'baseUrl' => 'http://localhost/skully/',
@@ -33,7 +33,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         return new \App\Application($config);
     }
 
-    public function xtestDeleteCache()
+    public function testDeleteCache()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -91,7 +91,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache tag works.
      */
-    public function xtestNoCache()
+    public function testNoCache()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -118,7 +118,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache affects included files.
      */
-    public function xtestNoCacheInclude()
+    public function testNoCacheInclude()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -146,7 +146,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache within a file that has extends would still work.
      */
-    public function xtestNoCacheExtends()
+    public function testNoCacheExtends()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -173,7 +173,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * nocache tag test, this time with a controller.
      */
-    public function xtestNoCacheWithActiveController()
+    public function testNoCacheWithActiveController()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/home';
@@ -201,7 +201,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache also works with fetch.
      */
-    public function xtestNoCacheFetch()
+    public function testNoCacheFetch()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -224,7 +224,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache also works with fetched text that is assigned to a template.
      */
-    public function xtestNoCacheAssignedFetch()
+    public function testNoCacheAssignedFetch()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -254,7 +254,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     /**
      * This proves nocache also works with fetch that is assigned into an extended template, WITH a rule written below.
      */
-    public function xtestNoCacheExtendsAssignedFetch()
+    public function testNoCacheExtendsAssignedFetch()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/test';
@@ -286,7 +286,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('Content is halo2', $output);
     }
 
-    public function xtestNoCacheExtendsAssignedFetchWithActiveController()
+    public function testNoCacheExtendsAssignedFetchWithActiveController()
     {
         $app = $this->getApp();
         $appTestDir = __DIR__.'/App/public/default/App/views/home';
@@ -309,7 +309,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('Content is halo2', $output);
     }
 
-    public function xtestThemeUrlPlugin()
+    public function testThemeUrlPlugin()
     {
         $app = $this->getApp();
         $appTestDir = FileHelper::replaceSeparators(__DIR__.'/App/public/default/App/views/test');

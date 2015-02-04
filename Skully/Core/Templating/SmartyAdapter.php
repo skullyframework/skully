@@ -124,12 +124,13 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
      */
     public function display($template = null, $cache_id = null, $compile_id = null, $parent = null)
     {
-        $this->smarty->display($template, $cache_id, $compile_id, $parent);
-//        try {
-//        }
-//        catch (\Exception $e) {
-//            InvalidTemplateException::throwError($e, $template);
-//        }
+
+        try {
+            $this->smarty->display($template, $cache_id, $compile_id, $parent);
+        }
+        catch (\Exception $e) {
+            InvalidTemplateException::throwError($e, $template);
+        }
     }
 
     public function clearAllCache()

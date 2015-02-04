@@ -104,7 +104,7 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         return $app;
     }
 
-    public function xtestPassAppToSmarty()
+    public function testPassAppToSmarty()
     {
         $app = $this->getApp();
         $smarty = $app->getTemplateEngine();
@@ -112,7 +112,7 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         unsetRealpath();
     }
 
-    public function xtestPluginDefined()
+    public function testPluginDefined()
     {
         $app = $this->getApp();
         $smarty = $app->getTemplateEngine();
@@ -122,7 +122,7 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         unsetRealpath();
     }
 
-    public function xtestGetLanguageFromFile()
+    public function testGetLanguageFromFile()
     {
         setRealpath();
         $app = $this->getApp();

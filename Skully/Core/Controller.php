@@ -121,7 +121,12 @@ class Controller extends ApplicationAware implements ControllerInterface {
                     }
                     catch (InvalidTemplateException $e) {
                         $url = $this->app->getRouter()->getUrl($this->getControllerPath()."/$action", $this->getParams());
-                        PageNotFoundException::alert($this->getControllerPath()."/$action", $url);
+                        if (strpos($e->getMessage(), 'Unable to load template file') !== false) {
+                            PageNotFoundException::alert($this->getControllerPath()."/$action", $url);
+                        }
+                        else {
+                            throw $e;
+                        }
                     }
                 }
             }

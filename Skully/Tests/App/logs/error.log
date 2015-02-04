@@ -4271,3 +4271,49 @@ Call to undefined method Tests\ModelTest::generate()
 [Wednesday, 04-Feb-2015 13:01:05 WIB warn] Path not found: /home/ssl
 [Wednesday, 04-Feb-2015 13:02:54 WIB warn] Path not found: /home/ssl
 [Wednesday, 04-Feb-2015 13:07:36 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 13:41:02 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:41:02 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:41:22 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:41:22 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:42:00 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Core\Templating\SmartyAdapter.php | ln:132
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Allowed memory size of 134217728 bytes exhausted (tried to allocate 100769792 bytes)
+#0  shutdownHandler()
+
+
+[Wednesday, 04-Feb-2015 13:42:20 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Core\Templating\SmartyAdapter.php | ln:132
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Allowed memory size of 134217728 bytes exhausted (tried to allocate 100769792 bytes)
+#0  shutdownHandler()
+
+
+[Wednesday, 04-Feb-2015 13:42:36 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:42:36 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:42:50 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:42:50 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:47:04 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:47:04 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:48:29 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:48:29 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:48:57 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:48:57 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:50:08 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:50:08 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:51:05 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:51:05 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:52:12 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:52:12 WIB error] test is halo2
