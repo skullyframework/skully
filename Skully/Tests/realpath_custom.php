@@ -6,11 +6,10 @@
  */
 use \org\bovigo\vfs\vfsStream;
 
-$__handle = null;
+// Patchwork\undo($__handle) does not work, so for now use undoAll.
 
 function setRealpath()
 {
-    global $__handle;
     $__handle = Patchwork\replace("Skully\\Application::getRealpath", function($path)
     {
         if (substr($path, 0, 3) == 'vfs') {
@@ -34,10 +33,7 @@ function setRealpath()
 
 function unsetRealpath()
 {
-    global $__handle;
-    if (!is_null($__handle)) {
-        Patchwork\undo($__handle);
-    }
+    Patchwork\undoAll();
 }
 
 /*
