@@ -1,5 +1,5 @@
 <?php
-
+use Skully\App\Helpers\Csrf as C;
 
 /**
  * @param array $params
@@ -25,7 +25,19 @@ function smarty_block_form($params, $content, &$smarty, &$repeat) {
             $paramsStr .= $key.'="'.$param.'" ';
         }
 
-        $form = "<form ".$paramsStr.">\n".$content."\n</form>";
+        /** @var \Skully\ApplicationInterface $app */
+        $app = $smarty->getRegisteredObject('app');
+        if($app->config("csrf")) {
+            $token_id = C::get_token_id();
+            $token_value = C::get_token($token_id);
+            $form = "<form " . $paramsStr . ">\n";
+            $form .= "<input type='hidden' name='" . $token_id . "' value='" . $token_value . "' />\n";
+            $form .= $content . "\n</form>";
+        }
+        else {
+            $form = "<form " . $paramsStr . ">\n" . $content . "\n</form>";
+        }
+
         return $form;
     }
 }
