@@ -18,6 +18,12 @@ class Router implements RouterInterface {
     protected $urlRules = array();
 
     /**
+     * @var array
+     * Url rewrites used in this application
+     */
+    protected $urlRewrites = array();
+
+    /**
      * @var string
      * Base path of the application
      */
@@ -32,11 +38,13 @@ class Router implements RouterInterface {
      * @param $basePath
      * @param $baseUrl
      * @param $urlRules
+     * @param $urlRewrites
      */
-    public function __construct($basePath, $baseUrl, $urlRules) {
+    public function __construct($basePath, $baseUrl, $urlRules, $urlRewrites=array()) {
         $this->basePath = $basePath;
         $this->baseUrl = $baseUrl;
         $this->urlRules = $urlRules;
+        $this->urlRewrites = $urlRewrites;
     }
     /**
      * @param string $basePath
@@ -70,6 +78,20 @@ class Router implements RouterInterface {
         if (!empty($parsedUrl['path'])) {
             $route = trim($parsedUrl['path'], '/');
         }
+
+        if(!empty($this->urlRewrites)){
+            foreach($this->urlRewrites as $originalPath => $editedPath){
+                if(strpos($route, $editedPath) === 0){
+                    $route = preg_replace('/'.$editedPath.'/', $originalPath, $route, 1);
+                    break;
+                }
+                else if(strpos($route, $originalPath) === 0){
+                    $route = '';
+                    break;
+                }
+            }
+        }
+
         $url_r = explode('/', $route);
 
         if (!empty($urlRules)) {
@@ -216,10 +238,20 @@ class Router implements RouterInterface {
 
             if ($internal) {
                 $base = $this->setHttps($this->baseUrl, $ssl);
+
+                if(!empty($this->urlRewrites)){
+                    foreach($this->urlRewrites as $originalPath => $editedPath){
+                        if(strpos($answer, $originalPath) === 0){
+                            $answer = preg_replace('/'.$originalPath.'/', $editedPath, $answer, 1);
+                            break;
+                        }
+                    }
+                }
             }
             else {
                 $base = '';
             }
+
             return $base.$answer.(!empty($parameters)?"?".http_build_query($parameters):'');
         }
     }

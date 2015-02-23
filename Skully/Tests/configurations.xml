@@ -5,7 +5,7 @@
             <file>init.php</file>
             <!--<file>ApplicationTest.php</file>-->
             <!--<file>ConfigTest.php</file>-->
-            <!--<file>RouterTest.php</file>-->
+            <file>RouterTest.php</file>
             <!--<file>TranslatorTest.php</file>-->
             <!--<file>ControllerTest.php</file>-->
             <!--<file>ControllerThemeTest.php</file>-->
@@ -15,7 +15,7 @@
             <!--<file>Commands/CommandTest.php</file>-->
             <!--<file>ImageProcessor/ImageTest.php</file>-->
             <!--<file>ModelTest.php</file>-->
-            <file>TemplateTest.php</file>
+            <!--<file>TemplateTest.php</file>-->
         </testsuite>
     </testsuites>
 </phpunit>

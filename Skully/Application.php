@@ -523,7 +523,7 @@ class Application implements ApplicationInterface {
             if (empty($urlRules)) {
                 throw new InvalidConfigException('Config must have option "urlRules"');
             }
-            $this->setRouter(new Router($basePath, $baseUrl, $urlRules));
+            $this->setRouter(new Router($basePath, $baseUrl, $urlRules, $this->config('urlRewrites')));
         }
         return $this->router;
     }
