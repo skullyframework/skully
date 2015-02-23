@@ -29,7 +29,7 @@ class InvalidTemplateException extends \Exception {
      * @throws InvalidTemplateException
      */
     public static function throwError($e, $file) {
-        if (strpos($e->getMessage(), 'Undefined index') !== false) {
+        if (strpos($e->getMessage(), 'Undefined index') !== false || strpos($e->getMessage(), 'Unable to load template file') !== false) {
             throw new self($e->getMessage() . " at file $file", self::$UNDEFINED_INDEX);
         }
         else {

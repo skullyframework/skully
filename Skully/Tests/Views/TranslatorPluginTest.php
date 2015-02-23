@@ -178,6 +178,7 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         ob_start();
         $app->runControllerFromRawUrl('plugins/lang');
         $output = ob_get_clean();
+        unsetRealpath();
         $file = 'vfs://root/public/default/App/languages/en/plugins/_pluginsLang.json';
         $this->assertTrue(file_exists($file));
         $json = file_get_contents($file);
@@ -185,6 +186,5 @@ class TranslatorPluginTest extends \PHPUnit_Framework_TestCase {
         $json_r = json_decode($json, true);
         $this->assertEquals('app default en', $json_r['three']);
         $this->assertEquals('app default en', $output);
-        unsetRealpath();
     }
 }

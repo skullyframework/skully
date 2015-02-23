@@ -29,6 +29,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
             ),
             'namespace' => 'App'
         ));
+        echo "getApp\n";
         return new \App\Application($config);
     }
 
@@ -325,6 +326,7 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
     public function testSSL()
     {
         $app = $this->getApp();
+        $this->assertEquals(realpath(dirname(__FILE__)), $app->getRealpath(dirname(__FILE__)));
         $appHomeDir = FileHelper::replaceSeparators(__DIR__.'/App/public/default/App/views/home');
 
         file_put_contents(FileHelper::replaceSeparators($appHomeDir.'/ssl.tpl'), '{public_url value="test"}');

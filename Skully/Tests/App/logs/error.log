@@ -4221,3 +4221,99 @@ Call to undefined method Tests\ModelTest::generate()
 [Saturday, 17-Jan-2015 08:42:21 WIB error] test is halo2
 [Saturday, 17-Jan-2015 08:42:28 WIB error] test is halo
 [Saturday, 17-Jan-2015 08:42:28 WIB error] test is halo2
+[Monday, 19-Jan-2015 11:28:36 WIB error] test is halo
+[Monday, 19-Jan-2015 11:28:37 WIB error] test is halo2
+[Monday, 19-Jan-2015 11:29:51 WIB error] test is halo
+[Monday, 19-Jan-2015 11:29:51 WIB error] test is halo2
+[Monday, 19-Jan-2015 11:29:51 WIB warn] Path not found: /home/ssl4
+[Monday, 19-Jan-2015 11:30:20 WIB error] test is halo
+[Monday, 19-Jan-2015 11:30:20 WIB error] test is halo2
+[Monday, 19-Jan-2015 11:30:20 WIB warn] Path not found: /home/ssl4
+[Monday, 19-Jan-2015 13:01:43 WIB error] test is halo
+[Monday, 19-Jan-2015 13:01:43 WIB error] test is halo2
+[Monday, 19-Jan-2015 13:01:44 WIB warn] Path not found: /home/ssl4
+[Monday, 19-Jan-2015 14:02:49 WIB error] test is halo
+[Monday, 19-Jan-2015 14:02:49 WIB error] test is halo2
+[Monday, 19-Jan-2015 14:02:50 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:09:26 WIB error] test is halo
+[Wednesday, 04-Feb-2015 12:09:26 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 12:09:26 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:17:44 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:18:35 WIB warn] Path not found: /home/ssl4a
+[Wednesday, 04-Feb-2015 12:19:43 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:19:58 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:20:11 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:20:20 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:21:30 WIB warn] Path not found: /home/ssl4
+[Wednesday, 04-Feb-2015 12:21:46 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:39:32 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:41:04 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:41:13 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:41:26 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:41:49 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:42:31 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:43:35 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:43:46 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:44:10 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:44:14 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:44:26 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:44:32 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:44:37 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:45:26 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:45:51 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:46:39 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:47:28 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:47:53 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:54:56 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:55:53 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:56:38 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 12:57:40 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 13:01:05 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 13:02:54 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 13:07:36 WIB warn] Path not found: /home/ssl
+[Wednesday, 04-Feb-2015 13:41:02 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:41:02 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:41:22 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:41:22 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:42:00 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Core\Templating\SmartyAdapter.php | ln:132
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Allowed memory size of 134217728 bytes exhausted (tried to allocate 100769792 bytes)
+#0  shutdownHandler()
+
+
+[Wednesday, 04-Feb-2015 13:42:20 WIB fatal] [SHUTDOWN] lvl:1 | file:D:\apache\skully\Skully\Core\Templating\SmartyAdapter.php | ln:132
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Allowed memory size of 134217728 bytes exhausted (tried to allocate 100769792 bytes)
+#0  shutdownHandler()
+
+
+[Wednesday, 04-Feb-2015 13:42:36 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:42:36 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:42:50 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:42:50 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:47:04 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:47:04 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:48:29 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:48:29 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:48:57 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:48:57 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:50:08 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:50:08 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:51:05 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:51:05 WIB error] test is halo2
+[Wednesday, 04-Feb-2015 13:52:12 WIB error] test is halo
+[Wednesday, 04-Feb-2015 13:52:12 WIB error] test is halo2

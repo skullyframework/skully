@@ -133,9 +133,6 @@ class ControllerThemeTest extends \PHPUnit_Framework_TestCase {
     {
         $this->getApp();
         $this->assertTrue(file_exists(FileHelper::replaceSeparators('vfs://root')));
-
-        // This cannot be asserted as it is True on Linux but False on Windows
-        // $this->assertFalse(file_exists(FileHelper::replaceSeparators('vfs://root/')));
         unsetRealpath();
     }
 
