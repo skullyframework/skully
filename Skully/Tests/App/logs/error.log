@@ -4594,3 +4594,46 @@ require_once(): Failed opening required 'vfs://root/Skully/Library/Smarty/libs/S
 
 [Tuesday, 24-Feb-15 20:19:44 WIB error] test is halo
 [Tuesday, 24-Feb-15 20:19:44 WIB error] test is halo2
+[Tuesday, 24-Feb-15 22:56:05 WIB error] test is halo
+[Tuesday, 24-Feb-15 22:56:05 WIB error] test is halo2
+[Tuesday, 24-Feb-15 22:59:44 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/SmartyTest.php | ln:30
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method SmartyTest::assert()
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 22:59:45 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/SmartyTest.php | ln:30
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method SmartyTest::assert()
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 22:59:50 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Tests/SmartyTest.php | ln:30
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Call to undefined method SmartyTest::assert()
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 23:00:27 WIB error] test is halo
+[Tuesday, 24-Feb-15 23:00:27 WIB error] test is halo2
