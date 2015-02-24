@@ -34,7 +34,7 @@ class ImageProcessor {
      *  crop(boolean) = false,
      *  scale(boolean) = true,
      *  thumbnail(boolean) = false,
-     *  maxOnly(boolean) = false,
+     *  maxOnly(boolean) = true, # Resize only when file is larger.
      *  canvasColor(string) = '#FFFFFF',
      *  resultDir = null,
      *  remoteDir = null,
@@ -71,7 +71,7 @@ class ImageProcessor {
             $onlyCreateWhenNew = $opts['onlyCreateWhenNew'];
         }
 
-        $defaults = array('curl' => false, 'crop' => false, 'scale' => true, 'thumbnail' => false, 'maxOnly' => false,
+        $defaults = array('curl' => false, 'crop' => false, 'scale' => true, 'thumbnail' => false, 'maxOnly' => true,
             'canvasColor' => '#FFFFFF', 'outputFilename' => false,
             'resultDir' => $resultDir, 'remoteDir' => $remoteDir, 'quality' => 90, 'cacheHttpMinutes' => 20);
 
@@ -251,9 +251,15 @@ class ImageProcessor {
                 endif;
 
             else:
+                if (self::isWindows()) {
+                    $maxSign = "^>";
+                }
+                else {
+                    $maxSign = "\\>";
+                }
                 $cmd = $path_to_convert." " . escapeshellarg($imagePath) .
                     " -thumbnail ". (!empty($h) ? 'x':'') . $w ."".
-                    (isset($opts['maxOnly']) && $opts['maxOnly'] == true ? "\\>" : "") .
+                    (isset($opts['maxOnly']) && $opts['maxOnly'] == true ? $maxSign : "") .
                     " -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
             endif;
 
@@ -309,5 +315,13 @@ class ImageProcessor {
         $fp = fopen($saveto,'x');
         fwrite($fp, $raw);
         fclose($fp);
+    }
+
+    public static function isWindows() {
+        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
