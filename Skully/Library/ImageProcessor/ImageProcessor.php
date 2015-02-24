@@ -262,7 +262,7 @@ class ImageProcessor {
                     (isset($opts['maxOnly']) && $opts['maxOnly'] == true ? $maxSign : "") .
                     " -quality ". escapeshellarg($opts['quality']) ." ". escapeshellarg($newPath);
             endif;
-
+            echo $cmd;
             exec($cmd, $output, $return_code);
             if($return_code == 127) {
                 $path_to_convert = '/usr/local/bin/convert'; # this could be something like /usr/bin/convert or /opt/local/share/bin/convert

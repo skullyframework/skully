@@ -4323,3 +4323,274 @@ Allowed memory size of 134217728 bytes exhausted (tried to allocate 100769792 by
 [Tuesday, 24-Feb-2015 03:45:02 WIB error] test is halo2
 [Tuesday, 24-Feb-2015 03:54:48 WIB error] test is halo
 [Tuesday, 24-Feb-2015 03:54:49 WIB error] test is halo2
+[Tuesday, 24-Feb-15 11:36:43 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:37:11 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:39:34 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:41:35 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:42:16 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:42:27 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:42:48 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:43:10 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:46:46 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:47:11 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:47:55 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:53:06 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:53:39 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:55:35 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:57:55 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 11:59:21 WIB error] test is halo
+[Tuesday, 24-Feb-15 12:02:01 WIB error] test is halo
+[Tuesday, 24-Feb-15 12:02:34 WIB error] test is halo
+[Tuesday, 24-Feb-15 12:04:02 WIB error] test is halo
+[Tuesday, 24-Feb-2015 14:17:59 WIB error] test is halo
+[Tuesday, 24-Feb-2015 14:19:24 WIB error] test is halo
+[Tuesday, 24-Feb-2015 14:19:24 WIB error] test is halo2
+[Tuesday, 24-Feb-2015 14:23:14 WIB error] test is halo
+[Tuesday, 24-Feb-2015 14:23:14 WIB error] test is halo2
+[Tuesday, 24-Feb-15 14:44:34 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 14:55:49 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 14:56:10 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 14:56:38 WIB fatal] [SHUTDOWN] lvl:1 | file:/media/jay/Data/apache/skully/Skully/Core/Templating../../../Library/Smarty/libs/sysplugins/smarty_internal_templateparser.php | ln:118
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Class '_smarty_template_buffer' not found
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 20:17:54 WIB fatal] [SHUTDOWN] lvl:64 | file:/media/jay/Data/apache/skully/Skully/Core/Templating/SmartyAdapter.php | ln:40
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+require_once(): Failed opening required 'vfs://root/Skully/Library/Smarty/libs/Smarty.class.php' (include_path='/media/jay/Data/apache/skully/vendor/phpunit/php-text-template:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-mock-objects:/media/jay/Data/apache/skully/vendor/phpunit/php-timer:/media/jay/Data/apache/skully/vendor/phpunit/php-token-stream:/media/jay/Data/apache/skully/vendor/phpunit/php-file-iterator:/media/jay/Data/apache/skully/vendor/phpunit/php-code-coverage:/media/jay/Data/apache/skully/vendor/phpunit/phpunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:/media/jay/Data/apache/skully/vendor/phpunit/phpunit-selenium:/media/jay/Data/apache/skully/vendor/phpunit/dbunit:/media/jay/Data/apache/skully/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear')
+#0  shutdownHandler()
+
+
+[Tuesday, 24-Feb-15 20:19:44 WIB error] test is halo
+[Tuesday, 24-Feb-15 20:19:44 WIB error] test is halo2
