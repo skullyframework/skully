@@ -55,7 +55,6 @@ class Theme implements ThemeInterface {
      * @param string $themeName Selected theme name.
      * @param string $appName App's name, used as directory name storing languages and views.
      * @param \Skully\ApplicationInterface $app Optional Skully App
-     * todo: param boolean $virtual Set to true for applications with virtual server setting. When true, use baseURl without publicDirectory for public Url.
      */
     public function __construct($basePath, $baseUrl, $publicDirectory, $themeName, $appName, $app = null)
     {
@@ -63,13 +62,13 @@ class Theme implements ThemeInterface {
         if (substr($basePath, -1, 1) != DIRECTORY_SEPARATOR) {
             $basePath .= DIRECTORY_SEPARATOR;
         }
-        // todo: virtual server setup
-//        if ($virtual) {
-//            $this->publicBaseUrl = $baseUrl;
-//        }
-//        else {
-        $this->publicBaseUrl = $baseUrl . $publicDirectory . '/';
-//        }
+        $this->publicBaseUrl = $baseUrl;
+        if (!empty($publicDirectory)) {
+            if (substr($publicDirectory, -1, 1) == '/') {
+                $publicDirectory = substr($publicDirectory, 0, strlen($publicDirectory)-1);
+            }
+            $this->publicBaseUrl .= $publicDirectory.'/';
+        }
         $this->basePath = $basePath . $publicDirectory . DIRECTORY_SEPARATOR;
         $this->themeName = $themeName;
 

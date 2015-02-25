@@ -35,6 +35,12 @@ interface ThemeInterface {
      */
     public function getPath($path = '', $hideErrors = false);
 
+    /**
+     * @param string $path
+     * @param bool $hideErrors
+     * @return mixed
+     * Get absolute path + AppName directory i.e. where View and Language files are stored.
+     */
     public function getAppPath($path = '', $hideErrors = false);
 
     /**
