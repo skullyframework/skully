@@ -81,11 +81,14 @@ class Router implements RouterInterface {
 
         if(!empty($this->urlRewrites)){
             foreach($this->urlRewrites as $originalPath => $editedPath){
-                if(strpos($route, $editedPath) === 0){
-                    $route = preg_replace('/'.$editedPath.'/', $originalPath, $route, 1);
+                $matches = null;
+                $returnValueEditedPath = preg_match('/^('.$editedPath.'\\/|'.$editedPath.'$)/', $route, $matches);
+                $returnValueOriginalPath = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $route, $matches);
+                if($returnValueEditedPath === 1){
+                    $route = preg_replace('/^'.$editedPath.'/', $originalPath, $route, 1);
                     break;
                 }
-                else if(strpos($route, $originalPath) === 0){
+                else if($returnValueOriginalPath === 1){
                     $route = '';
                     break;
                 }
@@ -241,8 +244,10 @@ class Router implements RouterInterface {
 
                 if(!empty($this->urlRewrites)){
                     foreach($this->urlRewrites as $originalPath => $editedPath){
-                        if(strpos($answer, $originalPath) === 0){
-                            $answer = preg_replace('/'.$originalPath.'/', $editedPath, $answer, 1);
+                        $matches = null;
+                        $returnValue = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $answer, $matches);
+                        if($returnValue === 1){
+                            $answer = preg_replace('/^'.$originalPath.'/', $editedPath, $answer, 1);
                             break;
                         }
                     }

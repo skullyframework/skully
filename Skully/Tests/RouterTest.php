@@ -127,6 +127,12 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
         $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
         $this->assertEquals('admin\addminn', $controllerAndAction['controller']);
         $this->assertEquals('index', $controllerAndAction['action']);
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('addminna/addminn/index');
+        $this->assertEquals('addminna/addminn/index', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('addminna\addminn', $controllerAndAction['controller']);
+        $this->assertEquals('index', $controllerAndAction['action']);
     }
 
     public function testGetUrlRewrite() {
@@ -138,5 +144,8 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
 
         $url = $this->router->getUrl('admin/admins/loginProcess', array('id' => 'something-1'));
         $this->assertEquals('http://localhost/skully/addminn/loginProcess?id=something-1', $url);
+
+        $url = $this->router->getUrl('admina/home/index', array('something' => 1));
+        $this->assertEquals('http://localhost/skully/admina/home/index?something=1', $url);
     }
 }
