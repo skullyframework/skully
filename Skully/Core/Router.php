@@ -35,6 +35,12 @@ class Router implements RouterInterface {
     protected $baseUrl = 'http://yoursite.com/';
 
     /**
+     * @var array
+     * Subdomains used in this application
+     */
+    protected $subdomains = array();
+
+    /**
      * @param $basePath
      * @param $baseUrl
      * @param $urlRules
@@ -60,6 +66,14 @@ class Router implements RouterInterface {
     public function setUrlRules($urlRules)
     {
         $this->urlRules = $urlRules;
+    }
+
+    /**
+     * @param array $subDomains
+     */
+    public function setSubDomains($subDomains)
+    {
+        $this->subDomains = $subDomains;
     }
 
     /**

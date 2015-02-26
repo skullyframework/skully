@@ -529,6 +529,7 @@ class Application implements ApplicationInterface {
                 throw new InvalidConfigException('Config must have option "urlRules"');
             }
             $this->setRouter(new Router($basePath, $baseUrl, $urlRules, $this->config('urlRewrites')));
+            $this->getRouter()->setSubDomains($this->config('subDomains'));
         }
         return $this->router;
     }
