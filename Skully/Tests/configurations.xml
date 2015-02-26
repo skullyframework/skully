@@ -2,7 +2,7 @@
 <phpunit>
     <testsuites>
         <testsuite name="App_Tests">
-            <!--<file>init.php</file>-->
+            <file>init.php</file>
             <!--<file>ApplicationTest.php</file>-->
             <!--<file>SmartyTest.php</file>-->
             <!--<file>ConfigTest.php</file>-->
