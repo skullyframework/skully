@@ -3,20 +3,20 @@
     <testsuites>
         <testsuite name="App_Tests">
             <file>init.php</file>
-            <!--<file>ApplicationTest.php</file>-->
-            <!--<file>SmartyTest.php</file>-->
-            <!--<file>ConfigTest.php</file>-->
+            <file>ApplicationTest.php</file>
+            <file>SmartyTest.php</file>
+            <file>ConfigTest.php</file>
             <file>RouterTest.php</file>
-            <!--<file>TranslatorTest.php</file>-->
-            <!--<file>ControllerTest.php</file>-->
-            <!--<file>ControllerThemeTest.php</file>-->
-            <!--<file>Views/TranslatorPluginTest.php</file>-->
-            <!--<file>Views/ThemePluginTest.php</file>-->
-            <!--<file>Helpers/BaseHelperTest.php</file>-->
-            <!--<file>Commands/CommandTest.php</file>-->
-            <!--<file>ImageProcessor/ImageTest.php</file>-->
-            <!--<file>ModelTest.php</file>-->
-            <!--<file>TemplateTest.php</file>-->
+            <file>TranslatorTest.php</file>
+            <file>ControllerTest.php</file>
+            <file>ControllerThemeTest.php</file>
+            <file>Views/TranslatorPluginTest.php</file>
+            <file>Views/ThemePluginTest.php</file>
+            <file>Helpers/BaseHelperTest.php</file>
+            <file>Commands/CommandTest.php</file>
+            <file>ImageProcessor/ImageTest.php</file>
+            <file>ModelTest.php</file>
+            <file>TemplateTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>

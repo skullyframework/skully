@@ -28,7 +28,13 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
         $rewrites = array(
             "admin" => "addminn"
         );
+
+        $subDomains = array(
+            "news" => "news.domain.com"
+        );
+
         $this->router = new Router('/', 'http://localhost/skully/', $config_r, $rewrites);
+        $this->router->setSubDomains($subDomains);
     }
     public function testRawUrlWithTwoParams()
     {
@@ -151,6 +157,6 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetUrlSubDomain() {
         $url = $this->router->getUrl('news/index', array('something' => 1));
-        $this->assertEquals('http://localhost/skully/addminn/admin/index?something=1', $url);
+        $this->assertEquals('http://news.domain.com/index?something=1', $url);
     }
 }

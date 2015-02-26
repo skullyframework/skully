@@ -256,12 +256,26 @@ class Router implements RouterInterface {
             if ($internal) {
                 $base = $this->setHttps($this->baseUrl, $ssl);
 
+                // Check Url Rewrites
                 if(!empty($this->urlRewrites)){
                     foreach($this->urlRewrites as $originalPath => $editedPath){
                         $matches = null;
                         $returnValue = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $answer, $matches);
                         if($returnValue === 1){
                             $answer = preg_replace('/^'.$originalPath.'/', $editedPath, $answer, 1);
+                            break;
+                        }
+                    }
+                }
+
+                // Check SubDomain Targets
+                if(!empty($this->subDomains)){
+                    foreach($this->subDomains as $originalPath => $editedPath){
+                        $matches = null;
+                        $returnValue = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $answer, $matches);
+                        if($returnValue === 1){
+                            $answer = preg_replace('/^('.$originalPath.'\\/|'.$originalPath.'$)/', '', $answer, 1);
+                            $base = $this->setHttps('http://' . $editedPath . '/', $ssl);
                             break;
                         }
                     }
