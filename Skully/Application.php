@@ -118,6 +118,11 @@ class Application implements ApplicationInterface {
         if ($this->configIsEmpty('timezone')) {
             $this->getConfigObject()->setProtected('timezone', 'Asia/Jakarta');
         }
+
+        if ($this->configIsEmpty('publicDir')) {
+            $this->getConfigObject()->setPublic('publicDir', 'public/');
+        }
+
         $this->setupTheme();
         $this->langAdjustment();
         date_default_timezone_set($this->config('timezone'));
@@ -553,7 +558,7 @@ class Application implements ApplicationInterface {
                 $this->getConfigObject()->setProtected('theme', 'default');
                 $theme = 'default';
             }
-            $this->setTheme(new Theme($basePath, $this->config('baseUrl'), 'public', $theme, $this->getAppName(), $this));
+            $this->setTheme(new Theme($basePath, $this->config('baseUrl'), $this->config('publicDir'), $theme, $this->getAppName(), $this));
         }
         return $this->theme;
     }

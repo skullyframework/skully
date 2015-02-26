@@ -29,7 +29,6 @@ class TemplateTest extends \PHPUnit_Framework_TestCase {
             ),
             'namespace' => 'App'
         ));
-        echo "getApp\n";
         return new \App\Application($config);
     }
 

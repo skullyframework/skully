@@ -2,7 +2,9 @@
 
 
 namespace Skully\Core\Templating;
-require_once dirname(__FILE__) . '../../../' . 'Library/Smarty/libs/Smarty.class.php';
+
+// Do not use Application::getRealpath here as this file is a hard requirement.
+require_once realpath(dirname(__FILE__) . '/../../Library/Smarty/libs/Smarty.class.php');
 
 use Skully\Exceptions\InvalidTemplateException;
 
@@ -37,9 +39,7 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
     public function __construct($basePath, $theme = 'default', $app = null, $additionalPluginsDir = array(), $caching = 1)
     {
         $appName = $app->getAppName();
-
         $this->app = $app;
-
         $this->smarty = new \Smarty;
         $this->smarty->caching = $caching;
         $this->caching = $caching;
@@ -124,12 +124,16 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
      */
     public function display($template = null, $cache_id = null, $compile_id = null, $parent = null)
     {
-
         try {
             $this->smarty->display($template, $cache_id, $compile_id, $parent);
-        }
-        catch (\Exception $e) {
-            InvalidTemplateException::throwError($e, $template);
+        } catch (\Exception $e) {
+            if (class_exists('_smarty_template_buffer')) {
+                InvalidTemplateException::throwError($e, $template);
+            }
+            else {
+                $msg = "Error happened when fetching template. Please clear your template cache (i.e. Delete 'cache' directory).";
+                InvalidTemplateException::throwError(new \Exception($msg), $template);
+            }
         }
     }
 
@@ -161,7 +165,13 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
             return $this->smarty->fetch($template, $cache_id, $compile_id, $parent, $display, $merge_tpl_vars, $no_output_filter);
         }
         catch (\Exception $e) {
-            InvalidTemplateException::throwError($e, $template);
+            if (class_exists('_smarty_template_buffer')) {
+                InvalidTemplateException::throwError($e, $template);
+            }
+            else {
+                $msg = "Error happened when fetching template. Please clear your template cache (i.e. Delete 'cache' directory).";
+                InvalidTemplateException::throwError(new \Exception($msg), $template);
+            }
             return false;
         }
     }
@@ -244,6 +254,14 @@ class SmartyAdapter implements TemplateEngineAdapterInterface {
      */
     public function setCacheLifetime($value=3600) {
         $this->smarty->cache_lifetime = $value;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEngine()
+    {
+        return $this->smarty;
     }
 
 }

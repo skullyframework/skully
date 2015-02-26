@@ -130,4 +130,9 @@ interface TemplateEngineAdapterInterface {
      * @param int $value
      */
     public function setCacheLifetime($value=3600);
+
+    /**
+     * @return mixed
+     */
+    public function getEngine();
 }
