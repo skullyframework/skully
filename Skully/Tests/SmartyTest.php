@@ -20,6 +20,15 @@ class SmartyTest extends PHPUnit_Framework_TestCase {
             ),
             'namespace' => 'App'
         ));
+        if (!file_exists(realpath(__DIR__.'/App/App/smarty/plugins'))) {
+            mkdir('./App/App/smarty/plugins');
+        }
+        if (!file_exists(realpath(__DIR__.'/App/App/smarty/cache'))) {
+            mkdir('./App/App/smarty/cache');
+        }
+        if (!file_exists(realpath(__DIR__.'/App/App/smarty/configs'))) {
+            mkdir('./App/App/smarty/configs');
+        }
 
         $app = new Application($config);
         $smarty = $app->getTemplateEngine()->getEngine();

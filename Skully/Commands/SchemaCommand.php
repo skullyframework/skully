@@ -20,10 +20,14 @@ class SchemaCommand extends Command {
             ->setHelp(<<<EOT
 Run schema-related commands
 
-Usage:
+Usage examples:
 
 <info>./console skully:schema db:migrate <env></info>
 <info>./console skully:schema db:generate model <env></info>
+
+Replace <env> with your environment setting, e.g. -t or --test for test environment, -p or --production for production.
+
+For more information, see Ruckusing documentation: https://github.com/ruckus/ruckusing-migrations
 EOT
             );
     }

@@ -11,6 +11,14 @@ if (!empty($argv)) {
             $serverName = 'test';
             unset($argv[$index]);
         }
+        else {
+            // --env=customEnvironment
+            $command = substr($arg, 0, 6);
+            if ($command == '--env=') {
+                $serverName = substr($arg, 5);
+                unset($argv[$index]);
+            }
+        }
     }
 }
 require_once(dirname(__FILE__) . '/../../../vendor/autoload.php');
