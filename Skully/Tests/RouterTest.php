@@ -24,7 +24,9 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
             'admin' => 'admin/home/index',
             'admin/loginProcess' => 'admin/admins/loginProcess',
             'admin/login' => 'admin/admins/login',
-            'control/adimin/min/*' => 'administrator/admin'
+            'control/adimin/min/*' => 'administrator/admin',
+            'test/*' => 'testing',
+            'testing/%par' => 'testing/index'
         );
 
         $subDomains = array(
@@ -151,6 +153,13 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals('administrator\admin\test', $controllerAndAction['controller']);
         $this->assertEquals('hello', $controllerAndAction['action']);
 
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('test/*');
+        $this->assertEquals('testing/index', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('testing', $controllerAndAction['controller']);
+        $this->assertEquals('index', $controllerAndAction['action']);
+        $this->assertEquals('*', $routeAndParams['params']['par']);
+
         $routeAndParams = $this->router->rawUrlToRouteAndParams('control/adimin/mina/test/hello');
         $this->assertEquals('control/adimin/mina/test/hello', $routeAndParams['route']);
         $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
@@ -183,6 +192,10 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
 
         $url = $this->router->getUrl('administrator/admina/test/index', array('something' => 1));
         $this->assertEquals('http://localhost/skully/administrator/admina/test/index?something=1', $url);
+
+
+        $url = $this->router->getUrl('testing/index', array('par' => '*'));
+        $this->assertEquals('http://localhost/skully/test/*', $url);
     }
 
     public function testGetUrlSubDomain() {
