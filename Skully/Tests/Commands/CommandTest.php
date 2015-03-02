@@ -10,6 +10,23 @@ use Symfony\Component\Console\Application;
 
 
 class CommandTest extends \PHPUnit_Framework_TestCase {
+    public function testGetCommandList()
+    {
+        $app = __setupApp();
+        $console = new Console($app, true);
+        $console->addCommands(array('\Skully\Tests\Commands\NewCommand'));
+        $list = $console->getCommands();
+        $listString = array();
+        foreach ($list as $item) {
+            $listString []= get_class($item);
+        }
+        $this->assertTrue(in_array('Skully\Commands\EncryptCommand', $listString));
+        $this->assertTrue(in_array('Skully\Commands\DecryptCommand', $listString));
+        $this->assertTrue(in_array('Skully\Commands\SchemaCommand', $listString));
+        $this->assertTrue(in_array('Skully\Commands\PackCommand', $listString));
+        $this->assertTrue(in_array('Skully\Tests\Commands\NewCommand', $listString));
+    }
+
     public function testRunningEncryptionCommand()
     {
         $app = __setupApp();

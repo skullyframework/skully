@@ -50,4 +50,8 @@ class Console extends ApplicationAware {
         $this->consoleApp->run($input, $output);
         return $output;
     }
+
+    public function getCommands() {
+        return $this->consoleApp->all();
+    }
 } 

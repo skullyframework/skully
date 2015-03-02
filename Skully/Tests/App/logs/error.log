@@ -4663,3 +4663,30 @@ Call to undefined method SmartyTest::assert()
 [Sunday, 01-Mar-2015 21:29:19 WIB error] test is halo2
 [Monday, 02-Mar-2015 11:43:39 WIB error] test is halo
 [Monday, 02-Mar-2015 11:43:39 WIB error] test is halo2
+[Monday, 02-Mar-2015 15:15:36 WIB error] test is halo
+[Monday, 02-Mar-2015 15:15:36 WIB error] test is halo2
+[Monday, 02-Mar-2015 15:26:58 WIB error] lvl: 4096 | msg:Object of class Symfony\Component\Console\Command\HelpCommand could not be converted to string | file:D:\apache\skully\Skully\Tests\Commands\CommandTest.php | ln:19
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+
+
+
+[Monday, 02-Mar-2015 15:26:58 WIB fatal] [SHUTDOWN] lvl:4096 | file:D:\apache\skully\Skully\Tests\Commands\CommandTest.php | ln:19
+GET: Array
+(
+)
+
+POST: Array
+(
+)
+
+Object of class Symfony\Component\Console\Command\HelpCommand could not be converted to string
+#0  shutdownHandler()
+
+

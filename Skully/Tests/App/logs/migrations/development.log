@@ -2380,3 +2380,14 @@ Mar 02 11:43:39 [info] SELECT version FROM schema_migrations
 Mar 02 11:43:39 [info] BEGIN
 Mar 02 11:43:39 [info] INSERT INTO schema_migrations (version) VALUES ('20150302044338')
 Mar 02 11:43:39 [info] COMMIT
+Mar 02 15:15:35 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Mar 02 15:15:35 [info] SELECT tbl_name FROM sqlite_master WHERE type='table' AND tbl_name="schema_migrations";
+Mar 02 15:15:35 [info] CREATE TABLE "schema_migrations" (
+"version" varchar(255)) ;
+Mar 02 15:15:35 [info] CREATE UNIQUE INDEX "idx_schema_migrations_version" ON "schema_migrations"("version")
+Mar 02 15:15:35 [info] SELECT version FROM schema_migrations
+Mar 02 15:15:35 [info] SELECT version FROM schema_migrations
+Mar 02 15:15:35 [info] SELECT version FROM schema_migrations
+Mar 02 15:15:35 [info] BEGIN
+Mar 02 15:15:35 [info] INSERT INTO schema_migrations (version) VALUES ('20150302081535')
+Mar 02 15:15:35 [info] COMMIT
