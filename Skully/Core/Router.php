@@ -18,12 +18,6 @@ class Router implements RouterInterface {
     protected $urlRules = array();
 
     /**
-     * @var array
-     * Url rewrites used in this application
-     */
-    protected $urlRewrites = array();
-
-    /**
      * @var string
      * Base path of the application
      */
@@ -44,13 +38,11 @@ class Router implements RouterInterface {
      * @param $basePath
      * @param $baseUrl
      * @param $urlRules
-     * @param $urlRewrites
      */
-    public function __construct($basePath, $baseUrl, $urlRules, $urlRewrites=array()) {
+    public function __construct($basePath, $baseUrl, $urlRules) {
         $this->basePath = $basePath;
         $this->baseUrl = $baseUrl;
         $this->urlRules = $urlRules;
-        $this->urlRewrites = $urlRewrites;
     }
     /**
      * @param string $basePath
@@ -93,18 +85,21 @@ class Router implements RouterInterface {
             $route = trim($parsedUrl['path'], '/');
         }
 
-        if(!empty($this->urlRewrites)){
-            foreach($this->urlRewrites as $originalPath => $editedPath){
-                $matches = null;
-                $returnValueEditedPath = preg_match('/^('.$editedPath.'\\/|'.$editedPath.'$)/', $route, $matches);
-                $returnValueOriginalPath = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $route, $matches);
-                if($returnValueEditedPath === 1){
-                    $route = preg_replace('/^'.$editedPath.'/', $originalPath, $route, 1);
-                    break;
-                }
-                else if($returnValueOriginalPath === 1){
-                    $route = '';
-                    break;
+        if (!empty($urlRules)) {
+            foreach($urlRules as $displayedPath => $systemPath){
+                $starPos = strpos($displayedPath, "*");
+                if($starPos !== false && $starPos > 0){
+                    $matches = null;
+                    $returnValueEditedPath = preg_match('/^('.str_replace("/", '\\/', str_replace("*", "", $displayedPath)).'|'.str_replace("/", '\\/', str_replace("/*", "", $displayedPath)).'$)/', $route, $matches);
+                    $returnValueOriginalPath = preg_match('/^('.str_replace("/", '\\/', $systemPath).'\\/|'.str_replace("/", '\\/', $systemPath).'$)/', $route, $matches);
+                    if($returnValueEditedPath === 1){
+                        $route = preg_replace('/^'.str_replace("/", '\\/', str_replace("/*", "", $displayedPath)).'/', $systemPath, $route, 1);
+                        break;
+                    }
+                    else if($returnValueOriginalPath === 1){
+                        $route = '';
+                        break;
+                    }
                 }
             }
         }
@@ -257,13 +252,16 @@ class Router implements RouterInterface {
                 $base = $this->setHttps($this->baseUrl, $ssl);
 
                 // Check Url Rewrites
-                if(!empty($this->urlRewrites)){
-                    foreach($this->urlRewrites as $originalPath => $editedPath){
-                        $matches = null;
-                        $returnValue = preg_match('/^('.$originalPath.'\\/|'.$originalPath.'$)/', $answer, $matches);
-                        if($returnValue === 1){
-                            $answer = preg_replace('/^'.$originalPath.'/', $editedPath, $answer, 1);
-                            break;
+                if (!empty($urlRules)) {
+                    foreach($urlRules as $displayedPath => $systemPath){
+                        $starPos = strpos($displayedPath, "*");
+                        if($starPos !== false && $starPos > 0){
+                            $matches = null;
+                            $returnValue = preg_match('/^('.str_replace("/", '\\/', $systemPath).'\\/|'.str_replace("/", '\\/', $systemPath).'$)/', $answer, $matches);
+                            if($returnValue === 1){
+                                $answer = preg_replace('/^'.str_replace("/", '\\/', $systemPath).'/', str_replace("/*", "", $displayedPath), $answer, 1);
+                                break;
+                            }
                         }
                     }
                 }
