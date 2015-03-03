@@ -4690,3 +4690,9 @@ Object of class Symfony\Component\Console\Command\HelpCommand could not be conve
 #0  shutdownHandler()
 
 
+[Tuesday, 03-Mar-2015 14:10:03 WIB error] test is halo
+[Tuesday, 03-Mar-2015 14:10:03 WIB error] test is halo2
+[Tuesday, 03-Mar-2015 14:12:47 WIB error] test is halo
+[Tuesday, 03-Mar-2015 14:12:48 WIB error] test is halo2
+[Tuesday, 03-Mar-2015 14:18:19 WIB error] test is halo
+[Tuesday, 03-Mar-2015 14:18:19 WIB error] test is halo
