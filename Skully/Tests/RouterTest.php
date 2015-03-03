@@ -20,20 +20,20 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
             'products/index' => 'products/index',
             'products/%id' => 'products/view',
             'products/%category/%id' => 'products/view2',
+            'addminn/*' => 'admin',
             'admin' => 'admin/home/index',
             'admin/loginProcess' => 'admin/admins/loginProcess',
-            'admin/login' => 'admin/admins/login'
-        );
-
-        $rewrites = array(
-            "admin" => "addminn"
+            'admin/login' => 'admin/admins/login',
+            'control/adimin/min/*' => 'administrator/admin',
+            'test/*' => 'testing',
+            'testing/%par' => 'testing/index'
         );
 
         $subDomains = array(
             "news" => "news.domain.com"
         );
 
-        $this->router = new Router('/', 'http://localhost/skully/', $config_r, $rewrites);
+        $this->router = new Router('/', 'http://localhost/skully/', $config_r);
         $this->router->setSubDomains($subDomains);
     }
     public function testRawUrlWithTwoParams()
@@ -139,6 +139,38 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
         $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
         $this->assertEquals('addminna\addminn', $controllerAndAction['controller']);
         $this->assertEquals('index', $controllerAndAction['action']);
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('admin');
+        $this->assertEquals('home/index', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('home', $controllerAndAction['controller']);
+        $this->assertEquals('index', $controllerAndAction['action']);
+
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('control/adimin/min/test/hello');
+        $this->assertEquals('administrator/admin/test/hello', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('administrator\admin\test', $controllerAndAction['controller']);
+        $this->assertEquals('hello', $controllerAndAction['action']);
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('test/*');
+        $this->assertEquals('testing/index', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('testing', $controllerAndAction['controller']);
+        $this->assertEquals('index', $controllerAndAction['action']);
+        $this->assertEquals('*', $routeAndParams['params']['par']);
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('control/adimin/mina/test/hello');
+        $this->assertEquals('control/adimin/mina/test/hello', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('control\adimin\mina\test', $controllerAndAction['controller']);
+        $this->assertEquals('hello', $controllerAndAction['action']);
+
+        $routeAndParams = $this->router->rawUrlToRouteAndParams('administrator/admin/test/hello');
+        $this->assertEquals('home/index', $routeAndParams['route']);
+        $controllerAndAction = $this->router->RouteToControllerAndAction($routeAndParams['route']);
+        $this->assertEquals('home', $controllerAndAction['controller']);
+        $this->assertEquals('index', $controllerAndAction['action']);
     }
 
     public function testGetUrlRewrite() {
@@ -153,6 +185,17 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
 
         $url = $this->router->getUrl('admina/home/index', array('something' => 1));
         $this->assertEquals('http://localhost/skully/admina/home/index?something=1', $url);
+
+
+        $url = $this->router->getUrl('administrator/admin/test/index', array('something' => 1));
+        $this->assertEquals('http://localhost/skully/control/adimin/min/test/index?something=1', $url);
+
+        $url = $this->router->getUrl('administrator/admina/test/index', array('something' => 1));
+        $this->assertEquals('http://localhost/skully/administrator/admina/test/index?something=1', $url);
+
+
+        $url = $this->router->getUrl('testing/index', array('par' => '*'));
+        $this->assertEquals('http://localhost/skully/test/*', $url);
     }
 
     public function testGetUrlSubDomain() {
