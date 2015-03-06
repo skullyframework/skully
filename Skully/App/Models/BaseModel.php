@@ -133,6 +133,16 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
 
     /**
      * Instead of overriding this method, override methods
+     * called by this (beforeDestroy)
+     * @throws \Exception
+     */
+    final public function delete()
+    {
+        $this->beforeDestroy();
+    }
+
+    /**
+     * Instead of overriding this method, override methods
      * called by this (afterCreate,Save,Update)
      */
     final public function after_update()
@@ -406,6 +416,11 @@ abstract class BaseModel extends \RedBeanPHP\SimpleModel {
     }
 
     public function beforeCreate()
+    {
+
+    }
+
+    public function beforeDestroy()
     {
 
     }
