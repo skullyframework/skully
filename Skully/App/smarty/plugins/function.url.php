@@ -20,7 +20,7 @@ function smarty_function_url($params = array(), &$smarty) {
 		unset($params['path']);
 	}
 
-    if (!isset($params['__ssl'])) {
+    if (isset($params['__ssl'])) {
         $ssl = $params['__ssl'];
         unset($params['__ssl']);
     }
