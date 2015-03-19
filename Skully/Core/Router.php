@@ -288,7 +288,7 @@ class Router implements RouterInterface {
     }
 
     private function setHttps($url, $ssl) {
-        if ($ssl === true || UrlHelper::isSecure()) {
+        if ($ssl === true || (UrlHelper::isSecure() && $ssl !== false) ) {
             $url = str_replace('http://', 'https://', $url);
         }
         elseif ($ssl === false) {
