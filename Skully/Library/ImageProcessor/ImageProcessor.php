@@ -241,7 +241,7 @@ class ImageProcessor {
                 if(true === $opts['scale']):
                     $resize = $w."x".$h;
                     $cmd = $path_to_convert ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
-                        (true === $opts['crop'] ? "^ -background rgba(0,0,0,0) -gravity center -extent " . escapeshellarg($resize) : "").
+                        (true === $opts['crop'] ? "^ -background transparent -gravity center -extent " . escapeshellarg($resize) : "").
                         " -quality ". escapeshellarg($opts['quality']) . " " . escapeshellarg($newPath);
                 else:
                     $cmd = $path_to_convert." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
