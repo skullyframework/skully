@@ -6,13 +6,15 @@ use Skully\Core\ApplicationAwareHelper;
 
 class Csrf extends ApplicationAwareHelper {
     public static function get_token_id() {
-        if (isset($_SESSION['token_id'])) {
+        /*if (isset($_SESSION['token_id'])) {
             return $_SESSION['token_id'];
         }
         else {
             $_SESSION['token_id']   = self::random(25);
             return $_SESSION['token_id'];
-        }
+        }*/
+
+        return '__token';
     }
 
     public static function get_token() {
