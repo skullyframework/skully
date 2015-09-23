@@ -28,7 +28,7 @@ class Csrf extends ApplicationAwareHelper {
 
     public static function check_valid($flag) {
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && $flag) {
-            if (isset($_POST[self::get_token_id()]) && $_POST[self::get_token_id()] != self::get_token()) {
+            if (!isset($_POST[self::get_token_id()]) || $_POST[self::get_token_id()] != self::get_token()) {
                 throw new Exception('Invalid CSRF!');
             }
 
