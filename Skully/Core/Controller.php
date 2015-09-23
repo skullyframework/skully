@@ -7,6 +7,7 @@
 
 namespace Skully\Core;
 
+use Skully\App\Helpers\Csrf as C;
 use Skully\ApplicationInterface;
 use Skully\Exceptions\InvalidTemplateException;
 use Skully\Exceptions\PageNotFoundException;
@@ -52,6 +53,8 @@ class Controller extends ApplicationAware implements ControllerInterface {
         $this->setApp($app);
         $this->setLanguage($this->app->getLanguage());
         $this->setParams($additionalParams);
+
+        C::check_valid($this->app->config('csrf'));
     }
 
     /**
