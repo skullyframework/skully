@@ -238,13 +238,20 @@ class ImageProcessor {
                     endif;
                 endif;
 
+                if(!empty($opts['imagickProgressive']) && $opts['imagickProgressive']) {
+                    $progressiveCommand = "-strip -interlace Plane";
+                }
+                else{
+                    $progressiveCommand = "";
+                }
+
                 if(true === $opts['scale']):
                     $resize = $w."x".$h;
-                    $cmd = $path_to_convert ." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+                    $cmd = $path_to_convert ." $progressiveCommand ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
                         (true === $opts['crop'] ? "^ -gravity center -extent " . escapeshellarg($resize) : "").
                         " -quality ". escapeshellarg($opts['quality']) . " " . escapeshellarg($newPath);
                 else:
-                    $cmd = $path_to_convert." ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
+                    $cmd = $path_to_convert." $progressiveCommand ". escapeshellarg($imagePath) ." -resize ". escapeshellarg($resize) .
                         " -size ". escapeshellarg($w ."x". $h) .
                         " xc:". escapeshellarg($opts['canvasColor']) .
                         " +swap -gravity center -composite -quality ". escapeshellarg($opts['quality'])." ".escapeshellarg($newPath);
