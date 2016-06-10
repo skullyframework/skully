@@ -1,6 +1,7 @@
 <?php
 namespace Skully\App\Controllers;
 
+use Skully\App\Helpers\Csrf as C;
 use Skully\Core\Controller;
 
 class BaseController extends Controller {
@@ -23,18 +24,15 @@ class BaseController extends Controller {
 
     }
 
-    protected function beforeAction()
-    {
-
+    protected function beforeAction() {
+        C::check_valid($this->app->config('csrf'));
     }
 
-    protected function beforeRender()
-    {
+    protected function beforeRender() {
         $this->setDefaultAssign();
     }
 
-    protected function setDefaultAssign()
-    {
+    protected function setDefaultAssign() {
         $this->showSetMessages();
 
         if (!($this->app->configIsEmpty('localTest'))) {
@@ -63,8 +61,7 @@ class BaseController extends Controller {
      * @param array $assignParams
      * @return void
      */
-    public function render($viewPath = null, $assignParams = array())
-    {
+    public function render($viewPath = null, $assignParams = array()) {
         $this->beforeRender();
         parent::render($viewPath, $assignParams);
     }
@@ -74,13 +71,12 @@ class BaseController extends Controller {
      * @return string
      * @param array $assignParams
      */
-    public function fetch($viewPath = null, $assignParams = array())
-    {
+    public function fetch($viewPath = null, $assignParams = array()) {
         $this->beforeRender();
         return parent::fetch($viewPath, $assignParams);
     }
 
-    protected function setAdditionalAssign(){
+    protected function setAdditionalAssign() {
 
     }
 }
